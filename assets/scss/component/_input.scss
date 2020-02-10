@@ -1,0 +1,11 @@
+input {
+    font-size: 0.8em;
+
+    &::placeholder {
+        color: #333;
+    }
+    
+    &.input--large {
+        padding: 12px;
+    }
+}
