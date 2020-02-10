@@ -1,3 +1,3 @@
 # SM.Store.Frontend
 
-# Paul Castro
+### Paul Castro
