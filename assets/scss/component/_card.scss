@@ -189,3 +189,53 @@
         height: 375px;
     }
 }
+
+.card--service {
+    width: 396px;
+    height: 245px;
+    background-color: $white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
+    &.expand {
+        height: 486px;
+
+        & .card--service-content {
+            flex-basis: 409px;
+        }
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        flex-basis: 77px;
+        text-align: center;
+        margin-bottom: 17px;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        & p {
+            flex: 0 0 100%;
+            letter-spacing: 4px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 168px;
+    }
+
+    // &-btn {
+    //     flex-basis: 32px;
+    // }
+}

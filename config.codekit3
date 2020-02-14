@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/assets/css/style.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -77,11 +85,41 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/arrow-tail-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/arrow-tail-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/arrow-tail-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/arrow-tail-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/banner-pattern.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/banner-pattern.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/bills-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/bills-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -310,6 +348,14 @@
 		"oAP": "/assets/scss/.sass-cache/74d6d363a40474210524de40c470a18124ed2df1/_nav.scssc",
 		"oF": 0
 		},
+	"/assets/scss/.sass-cache/74d6d363a40474210524de40c470a18124ed2df1/_pagination.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/.sass-cache/74d6d363a40474210524de40c470a18124ed2df1/_pagination.scssc",
+		"oF": 0
+		},
 	"/assets/scss/.sass-cache/a758ca21992ee3fb9a5e10fd662a93d86a34102e/_colors.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -525,6 +571,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_pagination.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_pagination.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/layout/_container.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -592,6 +651,25 @@
 		"oA": 0,
 		"oAP": "/prepros-6.config",
 		"oF": 0
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"/template.html": {
 		"cB": 0,

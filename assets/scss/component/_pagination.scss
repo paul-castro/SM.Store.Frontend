@@ -1,0 +1,21 @@
+.pagination {
+    width: 266px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__page {
+        color: $gray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.active {
+            font-weight: 600;
+            color: #000;
+        }
+    }
+}
