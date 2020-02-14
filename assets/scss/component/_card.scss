@@ -1,0 +1,191 @@
+.card--menu {
+    width: 275px;
+    height: 375px;
+
+    &-whatsnew {
+
+        & .card__image {
+            position: relative;
+            height: 313px;
+        }
+
+        & .card__label {
+            height: 62px;
+            background-color: $white;
+            padding: 16px 0 0 16px;
+
+            & a {
+                display: block;
+                color: $black;
+            }
+        }
+    }
+
+    &-advocacy {
+        height: 414px;
+
+        & .card__image {
+            position: relative;
+            height: 112px;
+            padding: 19px 18px 13px 16px;
+            display: flex;
+            align-items: center;
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            & h3 {
+                position: relative;
+                color: $white;
+            }
+        }
+
+        & .card__label {
+            height: 302px;
+            background-color: $white;
+            padding: 16px 16px 0 16px;
+            
+            & ul li {
+                margin-bottom: 16px;
+
+                & a {
+                    text-decoration: none;
+                    color: $black;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &-categories {
+        height: 454px;
+
+        & .card__image {
+            position: relative;
+            height: 112px;
+            padding: 19px 18px 13px 16px;
+            display: flex;
+            align-items: center;
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            & h3 {
+                position: relative;
+                color: $white;
+            }
+        }
+
+        & .card__label {
+            height: 342px;
+            background-color: $white;
+            padding: 16px 16px 13px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & ul li {
+                margin-bottom: 16px;
+
+                & a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            & a {
+                display: block;
+                color: $black;
+            }
+        }
+    }
+
+    &-stories {
+        height: 400px;
+
+        & .card__image {
+            position: relative;
+            height: 112px;
+            padding: 19px 18px 13px 16px;
+            display: flex;
+            align-items: center;
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            & h3 {
+                position: relative;
+                color: $white;
+            }
+        }
+
+        & .card__label {
+            height: 288px;
+            background-color: $white;
+            padding: 16px 16px 13px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+                        
+            & ul li {
+                margin-bottom: 16px;
+
+                & a {
+                    text-decoration: none;
+                    color: $black;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &-event {
+        height: 345px;
+        
+        & .card__image {
+            position: relative;
+            height: 180px;
+        }
+
+        & .card__label {
+            height: 165px;
+            background-color: $white;
+            padding: 8px 16px 17px 16px;
+
+            & p {
+                letter-spacing: 4px;
+            }
+
+            & ul {
+                margin-top: 8px;
+                
+                & li {
+                    color: $dark-gray;
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+
+    &-whatsnew {
+        height: 375px;
+    }
+}

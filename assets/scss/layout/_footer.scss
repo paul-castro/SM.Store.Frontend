@@ -1,116 +1,176 @@
 .footer {
     position: relative;
-    display: block;
-    background-color: rgb(51, 51, 238);
-    
-    &__upper {
-        height: 380px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 70px 50px 30px 130px;
+    min-height: 468px;
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-        &--column {
-            color: $white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+    &__messenger {
+        position: absolute;
+        right: 4%;
+        top: -24px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
 
-            &-title {
-                font-size: 0.9em;
-                font-family: $primary-font;
-                font-weight: 400;
-                text-transform: uppercase;
-                flex-basis: 30px;
-                letter-spacing: 0.8px;
-            }
+        & button {
+            color: #007FFF;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
 
-            &-content {
-                flex-basis: 250px;
+    &__content {
+        padding: 48px 72px 50px 72px; 
+        color: $white;
+        
+        @include respond(1199px) {
+            padding: 24px 0 28px 0; 
+        }
+        
+        @include respond(tablet) {
+            padding: 24px 0 28px 0; 
+        }
 
-                & ul {
-                    margin-top: 18px;
-                    list-style-type: none;
-                    height: 100%;
+        & .row {
+            & div {
+                
+                &:nth-child(1) {
+                    flex: 0 0 25.6%;
 
-                    &.two-column {
-                        column-count: 2;
+                    @include respond(tablet) {
+                        flex: 0 0 66.66% !important;
                     }
 
-                    & li {
-                        margin-bottom: 15px;
-                        
-                        & a {
-                            color: $white;
-                            font-size: 0.85em;
-                            font-family: $primary-font;
-                            font-weight: 400;
-                            text-decoration: none;
-                            letter-spacing: 1px;
-                            
-                            &:hover {
-                                text-decoration: underline;
-                            }
+                    @include respond(mobile) {
+                        flex: 0 0 100% !important;
+                    }
+
+                    & .footer__content--col-items {
+                        columns: 2;
+
+                        @include respond(tablet) {
+                            margin: 0 0 20px 16px;
                         }
                     }
                 }
+                
+                &:nth-child(2) {
+                    flex: 0 0 8.1%;
 
-                & p {
-                    font-size: 0.85em;
-                    font-family: $primary-font;
-                    font-weight: 400;
-                    margin-bottom: 20px;
+                    @include respond(tablet) {
+                        flex: 0 0 33.33% !important;
+                    }
+
+                    @include respond(mobile) {
+                        flex: 0 0 100% !important;
+                    }
+
+                    & .footer__content--col-items {
+                        @include respond(tablet) {
+                            margin: 0 0 20px 16px;
+                        }
+                    }
+                }
+                
+                &:nth-child(3) {
+                    flex: 0 0 13.6%;
+
+                    @include respond(tablet) {
+                        flex: 0 0 33.33% !important;
+                    }
+
+                    @include respond(mobile) {
+                        flex: 0 0 100% !important;
+                    }
+
+                    & .footer__content--col-items {
+                        @include respond(tablet) {
+                            margin: 0 0 20px 16px;
+                        }
+                    }
+                }
+                
+                &:nth-child(4) {
+                    flex: 0 0 32%;
+
+                    @include respond(tablet) {
+                        flex: 0 0 66.66% !important;
+                    }
+
+                    @include respond(mobile) {
+                        flex: 0 0 100% !important;
+                    }
+                }
+            }
+        }
+
+        &--col-header {
+            margin-bottom: 16px;
+        }
+
+        &--col-items {
+            
+            & li {
+                margin-bottom: 16px;
+
+                & a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+
+            & p {
+                margin-bottom: 16px;
+            }
+
+            & .footer__input-group {
+                height: 48px;
+                display: flex;
+                width: 90%;
+                margin-bottom: 48px;
+
+                @include respond(mobile) {
+                    width: 100%;
                 }
 
-                & .input-group {
+                & input {
+                    border: none;
+                    background-color: $white;
+                    flex: 0 0 65%;
+                }
+
+                & button {
+                    flex: 0 0 35%;
+                    border: none;
+                    background-color: $coral;
+                }
+            }
+
+            & .footer__social-media {
+
+                & ul {
                     display: flex;
-                    width: 80%;
-                    margin-bottom: 20px;
+                    flex-direction: row;
 
-                    & input {
-                        flex-basis: 60%;
-                    }
-
-                    & button {
-                        flex-basis: 40%;
-                        background-color: $light-red;
-                        color: $white;
+                    & li {
+                        margin-right: 25px;
                     }
                 }
-
-                & h5 {
-                    font-family: $primary-font;
-                    text-transform: uppercase;
-                }
-            }
-
-            &:nth-child(1) {
-                flex-basis: 34%;
-            }
-            &:nth-child(2) {
-                flex-basis: 10%;
-            }
-            &:nth-child(3) {
-                flex-basis: 20%;
-            }
-            &:nth-child(4) {
-                flex-basis: 30%;
             }
         }
     }
 
-    &__lower {
-        background-color: $light-blue;
-        height: 40px;
+    &__copyright {
+        bottom: 0;
         display: flex;
+        height: 40px;
+        width: 100%;
         justify-content: center;
         align-items: center;
+        background-color: $blue;
 
         &--text {
             color: $white;
-            font-family: $primary-font;
-            font-weight: 300;
-            font-size: 0.8em;
         }
     }
 }

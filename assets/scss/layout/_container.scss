@@ -1,5 +1,49 @@
-.container {
-    position: relative;
-    background-color: $white;
-    min-height: calc(100vh - (200px + 420px));
-}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px $gutter-desktop;
+
+    @include respond(tablet) {
+        padding: 0px $gutter-tablet;
+    }
+
+    @include respond(mobile) {
+        padding: 0px $gutter-mobile;
+    }
+}     
+
+// .col-12 {
+//     flex: 0 0 100% !important;
+// }
+
+// $columns: 12;
+// $margin: 24px;
+
+// @for $i from 1 to $columns {
+//     .col-d-#{$i} {
+//         flex: 0 0 calc(((100% / #{$columns}) * #{$i}) - #{$margin});
+//     }
+// }
+
+// @include respond(tablet) {
+//     $columns: 8;
+//     $margin: 16px;
+
+//     @for $i from 1 to $columns {
+//         .col-t-#{$i} {
+//             flex: 0 0 calc(((100% / #{$columns}) * #{$i}) - #{$margin}) !important;
+//         }
+//     }
+// }
+
+// @include respond(mobile) {
+//     $columns: 4;
+//     $margin: 16px;
+
+//     @for $i from 1 to $columns {
+//         .col-m-#{$i} {
+//             flex: 0 0 calc(((100% / #{$columns}) * #{$i}) - #{$margin}) !important;
+//         }
+//     }
+// }

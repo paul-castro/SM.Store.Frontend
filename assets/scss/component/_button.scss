@@ -1,20 +1,54 @@
-.btn {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: Lato;
-    border: none;
+button {
+    outline: none;
+}
+
+.btn--primary {
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 48px;
+    border: 1px solid $white;
+    background-color: transparent;
+    padding: 16px 24px;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
 
     &::after {
         content: '\2014\2014';
         letter-spacing: -2px;
-        margin-left: 5px;
+        margin-left: 8px;
     }
+}
 
-    &--small {
-        font-size: 0.8em;
+.btn--text-link {
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::after {
+        content: '\2014\2014';
+        letter-spacing: -2px;
+        margin-left: 8px;
     }
+}
 
-    &--large {
-        font-size: 1.5em;
+.btn--icon {
+    border: 1px solid $mid-gray;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 43px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & img {
+        margin-right: 10px;
     }
 }

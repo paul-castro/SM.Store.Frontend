@@ -1,1 +1,179 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
+
+@font-face {
+    font-family: 'Verlag Black';
+    src: url(../../fonts/Verlag-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Verlag Bold';
+    src: url(../../fonts/Verlag-Bold.ttf);
+}
+
+// FONTS FAMILY
+$font-heading1: 'Josefin Sans';
+$font-base: 'Open Sans';
+
+
+// BASE
+body {
+    font-family: $font-base;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+}
+
+.font {
+
+    &-titan {
+        font-family: $font-heading1;
+        font-size: 88px;
+        font-weight: bold;
+        line-height: 88px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+
+    &-hero {
+        font-family: $font-heading1;
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 72px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    &-h1 {
+        font-family: $font-heading1;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 58px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    &-h2 {
+        font-family: $font-heading1;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 1.6px;
+
+        &-hero {
+            font-family: $font-heading1;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 40px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+        }
+
+        &-caps {
+            font-family: $font-heading1;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+        }
+    }
+
+    &-h3 {
+        font-family: $font-heading1;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 1.6px;
+
+        &-caps {
+            font-family: $font-heading1;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 32px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+        }
+    }
+
+    &-h4 {
+        font-family: $font-base;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &-callout {
+        font-family: $font-base;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &-headline {
+        font-family: $font-base;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &-eyebrow {
+        font-family: $font-base;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    &-caption {
+        font-family: $font-base;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &-caption-bold {
+        font-family: $font-base;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &-metadata {
+        font-family: $font-base;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    &-cta {
+        font-family: $font-base;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    &-fineprint {
+        font-family: $font-base;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+}
+
+// TEXT
+.text {
+    &-semibold {
+        font-weight: 600;
+    }
+
+    &-bold {
+        font-weight: bold;
+    }
+
+    &-right {
+        text-align: right;
+    }
+}

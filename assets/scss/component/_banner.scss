@@ -1,0 +1,14 @@
+.banner {
+    height: 792px;
+    width: 100%;
+    left: 0px;
+    top: 32px;
+    position: absolute;
+    background-color: #F05D6B;
+
+    &__pattern {
+        position: absolute;
+        top: -40px;
+        left: -3.93%;
+    }
+}

@@ -1,10 +1,17 @@
 @import 'base/normalize';
+@import 'base/colors';
 @import 'base/typography';
-@import 'abstract/variable';
-@import 'abstract/utilities';
-@import 'abstract/mixin';
+
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
 @import 'component/input';
 @import 'component/button';
+@import 'component/list';
+@import 'component/nav';
+@import 'component/banner';
+@import 'component/card';
+
 @import 'layout/header';
 @import 'layout/container';
 @import 'layout/footer';
