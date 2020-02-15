@@ -124,6 +124,15 @@ body {
         text-transform: uppercase;
     }
 
+    &-eyebrow-medium {
+        font-family: Open Sans;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
     &-caption {
         font-family: $font-base;
         font-size: 14px;

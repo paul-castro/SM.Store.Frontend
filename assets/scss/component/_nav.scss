@@ -1,8 +1,9 @@
 .nav {
-    position: relative;
+    position: absolute;
     height: 120px;
+    width: 100%;
     z-index: 99;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     
     @include respond(tablet) {
         height: 64px;
