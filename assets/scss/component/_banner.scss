@@ -1,27 +1,39 @@
 .banner {
-    height: 100vh;
+    height: 792px;
     width: 100%;
     left: 0px;
     position: relative;
     background-color: #F05D6B;
 
+    @include respond(tablet) {
+        height: 442px;
+        padding: 12px;
+    }
+
     &__pattern {
         position: absolute;
-        height: 437px;
-        width: 100%;
-        top: -9%;
-        left: -3.93%;
+        top: 0;
+        left: 0;
+        height: 55.17%;
+        width: 75.35%;
+        background-image: url('../../assets/images/banner-pattern.svg');
+        background-repeat: no-repeat;
     }
 
     &__content {
-        position: absolute;
-        width: 49%;
+        position: relative;
+        width: 691px;
         top: 50.63%;
         left: 6.3%;
         color: $white;
         display: flex;
         flex-direction: column;
         z-index: 60;
+
+        @include respond(tablet) {
+            width: 70%;
+            left: 0;
+        }
 
         & span {
             letter-spacing: 4px;
@@ -33,11 +45,33 @@
         }
     }
 
-    &__img {
+    &__btn {
+        margin-top: 8px;
+    }
+
+    &__image {
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: 50;
         height: 80%;
+
+        & img {
+            
+        width: 1104px;
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        right: 32px;
+
+        @include respond(tablet) {
+            left: 50%;
+            bottom: 16px;
+            display: flex;
+            justify-content: center;
+            transform: translateX(-50%)
+        }
     }
 }

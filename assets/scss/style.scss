@@ -1,9 +1,9 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
 @import 'base/normalize';
 @import 'base/colors';
 @import 'base/typography';
-
-@import 'abstract/variables';
-@import 'abstract/mixins';
 
 @import 'component/input';
 @import 'component/button';

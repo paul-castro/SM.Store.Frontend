@@ -3,12 +3,11 @@
     height: 120px;
     width: 100%;
     z-index: 99;
-    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     
-    @include respond(tablet) {
+    @include respond(900px) {
         height: 64px;
     }
-
 
     &__top { 
         position: absolute;
@@ -20,7 +19,7 @@
         flex-direction: row;
         align-items: center;
         
-        @include respond(tablet) {
+        @include respond(900px) {
             display: none !important;
         }
 
@@ -32,6 +31,7 @@
             height: 18px;
 
             & li {
+
                 & a, 
                 & span {
                     text-decoration: none;
@@ -54,6 +54,7 @@
 
             & li {
                 margin: 0 25px 0 0;
+                white-space: nowrap;
             }
         }
 
@@ -64,6 +65,7 @@
             
             & li {
                 margin: 0 25px 0 0;
+                white-space: nowrap;
             }
         }
 
@@ -100,7 +102,7 @@
         top: 32px;
         align-items: center;
 
-        @include respond(tablet) {
+        @include respond(900px) {
             height: 100%;
             top: 0;
         }
@@ -110,7 +112,7 @@
         display: none;
         cursor: pointer;
         
-        @include respond(tablet) {
+        @include respond(900px) {
             display: block;
             flex: 0 0 15%;
         }
@@ -118,11 +120,15 @@
 
     &__logo {
         height: 53px;
-        flex: 0 0 35%;
+        flex: 0 0 auto;
+
+        @include respond(1200px) {
+            height: 40px;
+        }
         
-        @include respond(tablet) {
+        @include respond(900px) {
             height: 30px;
-            flex: 0 0 70%;
+            flex: 0 0 33.33%;
             text-align: center;
         }
 
@@ -135,7 +141,17 @@
         height: 24px;
         flex: 0 0 61%;
 
-        @include respond(tablet) {
+        @include respond(1200px) {
+            & ul li {
+                margin-left: 20px !important;
+
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @include respond(900px) {
             display: none;
         }
 
@@ -143,12 +159,13 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            width: 100%;
+            // width: 100%;
             height: 24px;
             z-index: 199;
 
             & li {
                 margin-left: 40px;
+                white-space: nowrap;
 
                 & a {
                     text-decoration: none;
@@ -189,12 +206,12 @@
 
     &__search {
         height: 24px;
-        flex: 0 0 56px;
+        flex: 0 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         
-        @include respond(tablet) {
+        @include respond(900px) {
             flex: 0 0 15%;
         }
     }

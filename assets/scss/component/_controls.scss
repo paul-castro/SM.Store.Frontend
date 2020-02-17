@@ -1,5 +1,13 @@
-// .controls {
-//     &__arrow {
+.controls {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    z-index: 50;
 
-//     }
-// }
+    &__arrow:nth-of-type(1) {
+        margin: 0 15px 0 0;
+    }
+    &__arrow:nth-of-type(2) {
+        margin: 0 0 0 15px;
+    }
+}

@@ -30,6 +30,7 @@ button {
     white-space: nowrap;
     background-color: transparent;
     cursor: pointer;
+    padding: 8px 0 8px 0;
 
     &::after {
         content: '\2014\2014';

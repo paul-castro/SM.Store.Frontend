@@ -239,3 +239,64 @@
     //     flex-basis: 32px;
     // }
 }
+
+.card--event {
+    height: 100%;
+    max-height: 496px;
+    width: 288px;
+    position: relative;
+    display: inline-block;
+    margin-left: 24px;
+    background-color: #ccc;
+
+    &-poster {
+        
+    }
+
+    &-details {
+        height: 280px;
+        width: 192px;
+        padding: 32px 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.88);
+
+        &-month {
+            margin-bottom: 8px;
+            letter-spacing: 4px;
+        }
+
+        &-day {
+            letter-spacing: 1.6px;
+            color: $brick;
+            margin-bottom: 8px;
+        }
+
+        &-title {
+            letter-spacing: 4px;
+            width: 50%;
+        }
+
+    }
+}
+
+.card--component {
+    height: 320px;
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    & img {
+        height: 288px;
+        width: 288px;
+    }
+
+    & a {
+        color: $black;
+        padding-bottom: 0;
+    }
+}
