@@ -1,12 +1,18 @@
-body {
-    background-color: $white;
-    display: flex;
-    justify-content: center;
-}
 
 .container {
-    max-width: 1400px;
+    position: relative;
+    max-width: 1224px;
     margin: 0 auto;
+
+    @include respond(1170px) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    @include respond(mobile) {
+        max-width: 360px;
+        margin: 0 auto;
+    }
 }
 
 .row {

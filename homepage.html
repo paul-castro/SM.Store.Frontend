@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="assets/css/style.min.css">
     </head>
     <body>
-        <div class="container">
             <!-- NAV DEFAULT -->
             <div class="nav">
                 <div class="nav__top nav__top--inner row">
@@ -111,50 +110,53 @@
 
                 <div class="banner__pagination pagination-dot">
                     
-                        <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
-                        <label class="pagination-dot__indicator" for="slide1"></label>
-                    
-                        <input type="radio" id="slide2" name="activator" type="text" class="pagination-dot__activator">
-                        <label class="pagination-dot__indicator" for="slide2"></label>
-                    
-                        <input type="radio" id="slide3" name="activator" type="text" class="pagination-dot__activator">
-                        <label class="pagination-dot__indicator" for="slide3"></label>
-                    
-                        <input type="radio" id="slide4" name="activator" type="text" class="pagination-dot__activator">
-                        <label class="pagination-dot__indicator" for="slide4"></label>
+                    <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide1"></label>
+                
+                    <input type="radio" id="slide2" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide2"></label>
+                
+                    <input type="radio" id="slide3" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide3"></label>
+                
+                    <input type="radio" id="slide4" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide4"></label>
                 </div>
                 
                 <div class="banner__image"></div>
             </div>
-            
             <section class="featured-blog">
-                <h2 class="featured-blog__title font-h2-hero">Trending Blogs</h2>
-                <a href="" class="featured-blog__btn font-cta btn--text-link">View all blogs</a>
-                <p class="featured-blog__subtitle font-eyebrow">From the latest fashion inspirations to the <br> newest product highlights - read about it here.</p>
+                <div class="container">
+                    <h2 class="featured-blog__title font-h2-hero">Trending Blogs</h2>
+                    <p class="featured-blog__subtitle font-eyebrow">From the latest fashion inspirations to the <br> newest product highlights - read about it here.</p>
+                    <a href="" class="featured-blog__btn font-cta btn--text-link">View all blogs</a>
+                    <div class="featured-blog__cards">
+                        <div class="featured-blog__card">
+                            <img src="./assets/images/cards/card-blog1.png" alt="">
+                            <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
+                            <h4 class="featured-blog__card--title font-h4">2020 Beauty Trends</h4>
+                            <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
+                        </div>
+                        <div class="featured-blog__card">
+                            <img src="./assets/images/cards/card-blog2.png" alt="">
+                            <span class="featured-blog__card--category font-eyebrow-medium">Women</span>
+                            <h4 class="featured-blog__card--title font-h4">Classic Forever Pieces</h4>
+                            <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
+                        </div>
+                        <div class="featured-blog__card">
+                            <img src="./assets/images/cards/card-blog3.png" alt="">
+                            <span class="featured-blog__card--category font-eyebrow-medium">Men</span>
+                            <h4 class="featured-blog__card--title font-h4">SM Men's Fashion Spring 2020 Lookbook</h4>
+                            <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
+                        </div>
+                        <div class="featured-blog__card">
+                            <img src="./assets/images/cards/card-blog4.png" alt="">
+                            <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
+                            <h4 class="featured-blog__card--title font-h4">Summer Hits</h4>
+                            <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
+                        </div>
+                    </div>
 
-                <div class="featured-blog__card">
-                    <img src="./assets/images/cards/card-blog1.png" alt="">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
-                    <h4 class="featured-blog__card--title font-h4">2020 Beauty Trends</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
-                </div>
-                <div class="featured-blog__card">
-                    <img src="./assets/images/cards/card-blog2.png" alt="">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Women</span>
-                    <h4 class="featured-blog__card--title font-h4">Classic Forever Pieces</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
-                </div>
-                <div class="featured-blog__card">
-                    <img src="./assets/images/cards/card-blog3.png" alt="">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Men</span>
-                    <h4 class="featured-blog__card--title font-h4">SM Men's Fashion Spring 2020 Lookbook</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
-                </div>
-                <div class="featured-blog__card">
-                    <img src="./assets/images/cards/card-blog4.png" alt="">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
-                    <h4 class="featured-blog__card--title font-h4">Summer Hits</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read blog</a>
                 </div>
             </section>
 
@@ -399,6 +401,5 @@
                 </div>
             </div>
             <!-- /FOOTER -->
-        </div>
     </body>
 </html>

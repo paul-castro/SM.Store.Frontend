@@ -1,107 +1,107 @@
 .featured {
     &-blog {
         position: relative;
-        padding: 80px 88px;
-        display: flex;
-        justify-content: space-between;
+        padding: 80px 0;
 
-        @include respond(1350px) {
-            padding: 80px 50px;
-        }
-
-        @include respond(1280px) {
-            padding: 32px 24px 80px 24px;
-        }
-
-        @include respond(1230px) {
-            display: block;
-        }
-        
         &__title {
-            position: absolute;
-            top: 80px;
-            left: 50%;
-            transform: translateX(-50%);
+            text-align: center;
+            color: $dark-gray;
+        }
 
-            @include respond(1280px) {
-                top: 32px;
+        &__subtitle {
+            text-align: center;
+            letter-spacing: 3px;
+            color: $dark-gray;
+            margin-bottom: 48px;
+
+            @include respond(1170px) {
+                margin-bottom: 24px;
             }
 
-            @include respond(1230px) {
-                position: relative;
-                top: 0;
-                left: 0;
-                transform: none;
-                text-align: center;
-                margin-bottom: 8px;
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                font-weight: normal;
+                width: 100%;
             }
         }
 
         &__btn {
             position: absolute;
-            right: 88px;
-            top: 80px;
+            right: 0;
+            top: 0px;
             color: $black;
 
-            @include respond(1280px) {
-                top: 32px;
+            @include respond(1170px) {
+                position: relative;
+                display: block;
+                text-align: center;
+                margin-bottom: 32px;
             }
         }
 
-        &__subtitle {
-            position: absolute;
-            width: 594px;
-            top: 128px;
-            left: 50%;
-            text-align: center;
-            transform: translateX(-50%);
-            letter-spacing: 3px;
+        &__cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
 
-            @include respond(1280px) {
-                top: 80px;
-            }
+            @include respond(1170px) {
 
-            @include respond(1230px) {
-                position: relative;
-                top: 0;
-                left: 0;
-                transform: none;
-                margin: 0 auto;
             }
         }
 
         &__card {
             height: 556px;
-            flex: 0 0 288px;
+            width: 288px;
             position: relative;
             display: inline-block;
 
-            @include respond(1230px) {
-                display: flex;
-                flex-direction: column;
-                width: 288px;
+            @include respond(mobile) {
+                height: 388px !important;
+                width: 160px !important;
+            }
 
-                &:nth-of-type(4) {
+            &:nth-of-type(1) {
+                margin-top: -112px;
+
+                @include respond(1170px) {
                     margin-top: 0;
-                }
-
-                &:nth-of-type(2),
-                &:nth-of-type(3) {
-                    margin-top: 0px;
                 }
             }
 
-            &:nth-of-type(2),
+            &:nth-of-type(2) {
+                @include respond(1170px) {
+                    margin-top: 24px;
+                }
+            }
+
             &:nth-of-type(3) {
-                margin-top: 140px;
+
+                @include respond(1170px) {
+                    
+                }
             }
 
             &:nth-of-type(4) {
-                margin-top: 80px;
+                margin-top: -56px;
+
+                @include respond(1170px) {
+                    margin-top: 24px;
+                }
+            }
+
+            & img {
+                @include respond(mobile) {
+                    height: 244px;
+                    width: 100%;
+                }
             }
 
             &--category {
                 color: $gray;
+                display: block;
             }
 
             &--title {
@@ -110,6 +110,7 @@
 
             &--btn {
                 display: block;
+                color: $black;
                 margin-top: 24px;
             }
         }
