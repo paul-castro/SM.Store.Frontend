@@ -1,46 +1,12 @@
 .nav {
-    position: absolute;
-    height: 120px;
-    width: 100%;
-    z-index: 99;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-    
-    @include respond(900px) {
-        height: 64px;
-    }
-
-    &__top { 
-        position: absolute;
-        height: 32px;
-        left: 0%;
-        right: 0%;
-        top: 0px;
+    &__upper {
         display: flex;
-        flex-direction: row;
+        height: 32px;
+        padding: 0 24px;
+        justify-content: space-between;
         align-items: center;
-        
-        @include respond(900px) {
-            display: none !important;
-        }
-
-        & ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 197px;
-            height: 18px;
-
-            & li {
-
-                & a, 
-                & span {
-                    text-decoration: none;
-                    color: $white;
-                }
-            }
-        }
-
-        &--inner {
+ 
+        &--default {
             background-color: $blue;
         }
 
@@ -48,171 +14,107 @@
             background-color: #C54238;
         }
 
-        &--sub-menu {
-            order: 0;
-            flex-basis: 33.33%; 
-
-            & li {
-                margin: 0 25px 0 0;
-                white-space: nowrap;
-            }
-        }
-
-        &--forex {
-            order: 1;
-            flex-basis: 33.33%;
-            justify-content: center;
-            
-            & li {
-                margin: 0 25px 0 0;
-                white-space: nowrap;
-            }
-        }
-
-        &--announcement {
-            order: 1;
-            flex-basis: 33.33%;
-            justify-content: center;
-            
-            & li {
-                margin: 0 25px 0 0;
-            }
-        }
-
-        &--misc {
-            order: 2;
-            flex-basis: 33.33%;
-            justify-content: flex-end;
+        &-list {
             display: flex;
 
             & li {
-                margin:  0 0 0 25px;
-
-                & img {
-                    vertical-align: middle;
-                }
-            }
-        }
-    }
-
-    &__main {
-        position: relative;
-        display: flex;
-        height: calc(120px - 32px);
-        top: 32px;
-        align-items: center;
-
-        @include respond(900px) {
-            height: 100%;
-            top: 0;
-        }
-    }
-
-    &__burger-menu {
-        display: none;
-        cursor: pointer;
-        
-        @include respond(900px) {
-            display: block;
-            flex: 0 0 15%;
-        }
-    }
-
-    &__logo {
-        height: 53px;
-        flex: 0 0 auto;
-
-        @include respond(1200px) {
-            height: 40px;
-        }
-        
-        @include respond(900px) {
-            height: 30px;
-            flex: 0 0 33.33%;
-            text-align: center;
-        }
-
-        & img {
-            height: 100%;
-        }
-    }
-
-    &__menu {
-        height: 24px;
-        flex: 0 0 61%;
-
-        @include respond(1200px) {
-            & ul li {
-                margin-left: 20px !important;
-
-                & a {
-                    font-size: 14px;
-                }
-            }
-        }
-
-        @include respond(900px) {
-            display: none;
-        }
-
-        & ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            // width: 100%;
-            height: 24px;
-            z-index: 199;
-
-            & li {
-                margin-left: 40px;
-                white-space: nowrap;
-
-                & a {
-                    text-decoration: none;
+                & a, span {
                     color: $white;
-                    font-weight: 600;
-                    padding: 8px 0;
-                    border-bottom: 3px transparent solid;
+                    text-decoration: none;
                 }
-
-                &:hover {
-                    & a {
-                        border-bottom: 3px $white solid;
-                    }
-
-                    & ~ .nav__menu-dropdown {
-                        display: block;
-                    }
-                }
-
             }
-        }
 
-        &-dropdown {
-            display: none;
-            position: absolute;
-            top: 88px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #F8F8F8;
-            padding: 24px 0; 
-            width: 87.43%;
-            // width: 1224px;
-            height: 495px;
-            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-            z-index: 199;
+            &-menu {
+                flex: 0 0 33.33%;
+
+                & li {
+                    margin-right: 24px;
+                }
+            }
+
+            &-forex {
+                justify-content: center;
+                flex: 0 0 33.33%;
+
+                & li {
+                    margin: 0 12px;
+                }
+            }
+            &-misc {
+                justify-content: flex-end;
+                flex: 0 0 33.33%;
+
+                & li {
+                    margin: 0 0 0 24px;
+                }
+            }
         }
     }
 
-    &__search {
-        height: 24px;
-        flex: 0 0 auto;
+    &__lower {
+        position: absolute;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        
-        @include respond(900px) {
-            flex: 0 0 15%;
+        height: 88px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        padding: 14px 24px;
+        justify-content: space-between;
+
+        &-burger {
+            display: none;
+            cursor: pointer;
+
+            @include respond(1160px) {
+                display: flex;
+                flex: 0 0 16px;
+                align-items: center;
+                
+                & img {
+                    height: 24px;
+                }
+            }
+        }
+
+
+        & .logo {
+            flex: 0 0 20%;
+        }
+
+        &-menu {
+            display: flex;
+            flex: 0 0 766px;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+
+            @include respond(1160px) {
+                display: none;
+            }
+
+            &-item {
+                display: inline-block;
+
+                & a {
+                    color: $white;
+                    text-decoration: none;
+                    padding-bottom: 8px;
+                    border-bottom: 3px solid transparent;
+
+                    &:hover {
+                        border-bottom: 3px solid $white;
+                    }
+                }
+            }
+        }
+
+        &-search {
+            flex: 0 0 16px;
+            display: flex;
+            align-items: center;
+            margin-left: 35px;
+                
+            & img {
+                height: 24px;
+            }
         }
     }
 }

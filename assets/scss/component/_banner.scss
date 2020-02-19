@@ -1,43 +1,51 @@
 .banner {
-    height: 792px;
-    width: 100%;
-    left: 0px;
-    position: relative;
     background-color: #F05D6B;
+    position: relative;
+    height: 792px;
 
-    @include respond(tablet) {
-        height: 442px;
-        padding: 12px;
+    @include respond(mobile) {
+        height: 500px;
     }
 
     &__pattern {
+        background: url('../images/banner-pattern.svg') no-repeat;
+        background-size: cover;
+        height: 437px;
+        width: 1055px;
         position: absolute;
-        top: 0;
-        left: 0;
-        height: 55.17%;
-        width: 75.35%;
-        background-image: url('../../assets/images/banner-pattern.svg');
-        background-repeat: no-repeat;
+        top: -9.15%;
+        left: -5.2%;
+    }
+
+    &__featured {
+        background: url('../images/banner.svg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        // height: 704px;
+        // width: 1104px;
+        width: 70%;
+        height: 85%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 
     &__content {
-        position: relative;
-        width: 691px;
+        position: absolute;
         top: 50.63%;
-        left: 6.3%;
         color: $white;
-        display: flex;
-        flex-direction: column;
-        z-index: 60;
+        max-width: 691px;
+        width: 49%;
+        margin-left: 88px;
 
         @include respond(tablet) {
-            width: 70%;
-            left: 0;
+            width: 74%;
+            margin-left: 16px;
         }
 
-        & span {
-            letter-spacing: 4px;
-            margin-bottom: 6px;
+        @include respond(mobile) {
+            margin-left: 12px;
+            top: 58.12%;
         }
 
         & h1:nth-of-type(2) {
@@ -45,33 +53,25 @@
         }
     }
 
-    &__btn {
-        margin-top: 8px;
-    }
-
-    &__image {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 50;
-        height: 80%;
-
-        & img {
-            
-        width: 1104px;
-        }
-    }
-
+    
     &__pagination {
         position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
         right: 32px;
+        z-index: 9;
 
         @include respond(tablet) {
+            top: 95%;
             left: 50%;
-            bottom: 16px;
             display: flex;
             justify-content: center;
-            transform: translateX(-50%)
+            transform: translate(-50%, -50%);
         }
+    }
+
+    &__btn {
+        display: block;
+        margin-top: 8px;
     }
 }

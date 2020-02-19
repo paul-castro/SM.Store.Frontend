@@ -47,6 +47,12 @@ body {
         line-height: 72px;
         letter-spacing: 4px;
         text-transform: uppercase;
+
+        @include respond(mobile) {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
 
     &-h1 {
@@ -72,10 +78,19 @@ body {
             line-height: 40px;
             letter-spacing: 1.6px;
             text-transform: uppercase;
+            
+
+            br {
+                display: none;
+            }
 
             @include respond(mobile) {
                 font-size: 24px;
                 line-height: 32px;
+                margin-right: auto;
+                br {
+                    display: block;
+                }
             }
         }
 
@@ -132,6 +147,13 @@ body {
         font-weight: bold;
         line-height: 24px;
         text-transform: uppercase;
+
+        @include respond(tablet) {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 2px;
+        }
     }
 
     &-eyebrow-semi {
@@ -140,6 +162,12 @@ body {
         font-weight: 600;
         line-height: 24px;
         text-transform: uppercase;
+
+        @include respond(mobile) {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 2px;
+        }
     }
 
     &-eyebrow-medium {
