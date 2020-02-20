@@ -1,7 +1,21 @@
+.wrapper {
+    overflow: hidden;
+}
+
 .container {
     width: 1284px;
     padding: 0 $gutter-desktop;
     margin: 0 auto;
+
+    @include respond(tablet) {
+        width: 600px;
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(mobile) {    
+        width: 360px;
+        padding: 0 $gutter-mobile;
+    }
 }
 
 .container-fluid {
@@ -9,16 +23,18 @@
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 840px) { 
-    .container{
-        width: 600px !important;
-        padding: 0 $gutter-tablet !important; 
-    }
-}
 
-@media only screen and (max-width: 600px) { 
-    .container{
-        width: 360px !important;
-        padding: 0 !important;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px $gutter-desktop;
+
+    @include respond(tablet) {
+        padding: 0px $gutter-tablet;
     }
-}
+
+    @include respond(mobile) {
+        padding: 0px $gutter-mobile;
+    }
+}    

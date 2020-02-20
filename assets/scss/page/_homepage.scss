@@ -514,7 +514,8 @@
         }
 
         @include respond(mobile) {
-            height: 550px;
+            height: 580px;
+            padding: 40px 0 !important;
         }
         
         &__details {
@@ -570,7 +571,7 @@
 
             @include respond(mobile) {
                 position: absolute;
-                bottom: 20px;
+                bottom: 55px;
             }
         }
 
@@ -589,140 +590,225 @@
 
     &-advocacy {
         position: relative;
-        padding: 64px 0;
         background-color: $light-sage;
+        min-height: 756px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(mobile) {
+            min-height: 530px;
+        }
 
         &__container {
-            background-color: $blush;
-            height: 100%;
-            width: 100%;
             position: relative;
-            padding: 59px 0 34px 78px;
+            min-height: 628px;
+            background-color: $blush;
+            margin-top: 64px;
             display: flex;
-            flex-direction: column;
+            align-items: center;
 
-            @include respond(tablet) {
-                padding: 13px 0;
-                flex-direction: column;
-            }
-        }
-        
-        &__title {
-            margin: 48px 0 16px 0;
-            // width: min-content;
-            position: absolute;
-            width: 340px;
-            z-index: 60;
-            
-            // display: block;
-
-            @include respond(tablet) {
-                position: relative;
-                width: auto;
-                height: auto;
-                display: block;
-
-                margin: 0;
-             }
-
-             @include respond(mobile) {
-                position: relative;
-                width: auto;
-                height: auto;
-                display: block;
-             }
-
-
-            & h1 {
-                position: relative;
-                text-align: center;
-
-                @include respond(tablet) {
-                  text-align: left;
-                  font-size: 24px;
-                  line-height: 32px
-                 }
-
-                &:nth-of-type(1) {
-                    color: $teal;
-                    // top: 0;
-
-                    @include respond(tablet) {
-                        left: 0;
-                    }
-                }
-
-                &:nth-of-type(2) {
-                    // top: 80px;
-                    right: -45%;
-                    
-                    @include respond(tablet) {
-                        left: 0;
-                    }
-                }
-
-                &:nth-of-type(3) {
-                    // top: 160px;
-                    left: 50%;
-                    transform: translateX(-40%);
-
-                    @include respond(tablet) {
-                        left: 0;
-                        transform: translateX(0%);
-                    }
-                }
+            @include respond(mobile) {
+                min-height: 530px;
+                margin-top: 16px;
             }
         }
 
         &__details {
             position: absolute;
-            width: 340px;
-            height: 72px;
-            top: 355px;
-            flex-basis: 40%;
-            text-align: right;
-            z-index: 60;
+            margin: 48px 0 0 60px;
+            z-index: 99;
 
             @include respond(tablet) {
-               position: relative;
-               width: auto;
-               height: auto;
-               display: block;
-               text-align: left;
+                margin: 0 0 24px 0;
+                top: 20px;
+            }
+
+            & h1 {
+                margin-bottom: 16px;
+
+                @include respond(tablet) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                }
+
+                & span {
+                    display: block;
+
+                    @include respond(tablet) {
+                        display: inline-block;
+                    }
+                    
+                    &:nth-of-type(1) {
+                        color: $teal;
+
+                        @include respond(tablet) {
+                            display: block;
+                        }
+                    }
+                    
+                    &:nth-of-type(2) {
+                        margin-left: 204px;
+
+                        @include respond(tablet) {
+                            margin-left: 0;
+                        }
+                    }
+                    
+                    &:nth-of-type(3) {
+                        margin-left: 55px;
+
+                        @include respond(tablet) {
+                            margin-left: 0;
+                        }
+                    }
+                }
             }
 
             & p {
+                width: 340px;
+                text-align: right;
                 margin-bottom: 53px;
+
+                @include respond(tablet) {
+                    text-align: left;
+                    margin-bottom: 24px;
+                }
             }
 
             & a {
-                background-color: transparent;
-                color: $black;
+                display: inline-block;
+                margin-left: 220px;
                 border: 1px solid $black;
+                color: $black;
+
+                @include respond(tablet) {
+                    margin-left: 0px;
+                }
             }
+
         }
 
         &__slider {
             position: relative;
             display: flex;
-            margin-left: 400px;
+            margin-left: 35%;
 
             @include respond(tablet) {
+                position: absolute;
+                top: 268px;
                 margin-left: 0;
             }
 
             & img {
                 margin-right: 24px;
+
+                @include respond(tablet) {
+                    height: 284px;
+                }
+
+                @include respond(mobile) {
+                    height: 184px;
+                }
             }
         }
 
         &__controls {
-            position: relative;
+            position: absolute;
             align-items: center;
             display: flex;
             justify-content: flex-end;
-            z-index: 90;
-            margin-right: 70px;
+            z-index: 120;
+            right: 60px;
+            bottom: 0;
+        }
+    }
+
+    &-press {
+        position: relative;
+        background-color: #EFF3FD;;
+        min-height: 824px;
+        padding: 64px 0;
+
+        @include respond(tablet) {
+            min-height: 454px;
+        }
+
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 34px;
+
+            & h2 {
+                color: $dark-gray;
+            }
+
+            & a {
+                color: $black;
+
+                @include respond(mobile) {
+                    margin-top: 32px;
+                }
+            }
+        }
+
+        &__container {
+            position: relative;
+            height: 584px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 24px solid $indigo;
+            box-sizing: border-box;
+
+            @include respond(tablet) {
+                border: 16px solid $indigo;
+                height: 268px;
+            }
+            
+            &-image {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            position: absolute;
+            margin-left: 102px;
+
+            @include respond(tablet) {
+                display: none;
+            }
+
+            & h1 {
+                color: $white;
+                width: 534px;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__controls {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            z-index: 120;
+        }
+    }
+
+    &-category {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 80px 0;
+
+        & .accessories-text {
+            @include respond(tablet) {
+                display: none;
+            }
         }
     }
 }

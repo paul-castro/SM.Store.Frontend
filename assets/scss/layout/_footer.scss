@@ -143,6 +143,10 @@
                     flex: 0 0 35%;
                     border: none;
                     background-color: $coral;
+
+                    @include respond(mobile) {
+                        
+                    }
                 }
             }
 

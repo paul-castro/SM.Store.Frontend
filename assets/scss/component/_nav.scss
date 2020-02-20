@@ -26,6 +26,10 @@
 
             &-menu {
                 flex: 0 0 33.33%;
+                
+                @include respond(1160px) {
+                    display: none;    
+                }
 
                 & li {
                     margin-right: 24px;
@@ -35,6 +39,10 @@
             &-forex {
                 justify-content: center;
                 flex: 0 0 33.33%;
+                
+                @include respond(1160px) {
+                    flex: 0 0 100%;
+                }
 
                 & li {
                     margin: 0 12px;
@@ -43,6 +51,10 @@
             &-misc {
                 justify-content: flex-end;
                 flex: 0 0 33.33%;
+                
+                @include respond(1160px) {
+                    display: none;    
+                }
 
                 & li {
                     margin: 0 0 0 24px;
@@ -93,6 +105,10 @@
             &-item {
                 display: inline-block;
 
+                &:hover > .nav__dropdown {
+                    display: flex;
+                }
+
                 & a {
                     color: $white;
                     text-decoration: none;
@@ -115,6 +131,34 @@
             & img {
                 height: 24px;
             }
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        min-height: 495px;
+        left: 50%;
+        top: 88px;
+        transform: translateX(-50%);
+        background-color: $light-gray;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        padding-top: 24px !important;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &:hover {
+            display: flex;
+        }
+
+        &-cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &-btn {
+            color: $dark-gray !important;
+            width: 153px;
         }
     }
 }
