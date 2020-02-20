@@ -109,7 +109,13 @@
                     display: flex;
                 }
 
-                & a {
+                &:nth-of-type(4) {
+                    &:hover > .nav__dropdown--events {
+                        display: flex;
+                    }
+                }
+
+                & > a {
                     color: $white;
                     text-decoration: none;
                     padding-bottom: 8px;
@@ -153,12 +159,47 @@
 
         &-cards {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
 
         &-btn {
             color: $dark-gray !important;
             width: 153px;
+        }
+
+        &--events {
+            position: absolute;
+            min-height: 495px;
+            left: 50%;
+            top: 88px;
+            transform: translateX(-50%);
+            background-color: $light-gray;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            padding-top: 24px !important;
+            display: none;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        &-left {
+            flex-basis: 70%;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        &-right {
+            flex-basis: 25%;
+
+            & ul {
+                & li {
+                    margin-bottom: 16px;
+
+                    & a {
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
 }

@@ -162,7 +162,6 @@
         
         & .card__image {
             position: relative;
-            height: 180px;
         }
 
         & .card__label {
@@ -180,13 +179,13 @@
                 & li {
                     color: $dark-gray;
                     margin-bottom: 9px;
+
+                    & img {
+                        vertical-align: middle;
+                    }
                 }
             }
         }
-    }
-
-    &-whatsnew {
-        height: 375px;
     }
 }
 
