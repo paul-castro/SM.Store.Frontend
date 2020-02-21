@@ -1338,7 +1338,6 @@ header {
           margin-top: 24px; } }
     @media only screen and (max-width: 1300px) {
       .featured-blog__card img {
-        height: 244px;
         width: 100%; } }
     .featured-blog__card--category {
       color: #88898F;

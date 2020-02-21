@@ -113,7 +113,7 @@
 
             & img {
                 @include respond(1300px) {
-                    height: 244px;
+                    //height: 244px;
                     width: 100%;
                 }
             }
@@ -854,6 +854,7 @@
         justify-content: space-between;
         padding: 80px 0;
 
+ 
         & .accessories-text {
             @include respond(tablet) {
                 display: none;
