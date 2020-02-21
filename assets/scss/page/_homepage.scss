@@ -2,8 +2,13 @@
 
     &-blog {
         position: relative;
-        height: 732px;
-        margin-top: 76px;
+        min-height: 732px;
+        margin: 76px 0;
+
+        @include respond(mobile) {
+            min-height: 500px;
+            margin: 30px 0;
+        }
 
         &__title {
             text-align: center;
@@ -56,7 +61,7 @@
             }
 
             @include respond(mobile) {
-                // justify-content: space-between;
+                justify-content: space-between;
             }
         }
 
@@ -73,7 +78,7 @@
             }
 
             @include respond(mobile) {
-                margin: 0 8px;
+                margin: 0;
             }
 
             &:nth-of-type(1) {
@@ -131,17 +136,16 @@
 
     &-video {
         position: relative;
-        height: 732px;
-        margin-top: 80px;
+        min-height: 584px;
         background-color: #FFF9EE;
         
+        
         @include respond(tablet) {
-            margin-top: 300px;
+            
         }
         
         @include respond(mobile) {
-            height: 527px;
-            margin-top: 350px;
+            
         }
 
         &__bg {
@@ -165,126 +169,139 @@
             position: relative;
             display: flex;
             z-index: 99;
+            padding-top: 48px;
+            padding-bottom: 48px;
             justify-content: space-between;
-            // align-items: center;
+
+            @include respond(1280px) {
+                height: 600px;
+                justify-content: flex-end;
+            }
 
             @include respond(tablet) {
-                height: 100%;
-                display: block;
+                padding-top: 24px;
+                padding-bottom: 24px;
             }
         }
 
         &__video {
-            order: 1;
-            flex-basis: 66%;
-            margin-top: 48px;
-            
+            position: relative;
+            height: 456px;
+            flex: 0 0 65%;
+
+            @include respond(1280px) {
+                position: absolute;
+                width: 500px;
+                height: 300px;
+                left: 40%;
+                transform: translateX(-50%);
+            }
+
+            @include respond(1000px) {
+                left: 30%;
+                width: 335px;
+                height: 215px;
+            }
+
             @include respond(tablet) {
-                display: block;
-                position: relative;
-                height: 100%;
-                margin: 0 auto;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
             
             &-file {
-            
-                @include respond(tablet) {
-                    position: absolute;
-                    top: 30%;
-                    left: 50%;
-                    width: 90%;
-                    transform: translate(-50%,-50%);
-                }
+                position: absolute;
+                z-index: 50;
+                height: 100%;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
             
             &-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 cursor: pointer;
-            
-                @include respond(tablet) {
-                    position: absolute;
-                    top: 30%;
-                    left: 50%;
-                    transform: translate(-50%,-50%); 
-                    z-index: 120;
-                }
-            
-                @include respond(mobile) {
-                    height: 78px;
-                }
+                z-index: 99;
+                height: 36.7%;
+                width: 24%;
             }
         }
 
         &__text {
-            order: 2;
-            flex-basis: 32%;
-            margin-top: 87px;
+            flex: 0 0 34%;
             z-index: 99;
-            
-            @include respond(tablet) {
-                position: absolute;
-                margin-top: 0;
-                height: 100%;
-                width: 100%;
+
+            @include respond(mobile) {
+                flex: 0 0 60%;
             }
 
             & span {
                 display: block;
                 margin-bottom: 8px;
                 color: $dark-gray;
+                letter-spacing: 3px;
+                white-space: nowrap;
             
                 @include respond(tablet) {
-                    position: absolute;
-                    top: 24px;
-                    right: 0;
+                    letter-spacing: 2px;
                 }
             }
 
-            & h1:nth-of-type(1) {
-                color: $white;
-            
-                @include respond(tablet) {
-                    position: absolute; 
-                    right: 20px;
-                    top: 40%;
-                    z-index: 99;
-                }
-            
-                @include respond(mobile) {
-                    top: 40%;
-                    right: 50px;
-                }
-            }
+            & h1 {
+                white-space: nowrap;
 
-            & h1:nth-of-type(2) {
-                color: $coral;
-                text-align: right;
-            
                 @include respond(tablet) {
-                    position: absolute; 
-                    right: 0;
-                    top: 50%;
-                    z-index: 99;
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-top: 200px;
+                }
+
+                & span {
+                    &:nth-of-type(1) {
+                        color: $white;
+            
+                        @include respond(1290px) {
+                            text-align: left;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        color: $coral;
+                        text-align: right;
+                    }
                 }
             }
 
             & p {
+                color: #2C2E2F;
+            
+                @include respond(1290px) {
+                    
+                }
 
                 @include respond(tablet) {
-                    position: absolute;
-                    top: 60%;
-                    left: 55%;
+                    
                 }
 
                 @include respond(mobile) {
-                    left: 30%;
+                    
                 }
             }
         }
 
         &__controls {
             position: absolute;
-            bottom: 0px;
-            right: 0;
+            right: 20px;
+            align-self: flex-end;
+            
+            @include respond(1290px) {
+                text-align: right;
+            }
+
         }
     }
 
@@ -339,26 +356,32 @@
         }
 
         &__header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            
+            // flex-wrap: wrap;
             margin-bottom: 20px;
 
             & h2 {
-                flex-basis: 90%;
+                display: inline-block;
                 margin-bottom: 16px;
             }
 
             & p {
+                display: block;
                 width: 45%;
 
                 @include respond(tablet) {
                     width: 100%;
                 }
+
+                @include respond(mobile) {
+                    width: 90%;
+                }
                 
             }
 
             & a {
+                float: right;
+                margin-right: 100px;
                 color: $black;
 
                 @include respond(tablet) {
@@ -499,6 +522,10 @@
             display: flex;
             justify-content: flex-end;
             z-index: 90;
+
+            @include respond(mobile) {
+                margin-right: 20px;
+            }
         }
     }
 
@@ -515,7 +542,7 @@
 
         @include respond(mobile) {
             height: 580px;
-            padding: 40px 0 !important;
+            padding: 40px 0 0 12px !important;
         }
         
         &__details {
@@ -578,7 +605,7 @@
         &__slider {
             display: flex;
             justify-content: flex-start;
-            z-index: 99;
+            z-index: 50;
 
             @include respond(mobile) {
                 margin-top: 70px;
@@ -608,6 +635,11 @@
             display: flex;
             align-items: center;
 
+            @include respond(tablet) {
+                
+                align-items: flex-start;
+            }
+
             @include respond(mobile) {
                 min-height: 530px;
                 margin-top: 16px;
@@ -620,8 +652,9 @@
             z-index: 99;
 
             @include respond(tablet) {
+                position: relative;
                 margin: 0 0 24px 0;
-                top: 20px;
+                // top: 20px;
             }
 
             & h1 {
@@ -809,6 +842,10 @@
             @include respond(tablet) {
                 display: none;
             }
+        }
+
+        @include respond(mobile) {
+            justify-content: space-evenly;
         }
     }
 }

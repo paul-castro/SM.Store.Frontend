@@ -1,0 +1,46 @@
+.events {
+
+    &__filter {
+        position: relative;
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--category {
+            display: flex;
+            flex: 0 0 50%;
+            justify-content: center;
+
+            @include respond(tablet) {
+                justify-content: flex-start;
+            }
+
+            & span {
+                margin-right: 40px;
+                white-space: nowrap;
+                cursor: pointer;
+
+                &.active {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &--location {
+            display: flex;
+            flex: 0 0 50%;
+            justify-content: flex-end;
+
+            & span {
+                letter-spacing: 3px;
+                margin-right: 17px;
+                white-space: nowrap;
+            }
+
+            & img {
+                margin-right: 17px;
+            }
+        }
+    }
+}

@@ -130,7 +130,7 @@
                 margin-bottom: 48px;
 
                 @include respond(mobile) {
-                    width: 100%;
+                    width: 85%;
                 }
 
                 & input {
@@ -145,7 +145,7 @@
                     background-color: $coral;
 
                     @include respond(mobile) {
-                        
+
                     }
                 }
             }

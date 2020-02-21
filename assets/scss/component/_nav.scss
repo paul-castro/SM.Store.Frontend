@@ -121,7 +121,8 @@
                     padding-bottom: 8px;
                     border-bottom: 3px solid transparent;
 
-                    &:hover {
+                    &:hover,
+                    &.active {
                         border-bottom: 3px solid $white;
                     }
                 }
@@ -141,6 +142,7 @@
     }
 
     &__dropdown {
+        width: 1284px;
         position: absolute;
         min-height: 495px;
         left: 50%;
@@ -152,6 +154,7 @@
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
+        z-index: 299;
 
         &:hover {
             display: flex;
@@ -160,6 +163,7 @@
         &-cards {
             display: flex;
             justify-content: space-between;
+
         }
 
         &-btn {
@@ -168,6 +172,7 @@
         }
 
         &--events {
+            width: 1284px;
             position: absolute;
             min-height: 495px;
             left: 50%;
@@ -179,6 +184,20 @@
             display: none;
             justify-content: space-between;
             flex-direction: row;
+        }
+
+        &--services {
+            
+            .nav__dropdown-cards {
+                justify-content: flex-start;
+                
+                .services-group-cards {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                }
+            }
         }
 
         &-left {

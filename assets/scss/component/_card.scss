@@ -189,6 +189,26 @@
     }
 }
 
+.card--menu-services {
+    height: 112px;
+    width: 275px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background: #F8F8F8;
+        mix-blend-mode: multiply;
+    }
+    
+    & p {
+        color: $dark-gray;
+        word-wrap: break-word;
+        margin-left: 16px;
+    }
+}
+
 .card--service {
     width: 396px;
     height: 245px;
@@ -322,5 +342,30 @@
         color: $black;
         padding-bottom: 0;
         word-wrap: break-word;
+    }
+}
+
+.card--promo {
+    width: 600px;
+    height: 505px;
+
+    @include respond(mobile) {
+        background-color: $white;
+    }
+
+    &-image {
+        margin-bottom: 16px;
+    }
+
+    &-title {
+        color: $dark-gray;
+    }
+
+    &-details {
+        margin-bottom: 24px;
+    }
+
+    & a {
+        color: $black;
     }
 }
