@@ -70,6 +70,7 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
         padding: 14px 24px;
         justify-content: space-between;
+        align-items: center;
 
         &-burger {
             display: none;
@@ -89,6 +90,18 @@
 
         & .logo {
             flex: 0 0 20%;
+
+            @include respond(tablet) {
+                flex: 0;
+             }
+
+           img {
+                @include respond(tablet) {
+                   width: 175px;
+                } 
+           }
+
+           
         }
 
         &-menu {
