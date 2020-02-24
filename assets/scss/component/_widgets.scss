@@ -1,0 +1,101 @@
+.widgets {
+    position: fixed;
+    min-height: 120px;
+    width: 100%;
+    bottom: 0;
+    // background: #ccc;
+    z-index: 199;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    transition: margin-bottom ease-in-out 0.4s;
+
+    & .widget {
+        width: 467px;
+        position: relative;
+        color: $white;
+        display: flex;
+        align-items: center;
+        padding: 16px;
+            
+        @include respond(mobile) {
+            width: 100%;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+
+            & a {
+                color: $white;
+
+                &::after {
+                    color: $white;
+                }
+            }
+        }
+
+        &--promos {
+            background-color: #C54238;
+
+            &-sidetext {
+                transform: rotate(-90deg);
+                height: min-content;
+                margin-left: -20px;
+                white-space: nowrap;
+            }
+
+            &-content {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+        }
+
+        &--events {
+            background-color: #0447A0;
+            
+            @include respond(tablet) {
+                display: none;
+            }
+
+            &-content {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+        }
+
+        &--locator {
+            background-color: #67CAAB;
+            
+            @include respond(tablet) {
+                display: none;
+            }
+
+            &-sidetext {
+                transform: rotate(-90deg);
+                height: min-content;
+                margin-left: -20px;
+                color: #FFDA80;
+                white-space: nowrap;
+            }
+
+            & img {
+                margin-left: -20px;
+            }
+
+            &-content {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+        }
+    }
+}
