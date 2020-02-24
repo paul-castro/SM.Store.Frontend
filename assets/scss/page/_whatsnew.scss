@@ -11,6 +11,15 @@
             position: relative;
             z-index: 50;
             height: 448px;
+
+            & img {
+                height: 100%;
+            }
+
+            @include respond(tablet) {
+                height: 205px;
+                position: absolute;
+            }
         }
 
         &--description {
@@ -23,9 +32,27 @@
             display: flex;
             justify-content: center;
 
+            @include respond(tablet) {
+                left: 32px;
+                position: relative;
+                top: 0px;
+            }
+
             &-text {
                 width: 411px;
-                margin-top: 85px;
+                margin: 85px 0 0 120px;
+
+                @include respond(tablet) {
+                    margin: 269px 0 0 30px;
+                    width: 328px;
+                }
+
+                & h1 {
+                    @include respond(mobile) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
 
                 & p {
                     &:nth-of-type(1) {
@@ -35,6 +62,10 @@
 
                     &:nth-of-type(2) {
                         color: #2C2E2F;
+
+                        @include respond(mobile) {
+                            font-size: 14px;
+                        }
                     }
                     
                 }

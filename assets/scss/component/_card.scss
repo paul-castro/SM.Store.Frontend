@@ -369,3 +369,46 @@
         color: $black;
     }
 }
+
+.card--sale {
+    width: 1236px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include respond(1236px) {
+        width: 100%;
+    }
+
+    @include respond(tablet) {
+        width: 536px;
+        height: 250px;
+    }
+
+    & img {
+        position: absolute;
+        width: 1236px;
+        height: 250px;
+
+        @include respond(1236px) {
+        }
+    }
+
+    &-text {
+        position: absolute;
+        right: 100px;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(tablet) {
+        }
+
+        & a {
+            width: min-content;
+        }
+    }
+}
