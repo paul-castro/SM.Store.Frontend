@@ -25,11 +25,29 @@
 }
 
 
+.container-1236 {
+    width: 1236px;
+    margin: 0 auto;
+
+    @include respond(tablet) {
+        max-width: 600px;
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(mobile) {    
+        max-width: 360px;
+        padding: 0 $gutter-mobile;
+    }
+}
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px $gutter-desktop;
+
+    
 
     @include respond(tablet) {
         padding: 0px $gutter-tablet;
