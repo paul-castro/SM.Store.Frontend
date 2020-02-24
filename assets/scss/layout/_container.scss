@@ -38,4 +38,8 @@
     @include respond(mobile) {
         padding: 0px $gutter-mobile;
     }
-}    
+}
+
+.main-section {
+    padding-top: 88px;
+}

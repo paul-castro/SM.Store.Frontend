@@ -1,0 +1,14 @@
+.carousel {
+    display: flex;
+
+    &__col {
+        width: 240px;
+        margin-right: 32px;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

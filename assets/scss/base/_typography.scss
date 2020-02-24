@@ -135,6 +135,11 @@ body {
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+
+        &--center {
+            text-align: center;
+        }
+   
     }
 
     &-h5 {
@@ -145,10 +150,24 @@ body {
                 letter-spacing: 1.6px;
                 text-transform: uppercase;
                 padding: 16px 0;
-    
                 color: $gray ;
             }
+
+            &--center {
+                text-align: center;
+            }
        
+    }
+
+    &-h6 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+
+        &--centet {
+            text-align: center;
+        }
     }
 
     &-callout {
@@ -263,4 +282,29 @@ body {
     &-right {
         text-align: right;
     }
+}
+
+.content {
+    &__heading2 {
+        font-family: $font-heading1;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+
+        &--center {
+            text-align: center;
+        }
+
+        &--left {
+            text-align: left;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+
+
 }

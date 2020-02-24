@@ -81,6 +81,10 @@
     min-height: 318px;
     display: flex;
     justify-content: center;
+
+    @include respond(tablet) {
+        min-height: 200px;
+    }
     
     
     &--whatsnew {
@@ -167,7 +171,13 @@
         @include bgcover;
 
         @include respond(tablet) {
+            background: url('../../assets/images/banner-stories.jpg') no-repeat;
+            @include bgcover;
+        }
+
+        @include respond(mobile) {
             background: url('../../assets/images/banner-stories-m.jpg') no-repeat;
+            @include bgcover;
         }
     }
 
@@ -186,6 +196,11 @@
         @include bgcover;
 
         @include respond(tablet) {
+            background: url('../../assets/images/banner-womens-blog.png') no-repeat;
+            @include bgcover;
+        }
+
+        @include respond(mobile) {
             background: url('../../assets/images/banner-womens-blog-m.png') no-repeat;
             @include bgcover;
         }
