@@ -30,12 +30,14 @@ button {
     white-space: nowrap;
     background-color: transparent;
     cursor: pointer;
-    padding: 8px 0 8px 0;
+    //padding: 8px 0 8px 0;
+    color: $black;
 
     &::after {
         content: '\2014\2014';
         letter-spacing: -2px;
         margin-left: 8px;
+        color: #FF4E4E;;
     }
 }
 
@@ -53,4 +55,40 @@ button {
     & img {
         margin-right: 10px;
     }
+}
+
+.button 
+{
+    text-decoration: none;
+
+    &--primary {
+        padding: 16px 24px;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+        &:after {
+            content: '\2014\2014';
+            letter-spacing: -2px;
+            margin-left: 8px;
+            color: $coral;
+        }
+
+        &:hover {
+            background: $white;
+  
+        }
+    }
+
+    &--black {
+        border: 1px solid $black;
+        color: $black;
+    }
+
+    &--white {
+        border: 1px solid #fff;
+        color: $black;
+    }
+
+   
 }

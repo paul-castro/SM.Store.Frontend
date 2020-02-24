@@ -1,0 +1,22 @@
+
+@mixin  absolute-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 90;
+}
+
+
+.gradient {
+    @include absolute-gradient;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    &--white {
+        background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0) 400%);
+        height: 352px;
+       
+    }
+}

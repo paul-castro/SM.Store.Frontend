@@ -3,7 +3,8 @@
 }
 
 .container {
-    max-width: 1284px;
+    //max-width: 1284px;
+    width: 1224px;
     padding: 0 $gutter-desktop;
     margin: 0 auto;
 
@@ -19,7 +20,7 @@
 }
 
 .container-fluid {
-    width: 100%;
+     width: 100%; 
     margin: 0 auto;
 }
 

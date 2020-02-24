@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
 
-@font-face {
+/*@font-face {
     font-family: 'Verlag Black';
     src: url(../../fonts/Verlag-Black.ttf);
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Verlag Bold';
     src: url(../../fonts/Verlag-Bold.ttf);
-}
+}*/
 
 // FONTS FAMILY
 $font-heading1: 'Josefin Sans';
@@ -135,6 +135,20 @@ body {
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+    }
+
+    &-h5 {
+
+            &--uppercase {
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                padding: 16px 0;
+    
+                color: $gray ;
+            }
+       
     }
 
     &-callout {

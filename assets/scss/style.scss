@@ -4,20 +4,28 @@
 @import 'base/normalize';
 @import 'base/colors';
 @import 'base/typography';
+@import 'base/alignment';
 
 @import 'component/input';
 @import 'component/button';
+@import 'component/link';
 @import 'component/list';
 @import 'component/nav';
 @import 'component/banner';
 @import 'component/card';
 @import 'component/pagination';
 @import 'component/controls';
+@import 'component/headings';
+@import 'component/gradient';
 
 @import 'layout/header';
 @import 'layout/container';
+@import 'layout/grid';
 @import 'layout/footer';
+
+@import 'template/blog';
 
 @import 'page/homepage';
 @import 'page/whatsnew';
 @import 'page/events';
+@import 'page/stories';

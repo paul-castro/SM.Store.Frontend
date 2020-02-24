@@ -1,0 +1,62 @@
+.stories-video {
+    @include section60;
+
+    &__block {
+        display: -webkit-box;
+        margin-bottom: 30px;
+    }
+
+    &__thumbnail {
+        width: 100%;
+    }
+
+    &__heading5 {
+        margin-bottom: 16px;
+    }
+    
+}
+
+.stories-magazine {
+    @include section60;
+    background-color: $lilac;
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+   
+}
+
+.stories-blog {
+
+    height: 2000px;
+
+    position: relative;
+
+    &__content {
+        padding: 66px 0;
+
+        
+    }
+
+    &__row {
+        margin-top:53px;
+    }
+}
+
+
+.icon {
+     &__play {
+        z-index: 99;
+
+        &--small {
+            width: 96px;
+            height: 96px;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+    }
+}

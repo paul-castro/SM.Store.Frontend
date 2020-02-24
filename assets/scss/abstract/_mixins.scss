@@ -16,3 +16,30 @@
 @mixin respondMinWidth($breakpoint) {
     @media only screen and (min-width: $breakpoint) { @content };
 }
+
+@mixin alignLeftPadding20 {
+    text-align:left; 
+    padding-left:20%;
+    margin-top: 120px;
+}
+
+@mixin paddingTop56 {
+    padding-top: 56px;
+}
+
+@mixin  iconPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@mixin section60 {
+    padding: 60px 0;
+}
+
+@mixin bgcover {
+    background-size: cover;
+    background-position: center left; 
+    flex-direction: column;
+}
+

@@ -3,6 +3,8 @@
     align-items: center;
     height: 58px;
     z-index: 50;
+    margin-left: auto;
+    justify-content: flex-end;
 
     &__arrow:nth-of-type(1) {
         margin: 0 15px 0 0;
@@ -11,3 +13,4 @@
         margin: 0 0 0 15px;
     }
 }
+

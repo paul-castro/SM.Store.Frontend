@@ -1,0 +1,43 @@
+@mixin  col-margin {
+    margin-right: 24px;
+   
+
+    @include respond(tablet) {
+        margin-right: 17px;
+     }
+
+    @include respond(mobile) {
+        margin-right: 17px;
+    }
+}
+
+
+
+.row-content {
+   display: flex;
+
+    .col-3 {
+        position: relative;
+        width: 392px;
+        @include col-margin;
+
+        @include respond(tablet) {
+            width: 285px;
+         }
+
+  
+
+
+    }
+
+    .col-4 {
+        width: 288px;
+        @include col-margin;
+        
+        &:nth-child(4n) {
+            margin-right: 0;;
+        }
+
+    }
+
+}
