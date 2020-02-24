@@ -14,3 +14,8 @@
     }
 }
 
+.ctrl-fix {
+    @include respond(mobile) {
+        bottom: 100px !important;
+    }
+}

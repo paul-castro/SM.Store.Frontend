@@ -557,8 +557,9 @@
         
         &__details {
             margin-top: 60px;
-            width: 210px;
+            // width: 210px;
             height: 274px;
+            flex-basis: 270px;
             text-align: right;
 
             @include respond(mobile) {
@@ -616,11 +617,14 @@
             display: flex;
             justify-content: flex-start;
             z-index: 50;
+            position: absolute;
+            left: 270px;
 
             @include respond(mobile) {
                 margin-top: 70px;
                 margin-left: -24px;
                 height: 320px;
+                left: 0px;
             }
         }
     }
