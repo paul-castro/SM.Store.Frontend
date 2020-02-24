@@ -18,14 +18,17 @@
 @import 'component/headings';
 @import 'component/gradient';
 
+
 @import 'layout/header';
 @import 'layout/container';
 @import 'layout/grid';
 @import 'layout/footer';
 
 @import 'template/blog';
+@import 'template/carousel';
 
 @import 'page/homepage';
 @import 'page/whatsnew';
 @import 'page/events';
 @import 'page/stories';
+@import 'page/category-landing';

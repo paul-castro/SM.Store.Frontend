@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SM Store</title>
+        <title>Category Landing | SM Store</title>
 
         <link rel="stylesheet" href="./assets/css/style.min.css">
     </head>
@@ -32,7 +32,7 @@
                     </ul> 
                 </nav>
                 
-                <nav class="nav__lower nav_lower--default container-fluid">
+                <nav class="nav__lower nav_lower--default container-fluid background--coral">
                     <div class="nav__lower-burger">
                         <img src="./assets/images/burger-menu.svg" alt="">
                     </div>
@@ -43,7 +43,7 @@
 
                     <ul class="nav__lower-menu">
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline">What's New</a>
+                            <a href="" class="font-headline active">What's New</a>
                             <div class="nav__dropdown container">
                                 <div class="nav__dropdown-cards">
                                     <div class="card--menu card--menu-whatsnew">
@@ -222,7 +222,7 @@
                             </div>
                         </li>
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline active">Events</a>
+                            <a href="" class="font-headline">Events</a>
                             <div class="nav__dropdown--events container">
                                 <div class="nav__dropdown-left">
                                     <h1 class="nav__dropdown-header font-h1-m">Upcoming Events</h1>
@@ -438,133 +438,189 @@
                 </nav>
             </header>
             <!-- /HEADER -->
-
-            <section class="banner-inner banner-inner--events container-fluid">
-                <p>#EventsAtSM</p>
-                <h1 class="font-hero">Find Events</h1>
-                <div class="banner-inner--events__input-group">
-                    <img src="./assets/images/search.svg" alt="">
-                    <input class="font-caption" type="text" placeholder="Search an event">
-                </div>
-            </section>
-
-            <section class="events__filter container">
-                <div class="events__filter--category">
-                    <span class="active">All</span>
-                    <span>Kids</span>
-                    <span>Fashion & Lifestyle</span>
-                </div>
-                <div class="events__filter--location">
-                    <span class="font-eyebrow-semi">In-store Events In</span>
-                    <img src="./assets/images/Navigation-red.svg" alt="">
-                    <span class="font-eyebrow text-bold">Makati City</span>
-                </div>
-            </section>
             
-            <section class="featured-events container">
-                <div class="featured-events__details">
-                    <h2 class="font-h2-hero featured-events__details--title">January</h2>
-                    <p class="font-eyebrow-semi featured-events__details--month">2020</p>
-                    <div class="featured-events__controls controls ctrl-fix">
-                        <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                        <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                    </div> <!--.featured-events__controls controls-->
-                </div> <!--.featured-events__details-->
+         
 
-                <div class="featured-events__slider">
-
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
-
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
-
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
-
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
-
-                </div> <!--.featured-events__slider-->
+            <section class="main-section category">
+                <section class="featured-category container">
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-women.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Women</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-men.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Men</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-beauty.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Beauty</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-youth.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Youth</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-kids.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Kids</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-accessories.png" alt="">
+                        <a href="" class="btn--text-link font-cta"><span class="accessories-text">Shoes, bags & </span>accessories</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-home.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Home</a>
+                    </div>
+                    <div class="card--component">
+                        <img src="./assets/images/cards/card-component-stationery.png" alt="">
+                        <a href="" class="btn--text-link font-cta featured-category__btn-link">Stationery</a>
+                    </div>
+                </section>
             </section>
 
-            
-            <section class="featured-events container">
-                <div class="featured-events__details">
-                    <h2 class="font-h2-hero featured-events__details--title">Upcoming</h2>
-                    <p class="font-eyebrow-semi featured-events__details--month"></p>
-                    <div class="featured-events__controls controls ctrl-fix">
-                        <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                        <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                    </div> <!--.featured-events__controls controls-->
-                </div> <!--.featured-events__details-->
 
-                <div class="featured-events__slider">
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+            <section class="new-arrival__container container">
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+                <div class="carousel">
+                    <div class="carousel__col">
+                        <a href="#"><img src="./assets/images/carousel-thumnail-01.jpg" alt="Thumnail"></a>
+                        <h5 class="font-h5--uppercase font-h5--center">SM WOMAN LADIES</h5>
+                        <a class="link__heading" href="#"><h4 class="font-h4 font-h4--center">Real Beauty</h4></a>
+                        <a class="link__heading" href="#"><h6 class="font-h6 font-h4--center font-h6--big">₱499.00</h6></a>
+                    </div>
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+                    <div class="carousel__col">
+                        <a href="#"><img src="./assets/images/carousel-thumnail-01.jpg" alt="Thumnail"></a>
+                        <h5 class="font-h5--uppercase font-h5--center">SM WOMAN LADIES</h5>
+                        <a class="link__heading" href="#"><h4 class="font-h4 font-h4--center">Real Beauty</h4></a>
+                        <a class="link__heading" href="#"><h6 class="font-h6 font-h4--center font-h6--big">₱499.00</h6></a>
+                    </div>
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+                    <div class="carousel__col">
+                        <a href="#"><img src="./assets/images/carousel-thumnail-01.jpg" alt="Thumnail"></a>
+                        <h5 class="font-h5--uppercase font-h5--center">SM WOMAN LADIES</h5>
+                        <a class="link__heading" href="#"><h4 class="font-h4 font-h4--center">Real Beauty</h4></a>
+                        <a class="link__heading" href="#"><h6 class="font-h6 font-h4--center font-h6--big">₱499.00</h6></a>
+                    </div>
 
-                </div> <!--.featured-events__slider-->
+                    <div class="carousel__col">
+                        <a href="#"><img src="./assets/images/carousel-thumnail-01.jpg" alt="Thumnail"></a>
+                        <h5 class="font-h5--uppercase font-h5--center">SM WOMAN LADIES</h5>
+                        <a class="link__heading" href="#"><h4 class="font-h4 font-h4--center">Real Beauty</h4></a>
+                        <a class="link__heading" href="#"><h6 class="font-h6 font-h4--center font-h6--big">₱499.00</h6></a>
+                    </div>
+                </div>
+
             </section>
-            
 
+
+
+            <section class="stories-blog">
+
+                <div class="stories-blog__content container">
+                    
+           
+                    <h2 class="content__heading2 content__heading2--center">All About Women's Fashion</h2>
+
+                    <div class="stories-blog__row blog__row row-content">
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                            <div class="blog__item col-4">
+                                <a href="#"><img src="./assets/images/blog-thumnail-01.jpg" alt="blog title"> </a>
+                                <h5 class="font-h5--uppercase">FASHION</h5>  
+                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
+                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
+                            </div> <!--.blog__item col-4-->
+
+                    </div> <!--.row-content-->
+
+                </div> <!--.stories-blog__content container -->
+
+                <div class="gradient gradient--white">
+                    <a href="#" class="button button--primary button--black button--gradient-content">View more</a>
+                </div> <!--.gradient--white -->
+
+            </section> <!--.stories-blog -->
+
+
+            
             <!-- FOOTER -->
             <footer class="footer">
                 <div class="footer__messenger">
