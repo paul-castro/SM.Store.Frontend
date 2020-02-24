@@ -205,6 +205,21 @@
             @include bgcover;
         }
     }
+
+    &--services {
+        background: url('../../assets/images/banner-services.jpg') no-repeat;
+        @include bgcover;
+
+        @include respond(tablet) {
+            background: url('../../assets/images/banner-services.jpg') no-repeat;
+            @include bgcover;
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-services.jpg') no-repeat;
+            @include bgcover;
+        }
+    }
     
 
 }

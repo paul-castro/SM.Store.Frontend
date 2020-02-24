@@ -860,6 +860,45 @@ ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
                 flex-direction: column; } }
+  .banner-inner--services {
+    background: url("../../assets/images/banner-services.jpg") no-repeat;
+    background-size: cover;
+    background-position: center left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    @media only screen and (max-width: 840px) {
+      .banner-inner--services {
+        background: url("../../assets/images/banner-services.jpg") no-repeat;
+        background-size: cover;
+        background-position: center left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+    @media only screen and (max-width: tablet) {
+      .banner-inner--services {
+        background: url("../../assets/images/banner-services.jpg") no-repeat;
+        background-size: cover;
+        background-position: center left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+    @media only screen and (max-width: 600px) {
+      .banner-inner--services {
+        background: url("../../assets/images/banner-services.jpg") no-repeat;
+        background-size: cover;
+        background-position: center left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+    @media only screen and (max-width: mobile) {
+      .banner-inner--services {
+        background: url("../../assets/images/banner-services.jpg") no-repeat;
+        background-size: cover;
+        background-position: center left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
 
 .card--menu {
   width: 275px;
@@ -1019,6 +1058,15 @@ ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column; }
+  @media only screen and (max-width: 1264px) {
+    .card--service {
+      width: 100%; } }
+  @media only screen and (max-width: 840px) {
+    .card--service {
+      width: 100%; } }
+  @media only screen and (max-width: tablet) {
+    .card--service {
+      width: 100%; } }
   .card--service.expand {
     height: 486px; }
     .card--service.expand .card--service-content {
@@ -1053,6 +1101,10 @@ ul {
     -webkit-box-pack: justify;
             justify-content: space-between;
     flex-basis: 168px; }
+
+.card__container {
+  box-shadow: 0px 7px 10px rgba(231, 234, 244, 0.35);
+  border-radius: 4px; }
 
 .card--event {
   height: 100%;
@@ -1216,6 +1268,9 @@ ul {
     .pagination__page.active {
       font-weight: 600;
       color: #000; }
+  .pagination--center {
+    -webkit-box-pack: center;
+            justify-content: center; }
 
 .pagination-dot__activator {
   display: none; }
@@ -1325,6 +1380,8 @@ ul {
           align-items: stretch;
   -webkit-transition: margin-bottom ease-in-out 0.4s;
   transition: margin-bottom ease-in-out 0.4s; }
+  .widgets p {
+    color: #FFFFFF; }
   .widgets .widget {
     width: 467px;
     position: relative;
@@ -1452,6 +1509,26 @@ header {
   width: 100%;
   margin: 0 auto; }
 
+.container-1236 {
+  width: 1236px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 840px) {
+    .container-1236 {
+      max-width: 600px;
+      padding: 0 16px; } }
+  @media only screen and (max-width: tablet) {
+    .container-1236 {
+      max-width: 600px;
+      padding: 0 16px; } }
+  @media only screen and (max-width: 600px) {
+    .container-1236 {
+      max-width: 360px;
+      padding: 0 12px; } }
+  @media only screen and (max-width: mobile) {
+    .container-1236 {
+      max-width: 360px;
+      padding: 0 12px; } }
+
 .row {
   display: -webkit-box;
   display: flex;
@@ -1478,6 +1555,9 @@ header {
 .row-content {
   display: -webkit-box;
   display: flex; }
+  .row-content--center {
+    -webkit-box-pack: center;
+            justify-content: center; }
   .row-content .col-3 {
     position: relative;
     width: 392px;
@@ -2967,3 +3047,38 @@ header {
 
 .new-arrival__content__h2 {
   margin-bottom: 28px; }
+
+.womens-blog {
+  height: auto;
+  margin-bottom: 14px; }
+  .womens-blog--margin-bottom {
+    margin-bottom: 60px; }
+
+.services__container {
+  background-color: #F9FBFF;
+  padding: 63.5px 0 139.5px 0; }
+
+.services__row {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+
+.services__col {
+  margin: 0 24px 32px 0;
+  width: 396px; }
+  .services__col:nth-child(3n) {
+    margin-right: 0; }
+  @media only screen and (max-width: 1264px) {
+    .services__col {
+      width: 500px;
+      margin-right: 32px; }
+      .services__col:nth-child(3n) {
+        margin-right: 0; } }
+  @media only screen and (max-width: 840px) {
+    .services__col {
+      width: 100%;
+      margin-right: 0; } }
+  @media only screen and (max-width: tablet) {
+    .services__col {
+      width: 100%;
+      margin-right: 0; } }
