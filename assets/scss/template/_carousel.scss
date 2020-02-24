@@ -1,14 +1,118 @@
 .carousel {
     display: flex;
 
+
+
+    &__container {
+        display: flex;
+        position: relative;
+        width: 1056px;
+        margin: 0 34px;
+
+        @include respond(1200px) {
+            width: 780px;
+        }
+
+        @include respond(980px) {
+            width: 500px;
+        }
+
+        @include respond(tablet) {
+            width: 400px;
+        }
+
+        @include respond(mobile) {
+            width: 200px;
+            margin: 0 14px;
+        }
+
+        
+
+
+       
+        
+    }
+
     &__col {
         width: 240px;
         margin-right: 32px;
         display: flex;
         flex-direction: column;
 
-        &:last-child {
+       /* &:last-child {
             margin-right: 0;
+        } */
+
+       &:nth-child(4n) {
+        margin-right: 0;
+       }
+
+       @include respond(1200px) {
+            &:nth-child(4n) {
+                display: none;
+           }
+
+           &:nth-child(3n) {
+            margin-right: 0;
+           }
         }
+
+        @include respond(980px) {
+            &:nth-child(3n) {
+                display: none;
+           }
+
+           &:nth-child(2n) {
+            margin-right: 0;
+           }
+        }
+
+        @include respond(mobile) {
+            &:nth-child(2n) {
+                display: none;
+           }
+
+           &:nth-child(1n) {
+            margin-right: 0;
+           }
+        }
+    }
+
+    &__control {
+        
+
+        &--left {
+           margin-top: 12%;
+
+           @include respond(mobile) {
+                margin-top: 32%;
+            }
+        }
+
+        &--right {
+            margin-top: 12%;
+
+            @include respond(mobile) {
+                margin-top: 32%;
+            }
+        }
+
+        &--center {
+            align-self: center;
+        }
+    }
+    
+    &__image {
+        width: auto;
+
+        @include respond(tablet) {
+            width: 187.67px;
+        }
+
+
+        @include respond(mobile) {
+            width: 187.67px;
+        }
+
     }
 }

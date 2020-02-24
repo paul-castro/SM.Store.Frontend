@@ -6,6 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    p {
+        color: $white;
+    }
+
     &__messenger {
         position: absolute;
         right: 4%;
