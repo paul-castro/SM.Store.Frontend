@@ -1,4 +1,4 @@
-.womens {
+/*.womens {
 
     &-sale {
         min-height: 346px;
@@ -22,3 +22,22 @@
         }
     }
 }
+*/
+
+.new-arrival {
+    &__container {
+        background-color: $light-gray;
+        padding: 48px 0;
+    }
+
+    &__content {
+
+        &__h2 {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+
+
+
