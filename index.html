@@ -439,6 +439,52 @@
                 </nav>
             </header>
             <!-- /HEADER -->
+
+            <!-- WIDGETS -->
+            <section class="widgets">
+                <div class="widget widget--promos">
+                    <p class="font-eyebrow widget--promos-sidetext">Jan 2-12</p>
+                    <img src="./assets/images/icons/Promos.svg" alt="">
+                    <div class="widget--promos-content">
+                        <div class="widget--promos-header widget-header">
+                            <p class="font-metadata text-bold">Promos</p>
+                            <a href="" class="btn--text-link font-cta">Learn more</a>
+                        </div>
+                        <div class="widget--promos-details">
+                            <p class="font-eyebrow">Big clearance sale</p>
+                            <p class="font-metadata">Up to 50% off on selected items</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget--events">
+                    <img src="./assets/images/widget-event-icon.png" alt="">
+                    <div class="widget--events-content">
+                        <div class="widget--events-header widget-header">
+                            <p class="font-metadata text-bold">Events near you</p>
+                            <a href="" class="btn--text-link font-cta">View all</a>
+                        </div>
+                        <div class="widget--events-details">
+                            <p class="font-eyebrow">Big clearance sale</p>
+                            <p class="font-metadata">Up to 50% off on selected items</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget--locator">
+                    <p class="font-eyebrow widget--locator-sidetext">Open now</p>
+                    <img src="./assets/images/icons/Stores.svg" alt="">
+                    <div class="widget--locator-content">
+                        <div class="widget--locator-header widget-header">
+                            <p class="font-metadata text-bold">Stores near you</p>
+                            <a href="" class="btn--text-link font-cta">View all</a>
+                        </div>
+                        <div class="widget--locator-details">
+                            <p class="font-eyebrow">The SM Store Estancia</p>
+                            <p class="font-metadata">Today, Monday, 10:00AM - 11:00PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /WIDGETS -->
             
             <section class="banner container-fluid">
                 <!-- <div class="banner__pattern"></div> -->
@@ -782,4 +828,21 @@
 
         </div> <!-- /wrapper -->
     </body>
+
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $(window).scroll(() => {
+            // console.log($(this).scrollTop());
+            var fromTop = $(this).scrollTop();
+            var widgetHeight = $('.widgets').height();
+            if(fromTop >= widgetHeight * 2) {
+                $('.widgets').css('margin-bottom', '-' + fromTop + 'px');
+            }
+
+            else {
+                $('.widgets').css('margin-bottom', fromTop + 'px');
+            }
+        })
+
+    </script>
 </html>
