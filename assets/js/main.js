@@ -15,6 +15,7 @@ $(document).ready(function(){
 
 
     // BURGER MENU
+    // onclick outside mobile menu
     const $menu = $('.burger-menu, .nav__mobile, .nav__mobile-sub, .nav__mobile *, .nav__mobile-sub *');
     $(document).mouseup(function (e) {
         var win = $(window);
@@ -24,7 +25,18 @@ $(document).ready(function(){
             $('.nav__mobile').css('display', 'none');
             $('.nav__mobile-sub').css('display', 'none');
             $('.nav__mobile').css('left', '12px');
+            refreshBurgerMenu();
         }
+    });
+    // on window resize
+    $(window).on('resize', function () {
+        var win = $(this);
+        $('.burger-menu-default').prop('hidden', false);
+        $('.burger-menu-close').prop('hidden', true);
+        $('.nav__mobile').css('display', 'none');
+        $('.nav__mobile-sub').css('display', 'none');
+        $('.nav__mobile').css('left', '12px');
+        refreshBurgerMenu();
     });
     $('.burger-menu').click(function(){
         if($('.nav__mobile').css('display') == 'none'){
@@ -38,6 +50,7 @@ $(document).ready(function(){
             $('.burger-menu-default').prop('hidden', false);
             $('.burger-menu-close').prop('hidden', true);
             $('.nav__mobile').css('left', '12px');
+            refreshBurgerMenu();
         }
     });
 
@@ -45,12 +58,21 @@ $(document).ready(function(){
     $('.nav__mobile-upper-item').click(function(){
         var submenu = $(this).data('item');
         $('.nav__mobile').css('left', '-360px');
-        $('.nav__mobile--'+submenu).css('display', 'flex');
+        $('.nav__mobile-sub').css('display', 'flex');
+        $('.nav__mobile--'+submenu).css('display', 'block');
+        $('.nav__mobile-control-back').data('item', submenu);
     });
     $('.nav__mobile-control-back').click(function(){
         $('.nav__mobile').css('left', '12px');
         $('.nav__mobile-sub').css('display', 'none');
+        refreshBurgerMenu();
     });
+
+    function refreshBurgerMenu() {
+        
+        var submenu = $('.nav__mobile-control-back').data('item');
+        $('.nav__mobile--'+submenu).css('display', 'none');
+    }
 
 
     // SLIM SCROLL FOR CUSTOM SCROLLBAR
@@ -64,5 +86,7 @@ $(document).ready(function(){
         color: '#0067B3',
         opacity: 1
     });
+
+
 
 });
