@@ -35,7 +35,8 @@
                 
                 <nav class="nav__lower nav_lower--default container-fluid">
                     <div class="nav__lower-burger">
-                        <img src="./assets/images/burger-menu.svg" alt="">
+                        <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
+                        <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
                     </div>
 
                     <div class="logo">
@@ -437,11 +438,73 @@
                         <img src="./assets/images/search.svg" alt="">
                     </div>
                 </nav>
+
+                
+                <nav class="nav__mobile">
+                    <ul class="nav__mobile-upper">
+                        <li><a href="" class="nav__mobile-upper-item">What's New</a></li>
+                        <li><a href="" class="nav__mobile-upper-item">Categories</a></li>
+                        <li><a href="" class="nav__mobile-upper-item">Events</a></li>
+                        <li><a href="" class="nav__mobile-upper-item">Gift Registry</a></li>
+                        <li><a href="" class="nav__mobile-upper-item">Services</a></li>
+                        <li><a href="" class="nav__mobile-upper-item">SM Cards</a></li>
+                        <li><a href="" class="nav__mobile-upper-item">Careers</a></li>
+                    </ul>
+                    <ul class="nav__mobile-lower">
+                        <li><a href="" class="nav__mobile-lower-item">About Us</a></li>
+                        <li><a href="" class="nav__mobile-lower-item">Stores</a></li>
+                        <li><a href="" class="nav__mobile-lower-item">Contact Us</a></li>
+                    </ul>
+                    <ul class="nav__mobile-lang">
+                        <li>
+                            <a href="" class="nav__mobile-lang-item"><span>English</span>
+                            <img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="nav__mobile--categories">
+                    <ul class="nav__mobile-control">
+                        <li>
+                            <a href="" class="nav__mobile-control-back">
+                                <img src="./assets/images/long-arrow-left.svg" />
+                                <span>Back</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__mobile-header">
+                        <span class="font-headline nav__mobile-header-title">Categories</span>
+                        <a href=''>View all</a>
+                    </div>
+                    <div class="nav__mobile-content">
+                        <a href="" class="nav__mobile-content-item">
+                            <img src="./assets/images/mobile-menu-category.png" alt="">
+                            <span class="font-headline2">Women</span>
+                        </a>
+                        <a href="" class="nav__mobile-content-item">
+                            <img src="./assets/images/mobile-menu-category.png" alt="">
+                            <span class="font-headline2">Men</span>
+                        </a>
+                        <a href="" class="nav__mobile-content-item">
+                            <img src="./assets/images/mobile-menu-category.png" alt="">
+                            <span class="font-headline2">Youth</span>
+                        </a>
+                        <a href="" class="nav__mobile-content-item">
+                            <img src="./assets/images/mobile-menu-category.png" alt="">
+                            <span class="font-headline2">Kids</span>
+                        </a>
+                        <a href="" class="nav__mobile-content-item">
+                            <img src="./assets/images/mobile-menu-category.png" alt="">
+                            <span class="font-headline2"></span>
+                        </a>
+                        <div class="nav__mobile-content-gradient"></div>
+                    </div>
+                </nav>
             </header>
             <!-- /HEADER -->
 
             <!-- WIDGETS -->
-            <section class="widgets">
+            <!-- <section class="widgets">
                 <div class="widget widget--promos">
                     <p class="font-eyebrow widget--promos-sidetext">Jan 2-12</p>
                     <img src="./assets/images/icons/Promos.svg" alt="">
@@ -483,7 +546,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- /WIDGETS -->
             
             <section class="banner container-fluid">
@@ -830,19 +893,53 @@
     </body>
 
     <script src="assets/js/jquery.js"></script>
-    <script>
-        $(window).scroll(() => {
-            // console.log($(this).scrollTop());
-            var fromTop = $(this).scrollTop();
-            var widgetHeight = $('.widgets').height();
-            if(fromTop >= widgetHeight * 2) {
-                $('.widgets').css('margin-bottom', '-' + fromTop + 'px');
-            }
+    <script src="assets/js/slimscroll.min.js"></script>
 
-            else {
-                $('.widgets').css('margin-bottom', fromTop + 'px');
-            }
-        })
+    <script>
+
+        $(document).ready(function(){
+            // WIDGET ANIMATION
+            $(window).scroll(() => {
+                // console.log($(this).scrollTop());
+                var fromTop = $(this).scrollTop();
+                var widgetHeight = $('.widgets').height();
+                if(fromTop >= widgetHeight * 2) {
+                    $('.widgets').css('margin-bottom', '-' + fromTop + 'px');
+                }
+
+                else {
+                    $('.widgets').css('margin-bottom', fromTop + 'px');
+                }
+            });
+
+
+            // BURGER MENU
+            $('.burger-menu').click(function(){
+                if($('.nav__mobile').css('display') == 'none'){
+                    $('.nav__mobile').css('display', 'flex');
+                    $('.burger-menu-default').prop('hidden', true);
+                    $('.burger-menu-close').prop('hidden', false);
+                }
+                else {
+                    $('.nav__mobile').css('display', 'none');
+                    $('.burger-menu-default').prop('hidden', false);
+                    $('.burger-menu-close').prop('hidden', true);
+                }
+            });
+
+
+            // SLIM SCROLL FOR CUSTOM SCROLLBAR
+            $('.nav__mobile-content').slimScroll({
+                height: '345px',
+                width: '288px',
+                alwaysVisible: true,
+                railVisible: true,
+                railColor: '#E0E0E0',
+                railOpacity: 1,
+                color: '#0067B3',
+                opacity: 1
+            });
+        });
 
     </script>
 </html>
