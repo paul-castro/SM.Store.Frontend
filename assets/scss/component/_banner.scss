@@ -79,6 +79,8 @@
 .banner-inner { 
     position: relative;
     min-height: 318px;
+    height: auto;
+    //padding: 40px 20px;
     display: flex;
     justify-content: center;
 
@@ -220,6 +222,30 @@
             @include bgcover;
         }
     }
-    
+
+}
+
+
+.big-header {
+        position: relative;
+        display: flex;
+        height: 550px;
+        align-items: flex-start;
+        padding: 88px 24px 20px 24px;         
+
+    &--beauty-trends{
+        background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
+        @include bgcover;
+
+        @include respond(tablet) {
+            background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
+            @include bgcover;
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-beauty-trends-m.jpg') no-repeat;
+            @include bgcover;
+        }
+    }
 
 }

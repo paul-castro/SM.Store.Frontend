@@ -217,12 +217,21 @@
     display: flex;
     flex-direction: column;
 
-    @include respond(1264px) {
+    /*@include respond(1264px) {
        width: 100%;
+    }*/
+
+    @include respond(1264px) {
+        width: 100%;
+        margin-right: 0;
     }
 
     @include respond(tablet) {
         width: 100%;   
+    }
+
+    @include respond(mobile) {
+        width: 333px;   
     }
 
     &.expand {
