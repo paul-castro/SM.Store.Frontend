@@ -1,0 +1,45 @@
+@mixin socia-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 8px 8px 12px; 
+
+}
+
+@mixin  icon-margin {
+     margin-right: 12px;
+}
+
+.social-share {
+    font-family: $font-base;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &__count {
+        color: $black;
+    }
+
+    &__facebook {
+        background-color: #1877F2;
+        @include socia-button;  
+        img {
+            @include icon-margin;  
+        }
+    }
+
+    &__twitter {
+        background-color: #1DA0F1;
+        @include socia-button;
+        img {
+            @include icon-margin;  
+        }
+    }
+}

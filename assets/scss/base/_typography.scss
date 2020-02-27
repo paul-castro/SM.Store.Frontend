@@ -308,13 +308,44 @@ p {
         }
 
         &--left {
-            text-align: left;
+            text-align: left;   
         }
 
         &--right {
             text-align: right;
         }
     }
+}
 
+.container-colored {
+    font-family: $font-heading1;
+    font-style: normal;
+    font-weight: bold;
+
+    &__h1 {
+        font-size: 64px;
+        line-height: 86px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &--block {
+            display: block;
+        }
+
+        &--pink {
+            color: $beauty-pink;
+        }
+    }
+
+    &__p {
+        font-family: $font-base;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $gray;
+        text-align: center;
+        margin-bottom: 16px;
+    }
 
 }
