@@ -455,3 +455,33 @@
         }
     }
 }
+
+.card-mobile--events {
+    width: 312px;
+    height: 80px;
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 16px;
+
+    &-text {
+        padding: 0 8px;
+
+        & p {
+            letter-spacing: 1.6px;
+        }
+
+        & ul {
+            margin-top: 8px;
+            
+            & li {
+                color: $dark-gray;
+                // margin-bottom: 9px;
+
+                & img {
+                    vertical-align: middle;
+                }
+
+            }
+        }
+    }
+}
