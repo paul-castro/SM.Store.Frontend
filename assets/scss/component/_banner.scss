@@ -193,6 +193,16 @@
         }
     }
 
+    &--about {
+        background: url('../../assets/images/banner-about.png') no-repeat;
+        @include bgcover;
+
+        @include respond(tablet) {
+            background: url('../../assets/images/banner-about-m.png') no-repeat;
+            @include bgcover;
+        }
+    }
+
     &--womens-blog {
         background: url('../../assets/images/banner-womens-blog@2x.png') no-repeat;
         @include bgcover;

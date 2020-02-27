@@ -1,0 +1,138 @@
+.about {
+
+    &-main {
+        min-height: 928px;
+        position: relative;
+        padding-top: 56px;
+
+        &-bg {
+            background-color: $lemon;
+            height: 741px;
+            width: 607px;
+            position: absolute;
+            left: -80px;
+            bottom: 88px;
+            z-index: 1;
+        }
+
+        &-img {
+            z-index: 50;
+            position: relative;
+        }
+
+        &-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 60;
+            top: 144px;
+
+            @include respond(1080px) {
+                position: relative;
+            }
+
+            & > h1 {
+                position: absolute;
+                left: 576px;
+                color: $pink;
+
+                @include respond(1160px) {
+                    left: 376px;
+                }
+
+                @include respond(1080px) {
+                    position: relative;
+                }
+            }
+
+            & > p {
+                width: 496px;
+                position: absolute;
+                right: 0;
+                top: 104px;
+
+                @include respond(1160px) {
+                    right: 280px;
+                    width: 400px;
+                }
+
+                @include respond(1080px) {
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &-sm-cares {
+        background-color: $cream;   
+        min-height: 628px;
+
+        & > .container {
+            position: relative;
+        }
+        
+        &-bg {
+            background-color: $freshmint;
+            height: 536px;
+            width: 608px;
+            position: absolute;
+            right: -88px;
+            // z-index: 1;
+
+            & > p:nth-of-type(1) {
+                position: absolute;
+                top: 88px;
+                left: 165px;
+                z-index: 60;
+            }
+
+            & > h1 {
+                position: absolute;
+                top: 128px;
+                left: 24px;
+                z-index: 60;
+
+                & > span {
+                    display: block;
+
+                    &:nth-of-type(1),
+                    &:nth-of-type(2) {
+                        color: $white;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 208px;
+                    }
+
+                    &:nth-of-type(3) {
+                        margin-left: 141px;
+                        color: $lemon;
+                    }
+                }
+            }
+
+            & > p:nth-of-type(2) {
+                position: absolute;
+                top: 350px;
+                margin-left: 165px;
+                color: $dark-gray;
+                z-index: 60;
+                width: 354px;
+            }
+
+            & > a {
+                width: 116px;
+                position: absolute;
+                top: 454px;
+                left: 165px;
+            }
+        }
+
+        &-img {
+            z-index: 50;
+            position: relative;
+            top: 64px;
+            // display: none;
+        }
+    }
+}
