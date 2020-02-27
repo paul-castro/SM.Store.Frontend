@@ -59,7 +59,7 @@ $(document).ready(function(){
         var submenu = $(this).data('item');
         $('.nav__mobile').css('left', '-360px');
         $('.nav__mobile-sub').css('display', 'flex');
-        $('.nav__mobile--'+submenu).css('display', 'block');
+        $('.nav__mobile--'+submenu).css('display', 'flex');
         $('.nav__mobile-control-back').data('item', submenu);
     });
     $('.nav__mobile-control-back').click(function(){
@@ -69,23 +69,22 @@ $(document).ready(function(){
     });
 
     function refreshBurgerMenu() {
-        
-        var submenu = $('.nav__mobile-control-back').data('item');
-        $('.nav__mobile--'+submenu).css('display', 'none');
+        // var submenu = $('.nav__mobile-control-back').data('item');
+        $('.nav__mobile-container').css('display', 'none');
     }
 
 
     // SLIM SCROLL FOR CUSTOM SCROLLBAR
-    $('.nav__mobile-content').slimScroll({
-        height: '345px',
-        width: '288px',
-        alwaysVisible: true,
-        railVisible: true,
-        railColor: '#E0E0E0',
-        railOpacity: 1,
-        color: '#0067B3',
-        opacity: 1
-    });
+    // $('.nav__mobile-content').slimScroll({
+    //     height: '345px',
+    //     width: '288px',
+    //     alwaysVisible: true,
+    //     railVisible: true,
+    //     railColor: '#E0E0E0',
+    //     railOpacity: 1,
+    //     color: '#0067B3',
+    //     opacity: 1
+    // });
 
 
 
