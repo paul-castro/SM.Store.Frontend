@@ -86,4 +86,10 @@
     &--pink {
         border: 15px solid $beauty-pink;
     }
+
+    @include respond(1040px) {
+        width: 96%;
+    }
+
+   
 }
