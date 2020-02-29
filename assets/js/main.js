@@ -4,13 +4,7 @@ $(document).ready(function(){
         // console.log($(this).scrollTop());
         var fromTop = $(this).scrollTop();
         var widgetHeight = $('.widgets').height();
-        if(fromTop >= widgetHeight * 2) {
-            $('.widgets').css('margin-bottom', '-' + fromTop + 'px');
-        }
-
-        else {
-            $('.widgets').css('margin-bottom', fromTop + 'px');
-        }
+        $('.widgets').css('margin-bottom', '-' + fromTop + 'px');
     });
 
 
