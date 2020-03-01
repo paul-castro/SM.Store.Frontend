@@ -1,6 +1,7 @@
 .breadcrumbs {
     padding-top: 16px;
     width: 100%;
+
     &__link {
         color:$white;
         text-decoration: none;
@@ -16,6 +17,11 @@
             background: none;
         }
     }
+
+    @include respond(mobile) {
+        position: absolute;
+        top: 160px;
+    }
 }
 
 .border--gradient {
@@ -23,6 +29,10 @@
     width: 100%;
     height: 1px;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
+    @include respond(mobile) {
+        display: none;
+    }
 }
 
 

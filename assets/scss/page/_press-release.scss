@@ -1,0 +1,13 @@
+.press-release {
+
+    & .large-image {
+        position: relative;
+        height: 500px;
+        background-color: #ccc;
+        top: -70px;
+        z-index: 50;
+        width: 1224px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

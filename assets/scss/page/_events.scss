@@ -43,4 +43,194 @@
             }
         }
     }
+
+    &-fl {
+        & .container-colored {
+            & > h1 {
+                letter-spacing: 4px;
+
+                @include respond(tablet) {
+                    font-size: 50px;
+                }
+
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                }
+
+                & > .container-colored__h1--block {
+                    margin-left: 120px;
+
+                    @include respond(tablet) {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+
+        & .btn--primary {
+            color: $black;
+            border: 1px solid $black;
+
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+        }
+
+        & ol {
+            margin-top: 16px;
+            margin-left: 20px;
+
+            & > li {
+                font-family: Open Sans;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: black;
+                margin-bottom: 16px;
+            }
+        }
+
+        &-note {
+            margin-top: 40px;
+            min-height: 142px;
+            width: 100%;
+            background-color: $seafoam;
+            display: flex;
+            padding: 24px;
+            align-items: flex-start;
+
+            & > div {
+                margin-left: 24px;
+
+                & > p {
+                    color: $black;
+                }
+
+                & > p:nth-of-type(2) {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &-map {
+            margin-top: 40px;
+            height: 354px;
+            width: 100%;
+            
+            & > img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &-k {
+        & .container-colored {
+            & > h1 {
+                letter-spacing: 4px;
+
+                @include respond(tablet) {
+                    font-size: 50px;
+                }
+
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                }
+            }
+        }
+
+        & .btn--primary {
+            color: $black;
+            border: 1px solid $black;
+
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+        }
+
+        & ol {
+            margin-top: 16px;
+            margin-left: 20px;
+
+            & > li {
+                font-family: Open Sans;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: black;
+                margin-bottom: 16px;
+            }
+        }
+
+        &-note {
+            margin-top: 40px;
+            min-height: 142px;
+            width: 100%;
+            background-color: $seafoam;
+            display: flex;
+            padding: 24px;
+            align-items: flex-start;
+
+            & > div {
+                margin-left: 24px;
+
+                & > p {
+                    color: $black;
+                }
+
+                & > p:nth-of-type(2) {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &-map {
+            margin-top: 40px;
+            height: 354px;
+            width: 100%;
+            
+            & > img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        & > .normal-text {
+            margin-top: 16px;
+        }
+    }
+
+    &__datetime {
+        & > img {
+            vertical-align: middle;
+        }
+
+        & > span {
+            vertical-align: middle;
+            color: $freshmint;
+            letter-spacing: 4px;
+        }
+    }
+
+    &__venue {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 16px;
+
+        & > div {
+            margin-left: 4px;
+
+            & > p {
+                font-family: $font-base;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
 }

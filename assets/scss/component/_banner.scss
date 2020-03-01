@@ -88,6 +88,9 @@
         min-height: 200px;
     }
     
+    &--blank {
+        background-color: $dark-gray;
+    }
     
     &--whatsnew {
         background: url('../../assets/images/banner-whatsnew.png') no-repeat;
@@ -203,6 +206,16 @@
         }
     }
 
+    &--contacts {
+        background: url('../../assets/images/banner-contacts.jpg') no-repeat;
+        @include bgcover;
+
+        @include respond(tablet) {
+            background: url('../../assets/images/banner-contacts-m.png') no-repeat;
+            @include bgcover;
+        }
+    }
+
     &--womens-blog {
         background: url('../../assets/images/banner-womens-blog@2x.png') no-repeat;
         @include bgcover;
@@ -237,11 +250,15 @@
 
 
 .big-header {
-        position: relative;
-        display: flex;
-        height: 550px;
-        align-items: flex-start;
-        padding: 88px 24px 20px 24px;         
+    position: relative;
+    display: flex;
+    height: 550px;
+    align-items: flex-start;
+    padding: 88px 24px 20px 24px;    
+    
+    @include respond(mobile) {
+        height: 344px;
+    }
 
     &--beauty-trends{
         background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
@@ -254,6 +271,55 @@
 
         @include respond(mobile) {
             background: url('../../assets/images/banner-beauty-trends-m.jpg') no-repeat;
+            @include bgcover;
+        }
+    }       
+    
+    &--3ds {
+        background: url('../../assets/images/banner-3ds.png') no-repeat;
+        @include bgcover;
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-3ds-m.png') no-repeat;
+            @include bgcover;
+        }
+    }
+
+    &--promo {
+        background: url('../../assets/images/banner-whatsnew-promo.png') no-repeat;
+        @include bgcover;
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-whatsnew-promo-m.png') no-repeat;
+            @include bgcover;
+        }
+    } 
+
+    &--press-release {
+        background: url('../../assets/images/banner-press-release-blog.png') no-repeat;
+        @include bgcover;
+    }   
+
+    &--event-fl {
+        background: url('../../assets/images/banner-events-fashion-lifestyle.png') no-repeat;
+        @include bgcover;
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-events-fashion-lifestyle-m.png') no-repeat;
+            @include bgcover;
+        }
+    }
+
+    &--event-k {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/banner-events-kids.png');
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        @include bgcover;
+
+        @include respond(mobile) {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/banner-events-kids.png');
+            background-blend-mode: multiply;
+            background-repeat: no-repeat;
             @include bgcover;
         }
     }

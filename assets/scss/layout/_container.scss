@@ -74,6 +74,13 @@
     padding-top: 88px;
 }
 
+.container-1014 {
+    position: relative;
+    width: 1014px;
+    // padding: 0 $gutter-desktop;
+    margin: 0 auto;
+}
+
 .container-colored {
     position: relative;
     z-index: 9;
@@ -82,6 +89,10 @@
     min-height: 500px;
     background: $white;
     padding: 58px;
+    
+    @include respond(mobile) {
+        margin: -124px auto 40px auto;
+    }
 
     &--pink {
         border: 15px solid $beauty-pink;
@@ -98,10 +109,34 @@
 
     @include respond(tablet) {
         width: 90% ;
+    &--freshmint {
+        border: 15px solid $freshmint;
+    }
+
+    &--pacific {
+        border: 15px solid $pacific;
+    }
+
+    &--yolk {
+        border: 15px solid $yolk;
+    }
+
+    &--blue {
+        border: 15px solid $blue;
+    }
+
+    &--lemon {
+        border: 15px solid $lemon;
+    }
+
+    @include respond(1040px) {
+        width: 96%;
     }
 
     @include respond(mobile) {
         width: 336px;
     }
    
+}
+
 }
