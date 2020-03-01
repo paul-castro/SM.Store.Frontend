@@ -109,6 +109,8 @@
 
     @include respond(tablet) {
         width: 90% ;
+    }
+
     &--freshmint {
         border: 15px solid $freshmint;
     }
@@ -137,6 +139,6 @@
         width: 336px;
     }
    
-}
+
 
 }
