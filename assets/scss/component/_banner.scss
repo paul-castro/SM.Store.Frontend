@@ -250,11 +250,15 @@
 
 
 .big-header {
-        position: relative;
-        display: flex;
-        height: 550px;
-        align-items: flex-start;
-        padding: 88px 24px 20px 24px;         
+    position: relative;
+    display: flex;
+    height: 550px;
+    align-items: flex-start;
+    padding: 88px 24px 20px 24px;    
+    
+    @include respond(mobile) {
+        height: 344px;
+    }
 
     &--beauty-trends{
         background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
@@ -275,10 +279,10 @@
         background: url('../../assets/images/banner-3ds.png') no-repeat;
         @include bgcover;
 
-        // @include respond(mobile) {
-        //     background: url('../../assets/images/banner-3ds-m.png') no-repeat;
-        //     @include bgcover;
-        // }
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-3ds-m.png') no-repeat;
+            @include bgcover;
+        }
     }
 
     &--promo {

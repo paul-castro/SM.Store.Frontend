@@ -89,6 +89,10 @@
     min-height: 500px;
     background: $white;
     padding: 58px;
+    
+    @include respond(mobile) {
+        margin: -124px auto 40px auto;
+    }
 
     &--pink {
         border: 15px solid $beauty-pink;
