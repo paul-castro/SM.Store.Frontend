@@ -12,7 +12,13 @@
             width: 290px;
             flex-direction: column;
          }
+
+         &--nowrap {
+             flex-wrap: nowrap;
+         }
     }
+
+    
 
     &__nav {
         display: flex;
@@ -44,8 +50,6 @@
         //height: 556px;
 
 
-   
-
         &:nth-child(2n) {
             margin-top: 125px;
             margin-bottom: 52px;
@@ -55,6 +59,23 @@
               margin-bottom: 30px;
                 
              }
+        }
+
+        &--align {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            &:nth-child(2n) {
+                margin-top: 0;
+                margin-bottom: 0;
+    
+                @include respond(610px) {
+                  margin-top: 0;
+                  margin-bottom: 0;
+                    
+                 }
+            }
+    
         }
     }
 

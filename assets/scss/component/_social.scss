@@ -19,12 +19,22 @@
     justify-content: center;
     align-items: center;
 
+    @include respond(mobile) {
+        display: flex;
+
+    }
+
     &:last-child {
         margin: 0;
     }
 
     &__count {
         color: $black;
+
+        @include respond(mobile) {
+           display: inline-block;
+    
+        }
     }
 
     &__facebook {

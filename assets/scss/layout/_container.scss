@@ -4,7 +4,7 @@
 
 .container {
     //max-width: 1284px;
-    width: 1224px;
+    max-width: 1224px;
     padding: 0 $gutter-desktop;
     margin: 0 auto;
 
@@ -85,11 +85,23 @@
 
     &--pink {
         border: 15px solid $beauty-pink;
+
+        @include respond(tablet) {
+            border: 10px solid $beauty-pink;
+            padding: 14px;
+        }
     }
 
-    @include respond(1040px) {
-        width: 96%;
+    @include respond(1200px) {
+        width: 60%;
     }
 
+    @include respond(tablet) {
+        width: 90% ;
+    }
+
+    @include respond(mobile) {
+        width: 336px;
+    }
    
 }
