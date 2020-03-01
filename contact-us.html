@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us | SM Store</title>
+        <title>Contact Us | SM Store</title>
 
         <link rel="stylesheet" href="./assets/css/style.min.css">
     </head>
@@ -439,69 +439,108 @@
             </header>
             <!-- /HEADER -->
             
-            <section class="banner-inner banner-inner--about container-fluid">
+            <section class="banner-inner banner-inner--contacts container-fluid">
                 <div class="container">
-                    <h1 class="font-hero banner-page__headings">About Us</h1>
+                    <h1 class="font-hero banner-page__headings">Contact Us</h1>
                 </div>
             </section>
             
-            <section class="about-main container">
-                <div class="about-main-bg"></div>
-                <img src="./assets/images/about-main.png" alt="" class="about-main-img">
-                <div class="about-main-content">
-                    <h1 class="font-hero">The SM Store</h1>
-                    <p>
-                        The SM Store is the Philippines’ largest department store chain with 65 branches nationwide—with a great selection of menswear, womenswear, childrenswear, all kinds of beauty products, and things for the home. You can also find stationery, electronic gadgets, snacks, toys, hardware, and fun Philippine souvenirs here.
-                        <br><br>
-                        Beyond merchandise, The SM Store provides services such as bills payment, ticketing, remittance, currency exchange, free gift wrapping, clothing alterations, home delivery, and most recently, click & collect.
-                        <br><br>
-                        Since our first store opened in 1958, The SM Store has been a long-time favorite one-stop-shop with the best product variety, shopping convenience, and value for money.
-                        <br><br>
-                        The SM Store carries this ease of shopping online with www.thesmstore.com, combining the benefits of browsing online and shopping in-store. Stay up to date with the latest in fashion and be the first to see what’s new in our stores via TheSMStore.com. 
-                        <br><br>
-                        As we always say, <b>"We've got it all for you!"</b>
-                    </p>
-                </div>
-
+            <section class="contacts__intro container">
+                <h2 class="font-h2-caps">We’re here to help!</h2>
+                <p>Need some help? Check out our <a href="">Help & Support</a> section, but if you can't find the answer you're looking for, please get in touch using one of the below options:</p>
             </section>
 
-            <section class="about-sm-cares container-fluid">
-                <div class="container">
-                    <div class="about-sm-cares-bg">
-                        <p class="font-eyebrow-semi">SM Cares</p>
-                        <h1 class="font-h1">
-                            <span>Share-a-toy</span>
-                            <span>make a</span>
-                            <span>child happy</span>
-                        </h1>
-                        <p>The SM Group continues to put smiles on children’s faces with its annual Share-A-Toy. Make A Child Happy toy drive.</p>
-                        <a href="" class="btn--primary font-cta">View</a>
-                    </div>
+            <section class="contacts__form container">
+                <h2 class="font-h2-caps">Email us</h2>
+                <p>Send us a message, and we'll aim to get back to you as soon as possible</p>
 
-                    <img class="about-sm-cares-img" src="./assets/images/about-sm-cares.jpg" />
-                </div>
-            </section>
-            
-            <section class="featured-press">
-                <div class="container">
-                    <div class="featured-press__header">
-                        <h2 class="font-h2-hero">Press Releases</h2>
-                        <a href="" class="btn--text-link font-cta">View all</a>
+                <form class="form__container form--contacts">
+                    <div class="form__group">
+                        <label class="form__group--label font-caption">Full Name*</label>
+                        <input class="form__group--input" type="text">
+                        <p class="font-validation">*This is a required field</p>
                     </div>
-                    <div class="featured-press__container">
-                        <img class="featured-press__container-image" src="./assets/images/press-release.png"/>
-                        <div class="featured-press__content">
-                            <h1 class="font-hero">The SM Store wins at ice</h1>
-                            <a href="" class="btn--primary font-cta">Read</a>
+                    <div class="form__group">
+                        <label class="form__group--label font-caption">Email Address*</label>
+                        <input class="form__group--input" type="text">
+                        <p class="font-validation">*This is a required field</p>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__group--label font-caption">Contact Number*</label>
+                        <input class="form__group--input" type="text">
+                        <p class="font-validation">*This is a required field</p>
+                        
+                        <label class="form__group--label font-caption">How do you want to be contacted?*</label>
+                        <div class="form__group--radio">
+                            <input id="byPhone" class="form__group--input" type="radio" name="contactBy">
+                            <label for="byPhone" class="font-caption">By phone</label>
+                            <input id="byEmail" class="form__group--input" type="radio" name="contactBy">
+                            <label for="byEmail" class="font-caption">By email</label>
+                            <p class="font-validation">*This is a required field</p>
                         </div>
                     </div>
-                    
-                    <div class="featured-press__controls controls">
-                        <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                        <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                    <!-- <div class="form__group">
+                    </div> -->
+                    <div class="form__group">
+                        <label class="form__group--label font-caption">What does your enquiry relate to? *</label>
+                        <select class="form__group--input"></select>
+                        <p class="font-validation">*This is a required field</p>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__group--label font-caption">Choose your topic *</label>
+                        <select class="form__group--input"></select>
+                        <p class="font-validation">*This is a required field</p>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__group--label font-caption">Your Message*</label>
+                        <textarea class="form__group--textarea"></textarea>
+                        <p class="font-validation">*This is a required field</p>
+                    </div>
+                </form>
+
+                <button class="btn--primary font-cta">Submit</button>
+            </section>
+
+            <section class="contacts__alt container">
+                <h2 class="font-h2-caps">Other ways to reach us</h2>
+                <div class="contacts__alt-content">
+                    <div>
+                        <img src="./assets/images/icons/icon-phone.png" alt="">
+                        <div>
+                            <p class="font-metadata">Call us at</p>
+                            <span class="font-caption-bold">(02)8811-0000</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icons/icon-message.png" alt="">
+                        <div>
+                            <p class="font-metadata">Email us at</p>
+                            <span class="font-caption-bold">customercare@thesmstore.com</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/icons/icon-viber.png" alt="">
+                        <div>
+                            <p class="font-metadata">Join us on viber</p>
+                            <a href="" class="btn--text-link font-cta">Join</a>
+                        </div>
                     </div>
                 </div>
+                <p>For store information, visit our <a href="">Stores</a> page.</p>
             </section>
+
+            <section class="contacts__social-media container-fluid">
+                <div class="container">
+                    <h3 class="font-h3-caps">Follow us on social</h3>
+                    <ul>
+                        <li><img src="./assets/images/icons/fb-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
+                        <li><img src="./assets/images/icons/instagram-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
+                        <li><img src="./assets/images/icons/twitter-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
+                        <li><img src="./assets/images/icons/youtube-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
+                    </ul>
+                </div>
+            </section>
+
             <!-- FOOTER -->
             <footer class="footer">
                 <div class="footer__messenger">
