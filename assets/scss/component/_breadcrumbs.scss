@@ -19,8 +19,7 @@
     }
 
     @include respond(mobile) {
-        position: absolute;
-        top: 160px;
+        display: none;
     }
 }
 

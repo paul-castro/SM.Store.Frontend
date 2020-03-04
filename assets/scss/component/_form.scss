@@ -13,6 +13,10 @@
         flex-direction: column;
         margin-bottom: 30px;
 
+        @include respond(mobile) {
+            flex-basis: 100%;
+        }
+
         &--label {
             margin-bottom: 6px;
             text-transform: capitalize;

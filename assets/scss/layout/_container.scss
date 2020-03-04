@@ -84,7 +84,7 @@
 .container-colored {
     position: relative;
     z-index: 9;
-    width: 1014px;
+    max-width: 1014px;
     margin: -233px auto 40px auto;
     min-height: 500px;
     background: $white;
@@ -92,6 +92,7 @@
     
     @include respond(mobile) {
         margin: -124px auto 40px auto;
+        padding: 36px;
     }
 
     &--pink {
