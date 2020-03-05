@@ -12,7 +12,7 @@
 
         &__title {
             text-align: center;
-            color: $dark-gray;
+            color: $black;
         }
 
         &__subtitle {
@@ -37,11 +37,12 @@
 
         &__btn {
             position: absolute;
-            right: 0;
+            right: 24px;
             top: 76px;
             color: $black;
 
             @include respond(1300px) {
+                right: 0;
                 top: 0px;
                 position: relative;
                 display: block;
@@ -541,92 +542,135 @@
 
     &-events {
         position: relative;
-        height: 656px;
+        min-height: 656px;
         background-color: $white;
-        padding: 80px 0;
+        // padding: 80px 0;
         display: flex;
+        flex-direction: column;
 
-        @include respond(tablet) {
-            padding: 80px 0 !important;
-        }
-
-        @include respond(mobile) {
-            height: 580px;
-            padding: 40px 0 0 12px !important;
-        }
-        
-        &__details {
-            margin-top: 60px;
-            // width: 210px;
-            height: 274px;
-            flex-basis: 270px;
+        &__header {
+            height: 33px;
             text-align: right;
-
-            @include respond(mobile) {
-                text-align: left;
-                height: 100%;
-                position: absolute;
-                margin-top: 0px;
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            &--title {
-                margin-bottom: 14px;
-
-                @include respond(mobile) {
-                    order: 2;
-                }
-            }
-    
-            &--month {
-                margin-bottom: 64px;
-
-                @include respond(mobile) {
-                    order: 1;
-                    margin-bottom: 0;
-                }
-            }
-    
-            &--btn {
-                display: block;
-                color: $black;
-
-                @include respond(mobile) {
-                    order: 3;
-                    margin-top: 350px;
-                }
-            }
+            margin-top: 48px;
         }
-        
-        &__controls {
-            position: relative;
-            align-items: center;
-            // display: flex;
-            justify-content: flex-end;
-            z-index: 90;
 
-            @include respond(mobile) {
-                position: absolute;
-                bottom: 55px;
+        &__content {
+            height: 432px;
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+            margin-top: 24px;
+        }
+
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            width: 370px;
+            margin-top: 25px;
+
+            & > h2 {
+                font-family: $font-heading1;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                color: $black;
+                margin-bottom: 8px;
+            }
+
+            &-month {
+                font-family: Open Sans;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: $dark-gray;
+                margin-bottom: 48px;
+            }
+
+            & > h3 {
+                font-family: Josefin Sans;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                color: #FF4E4E;
+                margin-left: 29px;
+            }
+
+            &-description {
+                margin-left: 29px;
+                font-family: Open Sans;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: $dark-gray;
+                margin-bottom: 21px;
+            }
+
+            &-datetime {
+                display: flex;
+                align-items: flex-start;
+                margin-left: 29px;
+        
+                & > img {
+                    vertical-align: middle;
+                }
+        
+                & > span {
+                    margin-left: 4px;
+                    vertical-align: middle;
+                    color: $freshmint;
+                    letter-spacing: 4px;
+        
+                    @include respond(tablet) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        
+            &-venue {
+                display: flex;
+                align-items: flex-start;
+                // margin-top: 16px;
+                // margin-left: 29px;
+                margin: 16px 0 65px 29px;
+                
+                & > p {
+                    margin-left: 4px;
+                    font-family: $font-base;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            & > .btn--text-link {
+                margin-left: 29px;
             }
         }
 
         &__slider {
-            display: flex;
-            justify-content: flex-start;
-            z-index: 50;
             position: absolute;
-            left: 270px;
+            margin-left: 370px;
+            display: flex;
 
-            @include respond(mobile) {
-                margin-top: 70px;
-                margin-left: -24px;
-                height: 320px;
-                left: 0px;
+            &-event {
+                margin-right: 24px;
+                position: relative;
+
+                
             }
         }
+
+        &__footer {
+            text-align: right;
+            margin-top: 49px;
+        }
+
     }
 
     &-advocacy {

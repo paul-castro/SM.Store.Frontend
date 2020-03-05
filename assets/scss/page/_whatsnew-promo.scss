@@ -1,9 +1,76 @@
 .promo-section {
 
-    & .thankyou-img {
+    & .thankyou-text {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin-bottom: 48px;
+        margin-top: 59px;
+        padding: 30px;
+        position: relative;
+
+        @include respond(tablet) {
+            padding: 20px;
+            width: 100%;
+        }
+
+        &--shadow {
+            font-size: 95px;
+            -webkit-text-stroke: 0.9px $freshmint;
+            color: transparent;
+            position: absolute;
+            top: 0;
+            left: 140px;
+            letter-spacing: 8px;
+            white-space: nowrap;
+
+            @include respond(1034px) {
+                font-family: $font-heading1;
+                font-size: 65px;
+                font-weight: bold;
+                line-height: 40px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+            }
+
+            @include respond(tablet) {
+                font-size: 58px !important;
+                font-weight: bold;
+                line-height: 40px;
+                letter-spacing: 1.6px;
+                left: 20% !important;
+            }
+
+            @include respond(mobile) {
+                font-size: 40px !important;
+                top: 5px;
+                left: 5px !important;
+            }
+        }
+
+        & h1 {
+            color: $pink;
+            z-index: 50;
+            letter-spacing: 8px;
+            white-space: nowrap;
+
+            @include respond(1034px) {
+                font-size: 58px;
+                font-weight: bold;
+                line-height: 40px;
+                letter-spacing: 6px;
+            }
+
+            @include respond(tablet) {
+                font-size: 58px !important;
+                font-weight: bold;
+                line-height: 40px;
+                letter-spacing: 1.6px;
+            }
+
+            @include respond(mobile) {
+                font-size: 40px !important;
+            }
+        }
     }
 
     & button {

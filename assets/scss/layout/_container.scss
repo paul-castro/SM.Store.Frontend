@@ -91,8 +91,9 @@
     padding: 58px;
     
     @include respond(mobile) {
-        margin: -124px auto 40px auto;
-        padding: 36px;
+        margin: -124px 0 40px 0;
+        width: 100% !important;
+        padding: 20px;
     }
 
     &--pink {
@@ -102,14 +103,6 @@
             border: 10px solid $beauty-pink;
             padding: 14px;
         }
-    }
-
-    @include respond(1200px) {
-        width: 60%;
-    }
-
-    @include respond(tablet) {
-        width: 90% ;
     }
 
     &--freshmint {

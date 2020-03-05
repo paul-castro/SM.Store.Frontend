@@ -69,6 +69,18 @@
             }
         }
 
+        & .get-direction-text {
+            position: absolute;
+            right: 0;
+            text-decoration: none;
+            color: $dark-gray;
+
+            @include respond(tablet) {
+                position: relative;
+                margin: 16px 0 0 24px;
+            }
+        }
+
         & .btn--primary {
             color: $black;
             border: 1px solid $black;
@@ -102,8 +114,19 @@
             padding: 24px;
             align-items: flex-start;
 
+            & > img {
+                
+                @include respond(tablet) {
+                    height: 35px;
+                }
+            }
+
             & > div {
                 margin-left: 24px;
+                
+                @include respond(tablet) {
+                    margin-left: 16px;
+                }
 
                 & > p {
                     color: $black;
@@ -124,6 +147,14 @@
                 height: 100%;
                 width: 100%;
             }
+        }
+
+        
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            position: relative;
         }
     }
 
@@ -168,6 +199,18 @@
             }
         }
 
+        & .get-direction-text {
+            position: absolute;
+            right: 0;
+            text-decoration: none;
+            color: $dark-gray;
+
+            @include respond(tablet) {
+                position: relative;
+                margin: 16px 0 0 24px;
+            }
+        }
+
         &-note {
             margin-top: 40px;
             min-height: 142px;
@@ -204,17 +247,33 @@
         & > .normal-text {
             margin-top: 16px;
         }
+        
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
     }
 
+
     &__datetime {
+        display: flex;
+        align-items: flex-start;
+
         & > img {
             vertical-align: middle;
         }
 
         & > span {
+            margin-left: 4px;
             vertical-align: middle;
             color: $freshmint;
             letter-spacing: 4px;
+
+            @include respond(tablet) {
+                font-size: 16px;
+            }
         }
     }
 
