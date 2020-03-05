@@ -656,19 +656,29 @@
         &__slider {
             position: absolute;
             margin-left: 370px;
-            display: flex;
+            // display: flex;
+            height: 400px;
+            width: 1500px !important;
 
             &-event {
                 margin-right: 24px;
                 position: relative;
-
-                
             }
+
+            // & .owl-item {
+            //     // display: inline-block !important;
+            //     width: 648px !important;
+            //     height: 432px !important;
+            // }
         }
 
         &__footer {
             text-align: right;
             margin-top: 49px;
+
+            & > button {
+                background-color: transparent;
+            }
         }
 
     }

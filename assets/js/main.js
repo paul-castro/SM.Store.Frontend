@@ -67,6 +67,12 @@ $(document).ready(function(){
         $('.nav__mobile-container').css('display', 'none');
     }
 
+    // OWL CAROUSEL for Image sliders
+    $('.owl-carousel').owlCarousel({
+        navContainer: '.featured-events__footer',
+        navText: [$('.featured-events__footer .controls__arrow--left'),$('.featured-events__footer .controls__arrow--right')],
+    });
+
 
     // SLIM SCROLL FOR CUSTOM SCROLLBAR
     // $('.nav__mobile-content').slimScroll({
@@ -79,7 +85,5 @@ $(document).ready(function(){
     //     color: '#0067B3',
     //     opacity: 1
     // });
-
-
 
 });
