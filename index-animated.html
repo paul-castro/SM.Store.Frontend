@@ -6,15 +6,20 @@
         <title>SM Store</title>
 
         <link rel="stylesheet" href="./assets/css/style.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     </head>
     <body>
         <div class="wrapper">
 
+            <div class="animated-logo">
+                <img src="./assets/images/logo.svg" alt="SM Store">
+            </div>
             
             <!-- HEADER -->
             <header>
-                <nav class="nav__upper nav__upper--default container-fluid">
+                
+                <nav class="nav__upper nav__upper--default container-fluid" style="display: none;">
                     <ul class="nav__upper-list nav__upper-list-menu">
                         <li><a href="" class="font-fineprint">About Us</a></li>
                         <li><a href="" class="font-fineprint">Stores</a></li>
@@ -40,11 +45,11 @@
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
                     </div>
 
-                    <div class="logo">
+                    <!--<div class="logo animate-from__center">
                         <img src="./assets/images/logo.svg" alt="SM Store">
-                    </div>
+                    </div> //-->
 
-                    <ul class="nav__lower-menu">
+                    <ul class="nav__lower-menu moveInUp">
                         <li class="nav__lower-menu-item">
                             <a href="" class="font-headline">What's New</a>
                             <div class="nav__dropdown container">
@@ -600,7 +605,7 @@
             <!-- /HEADER -->
 
             <!-- WIDGETS -->
-            <section class="widgets">
+            <section class="widgets" style="display: none;">
                 <div class="widget widget--promos">
                     <p class="font-eyebrow widget--promos-sidetext">Jan 2-12</p>
                     <img src="./assets/images/icons/Promos.svg" alt="">
@@ -645,10 +650,10 @@
             </section>
             <!-- /WIDGETS -->
             
-            <section class="banner container-fluid">
+            <section class="banner container-fluid vh-100">
                 <!-- <div class="banner__pattern"></div> -->
-                <div class="banner__featured"></div>
-                <div class="banner__content">
+                <div class="banner__featured moiveInLeft"></div>
+                <div class="banner__content moveInUp">
                     <span class="font-eyebrow">Get up to 50% discount</span>
                     <h1 class="font-titan">Women's</h1>
                     <h1 class="font-titan">Sale</h1>
@@ -657,7 +662,7 @@
                     </div>
                 </div>
 
-                <div class="banner__pagination pagination-dot">
+                <div class="banner__pagination pagination-dot" style="display: none;">
                     
                     <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
                     <label class="pagination-dot__indicator" for="slide1"></label>
@@ -674,7 +679,7 @@
                 </div> <!--.banner__pagination pagination-dot-->
             </section>
 
-            <section class="featured-blog container">
+            <section class="featured-blog container" style="display: none;">
                 <h2 class="featured-blog__title font-h2-hero">Trending Blogs</h2>
                 <p class="featured-blog__subtitle font-eyebrow">From the latest fashion inspirations to the <br> newest product highlights - read about it here.</p>
                 <a href="" class="featured-blog__btn font-cta btn--text-link">View all blogs</a>
@@ -712,7 +717,7 @@
                 </div> <!--.featured-blog__cards-->
             </section>
 
-            <section class="featured-video">
+            <section class="featured-video" style="display: none;">
                 <div class="featured-video__bg container-fluid"></div>
                 <div class="featured-video__content container">
                     <div class="featured-video__video">
@@ -737,7 +742,7 @@
                 </div>
             </section>
 
-            <section class="featured-stories">
+            <section class="featured-stories" style="display: none;">
                 <div class="featured-stories__box container-fluid">
 
                 </div>
@@ -779,7 +784,7 @@
                 </div>
             </section>
 
-            <section class="featured-events container">
+            <section class="featured-events container" style="display: none;">
                 <div class="featured-events__details">
                     <h2 class="font-h2-hero featured-events__details--title">In-Store Events</h2>
                     <p class="font-eyebrow-semi featured-events__details--month">January</p>
@@ -831,7 +836,7 @@
                 </div> <!--.featured-events__slider-->
             </section>
 
-            <section class="featured-advocacy container-fluid">
+            <section class="featured-advocacy container-fluid" style="display: none;">
                 <div class="featured-advocacy__container container">
                     <div class="featured-advocacy__details">
                         <h1 class="font-hero">
@@ -856,7 +861,7 @@
                 
             </section>
 
-            <section class="featured-press">
+            <section class="featured-press" style="display: none;">
                 <div class="container">
                     <div class="featured-press__header">
                         <h2 class="font-h2-hero">Press Releases</h2>
@@ -877,7 +882,7 @@
                 </div>
             </section>
 
-            <section class="featured-category container">
+            <section class="featured-category container" style="display: none;">
                 <div class="card--component">
                     <img src="./assets/images/cards/card-component-women.png" alt="">
                     <a href="" class="btn--text-link font-cta featured-category__btn-link">Women</a>
@@ -913,7 +918,7 @@
             </section>
 
             <!-- FOOTER -->
-            <footer class="footer">
+            <footer class="footer" style="display: none;">
                 <div class="footer__messenger">
                     <button class="btn--icon text-semibold"><img src="./assets/images/messenger.svg"> Chat With Us</button>
                 </div>
