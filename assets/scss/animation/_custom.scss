@@ -1,0 +1,99 @@
+.animated-logo {
+    position: absolute;
+    top: 47px;
+    left: 25px;
+    z-index: 99;
+
+    animation-name: moveFromCenter;
+    animation-duration: 1s;
+}
+
+.moiveInLeft {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-delay: 1;
+}
+
+.moveInUp {
+    animation-name: moveInUp;
+    animation-duration: 0.5s;
+    animation-delay: 2;
+}
+
+
+
+@keyframes moveFromCenter {
+    0% {
+       // transform: translateY(50%), translateX(50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
