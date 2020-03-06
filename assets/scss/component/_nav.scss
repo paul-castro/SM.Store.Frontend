@@ -48,6 +48,20 @@
                     margin: 0 12px;
                 }
             }
+
+            &-announcement {
+                justify-content: center;
+                flex: 0 0 33.33%;
+                
+                @include respond(1160px) {
+                    flex: 0 0 100%;
+                }
+
+                & li {
+                    margin: 0 12px;
+                }
+            }
+
             &-misc {
                 justify-content: flex-end;
                 flex: 0 0 33.33%;
