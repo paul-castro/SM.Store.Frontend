@@ -12,10 +12,18 @@
 		    linear-gradient(#FFC734 (57.4px - 3.5px), transparent 1%) center, rgba(0,0,0,0.009);
 	    background-size: 57.4px 57.4px;
         height: 437px;
-        width: 1055px;
+        width: 100%;
         position: absolute;
         top: -9.15%;
-        left: -5.2%;
+        right: 400px;
+
+        @include respond(tablet) {
+            right: 204px;
+        }
+
+        @include respond(mobile) {
+            right: 94px;
+        }
     }
 
     &__featured {
