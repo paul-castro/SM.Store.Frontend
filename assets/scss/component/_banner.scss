@@ -8,8 +8,9 @@
     }
 
     &__pattern {
-        background: url('../images/banner-pattern.svg') no-repeat;
-        background-size: cover;
+        background: linear-gradient(90deg, #FFC734 (57.4px - 3.5px), transparent 1%) center,
+		    linear-gradient(#FFC734 (57.4px - 3.5px), transparent 1%) center, rgba(0,0,0,0.009);
+	    background-size: 57.4px 57.4px;
         height: 437px;
         width: 1055px;
         position: absolute;
