@@ -1,3 +1,15 @@
+@mixin  hide {
+    visibility: hidden;
+}
+
+@mixin  show {
+    visibility: show;
+}
+
+
+
+
+
 .animated-logo {
     position: absolute;
     top: 47px;
@@ -6,18 +18,37 @@
 
     animation-name: moveFromCenter;
     animation-duration: 1s;
+    //animation-delay: 2s;
 }
 
 .moiveInLeft {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    //animation-delay: 3s;
+}
+
+.moiveInTopCornerLeft {
+    animation-name: moveInTopCornerLeft;
+    animation-duration: 1s;
+    //animation-delay: 3s;
+}
+
+.moiveInRight {
     animation-name: moveInRight;
     animation-duration: 1s;
-    animation-delay: 1;
+    //animation-delay: 3s;
+}
+
+.moveInDown {
+    animation-name: moveInDown;
+    animation-duration: 0.5s;
+    //animation-delay: 3s;
 }
 
 .moveInUp {
     animation-name: moveInUp;
     animation-duration: 0.5s;
-    animation-delay: 2;
+    //animation-delay: 3s;
 }
 
 
@@ -38,8 +69,37 @@
 @keyframes moveInUp {
     0% {
         opacity: 0;
-        transform: translateY(3rem);
+        transform: translateY(100px);
     }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInDown {
+    0% {
+        
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTopCornerLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        @include hide();
+    }
+
+   
 
     100% {
         opacity: 1;
@@ -51,14 +111,17 @@
 
 
 
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-100px);
+        @include hide();
     }
 
     80% {
-        transform: translateX(1rem);
+        @include show();
+        transform: translateX(10px);
     }
 
     100% {
@@ -70,10 +133,12 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
+        @include hide();
         transform: translateX(10rem);
     }
 
     80% {
+        @include show();
         transform: translateX(-1rem);
     }
 
