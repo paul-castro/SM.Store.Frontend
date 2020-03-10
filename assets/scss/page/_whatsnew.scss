@@ -105,12 +105,22 @@
     & .large-image {
         position: relative;
         height: 260px;
-        background-color: #ccc;
         top: -70px;
         z-index: 50;
         width: 1224px;
         margin: 0 auto;
-        text-align: center;
+
+        @include respond(tablet) {
+            width: 100%;
+            height: min-content;
+            margin-bottom: -70px;
+        }
+        
+        & > img {
+            @include respond(tablet) {
+                width: 100%;
+            }
+        }
     }
 
     & .sale-list {
@@ -122,24 +132,53 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @include respond(tablet) {
+            padding: 24px 50px;
+            height: min-content;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        @include respond(mobile) {
+            padding: 24px 16px;
+        }
+
         &-item {
-            min-height: 88px;
-            max-width: 808px;
+            height: 88px;
             border-left: 4px solid $chili;
             padding-left: 24px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+
+            @include respond(tablet) {
+                height: min-content;
+                margin-bottom: 24px;
+            }
 
             & > p {
                 color: $black;
+                width: 100%;
+                margin-top: 8px;
             }
+        }
+
+        & > p {
+            margin-top: 10px;
         }
     }
 
     & .promo-image {
-        min-height: 654px;
+        height: 654px;
         position: relative;
+
+        @include respond(tablet) {
+            width: 100%;
+            height: 450px;
+        }
+
+        @include respond(mobile) {
+            height: 233px;
+        }
 
         & > img {
             position: absolute;
@@ -154,6 +193,22 @@
         padding: 48px 104px;
         margin-bottom: 80px;
 
+        @include respond(tablet) {
+            width: 100%;
+            padding: 24px 50px;
+        }
+
+        @include respond(mobile) {
+            padding: 24px 16px;
+            margin-bottom: 24px;
+        }
+
+        & > .hr {
+            @include respond(mobile) {
+                margin: 24px 0;
+            }
+        }
+
         & > ol {
             margin-top: 20px;
             margin-left: 20px;
@@ -165,4 +220,52 @@
         }
     }
 
+    & .store-hours {
+
+        @include respond(tablet) {
+            padding: 24px 16px;
+            width: 100%;
+        }
+
+        & > .store-branches {
+            background-color: #EFF3FD;
+            padding: 32px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+
+            @include respond(tablet) {
+                margin-top: 40px;
+            }
+            
+            & > h1 {
+                margin-bottom: 32px;
+                text-align: center;
+            }   
+
+            & > div {
+                display: flex;
+                flex-wrap: wrap;
+
+                @include respond(tablet) {
+                    width: 100%;
+                }
+
+                & > span {
+                    flex-basis: 33.33%;
+                    width: 122px;
+
+                    @include respond(mobile) {
+                        flex-basis: 50%;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+
 }
+
+
