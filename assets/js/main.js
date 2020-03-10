@@ -66,14 +66,7 @@ $(document).ready(function(){
         // var submenu = $('.nav__mobile-control-back').data('item');
         $('.nav__mobile-container').css('display', 'none');
     }
-
-    // OWL CAROUSEL for Image sliders
-    $('.owl-carousel').owlCarousel({
-        navContainer: '.featured-events__footer',
-        navText: [$('.featured-events__footer .controls__arrow--left'),$('.featured-events__footer .controls__arrow--right')],
-    });
-
-
+ 
     // SLIM SCROLL FOR CUSTOM SCROLLBAR
     // $('.nav__mobile-content').slimScroll({
     //     height: '345px',
@@ -86,4 +79,12 @@ $(document).ready(function(){
     //     opacity: 1
     // });
 
+
+    // TOGGLE MODAL
+    $('.modal .modal__close').click(function(){
+        $(this).parent().parent().removeClass('active');
+    });
+    $('.modal').click(function(){
+        $(this).removeClass('active');
+    });
 });
