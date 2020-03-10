@@ -5,6 +5,11 @@
         padding: 0 24px;
         justify-content: space-between;
         align-items: center;
+
+
+        position: absolute;
+        top: 0;
+        left: 0;
  
         &--default {
             background-color: $blue;
@@ -85,6 +90,8 @@
         padding: 14px 24px;
         justify-content: space-between;
         align-items: center;
+        top: 30px;
+        left: 0;
 
         &-burger {
             display: none;
