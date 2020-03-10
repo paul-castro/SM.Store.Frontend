@@ -73,7 +73,7 @@ $(document).ready(function(){
         navText: [$('.featured-events__footer .controls__arrow--left'),$('.featured-events__footer .controls__arrow--right')],
     });
 
-
+ 
     // SLIM SCROLL FOR CUSTOM SCROLLBAR
     // $('.nav__mobile-content').slimScroll({
     //     height: '345px',
@@ -86,4 +86,12 @@ $(document).ready(function(){
     //     opacity: 1
     // });
 
+
+    // TOGGLE MODAL
+    $('.modal .modal__close').click(function(){
+        $(this).parent().parent().removeClass('active');
+    });
+    $('.modal').click(function(){
+        $(this).removeClass('active');
+    });
 });
