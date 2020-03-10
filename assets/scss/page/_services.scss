@@ -34,8 +34,18 @@
         padding-top: 24px;
         padding-bottom: 180px;
 
+        @include respond(tablet) {
+            width: 100%;
+            margin: 0 12px;
+            padding-bottom: 58px;
+        }
+
         & > p { 
             text-align: center;
+
+            // @include respond(tablet) {
+            //     width: 100%;
+            // }
 
             &:nth-of-type(1) {
                 margin-bottom: 16px;
@@ -48,6 +58,10 @@
 
         & table {
             margin-bottom: 16px;
+
+            @include respond(tablet) {
+                width: 100%;
+            }
         }
 
         &-note {

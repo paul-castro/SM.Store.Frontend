@@ -104,6 +104,26 @@
                     background-color: $silver;
                     padding: 18px;
                     text-align: center;
+                    font-weight: bold;
+
+                    @include respond(mobile) {
+                        flex-basis: 30%;
+                    }
+
+                    &:nth-of-type(1) {
+                        
+                        @include respond(mobile) {
+                            display: none;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        display: none;
+                        
+                        @include respond(mobile) {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
@@ -120,17 +140,40 @@
                 & td {
                     flex-basis: 33.33%;
                     padding: 18px 40px;
+                        
+                    @include respond(mobile) {
+                        padding: 18px;
+                        flex-basis: 30%;
+                        font-size: 14px;
+                    }
 
                     &:nth-of-type(1) {
                         font-weight: 600;
+                        
+                        @include respond(mobile) {
+                            display: none;
+                        }
                         
                         & img {
                             margin-right: 26px;
                         }
                     }
 
-                    &:nth-of-type(2),
-                    &:nth-of-type(3) {
+                    &:nth-of-type(2) {
+                        display: none;
+                        font-weight: 600;
+                        
+                        @include respond(mobile) {
+                            display: block;
+                        }
+                        
+                        & img {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    &:nth-of-type(3),
+                    &:nth-of-type(4) {
                         text-align: center;
                     }
                 }
