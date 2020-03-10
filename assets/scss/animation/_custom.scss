@@ -1,68 +1,176 @@
 @mixin  hide {
-    visibility: hidden;
+   display: inline;
 }
 
 @mixin  show {
     visibility: show;
 }
 
+@mixin navMoveInUp {
+    animation: moveNavListInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
 
+@mixin  opacityFillMode {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
+}
 
 
 
 .animated-logo {
     position: absolute;
-    top: 47px;
-    left: 25px;
+    //top: 47px;
+    //left: 25px;
+    top:48%;
+    left:40%;
     z-index: 99;
 
     animation-name: moveFromCenter;
     animation-duration: 1s;
-    //animation-delay: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .moiveInLeft {
+    @include opacityFillMode();
     animation-name: moveInLeft;
     animation-duration: 1s;
-    //animation-delay: 3s;
+    animation-delay: 1s;
 }
 
 .moiveInTopCornerLeft {
+    @include opacityFillMode();
     animation-name: moveInTopCornerLeft;
     animation-duration: 1s;
-    //animation-delay: 3s;
+    animation-delay: 1s;
 }
 
 .moiveInRight {
+    @include opacityFillMode();
     animation-name: moveInRight;
     animation-duration: 1s;
-    //animation-delay: 3s;
+    animation-delay: 1s;
 }
 
 .moveInDown {
+    @include opacityFillMode();
     animation-name: moveInDown;
     animation-duration: 0.5s;
-    //animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 
 .moveInUp {
+    @include opacityFillMode();
     animation-name: moveInUp;
-    animation-duration: 0.5s;
-    //animation-delay: 3s;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+
+.nav__lower {
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 0%);
+    animation: bgFade;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay:1.5s;
+    //transition: all;
+    //transition-duration: 0.5s;
+}
+
+
+.nav {
+
+    &__lower-menu-item {
+        opacity: 0;
+        animation-fill-mode: forwards !important;
+        
+        &:nth-child(1) {
+            @include navMoveInUp();
+            animation-delay: 2.1s;
+        }
+
+        &:nth-child(2) {
+            @include navMoveInUp();
+            animation-delay: 2.15s;
+        }
+
+        &:nth-child(3) {
+            @include navMoveInUp();
+            animation-delay: 2.2s;
+        }
+
+        &:nth-child(4) {
+            @include navMoveInUp();
+            animation-delay: 2.25s;
+        }
+
+        &:nth-child(5) {
+            @include navMoveInUp();
+            animation-delay: 2.30s;
+        }
+
+        &:nth-child(6) {
+            @include navMoveInUp();
+            animation-delay: 2.35s;
+        }
+
+        &:nth-child(7) {
+            @include navMoveInUp();
+            animation-delay: 2.40s;
+        }
+
+        &:nth-child(8) {
+            @include navMoveInUp();
+            animation-delay: 2.45s;
+        }
+    }
+
+    &__lower-search {
+        @include opacityFillMode();
+        @include navMoveInUp();
+        animation-delay: 2.50s;
+    }
 }
 
 
 
 @keyframes moveFromCenter {
     0% {
-       // transform: translateY(50%), translateX(50%);
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        // transform: translateY(50%), translateX(50%);
+        // position: absolute;
+        top: 48%;
+        left: 40%;
     }
 
     100% {
         transform: translate(0);
+        top: 47px;
+        left: 25px;
+    }
+}
+
+@keyframes moveNavListInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes bgFade {
+    0% {
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 0%);
+    }
+
+    100% {
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
     }
 }
 
@@ -81,7 +189,6 @@
 
 @keyframes moveInDown {
     0% {
-        
         opacity: 0;
         transform: translateY(-50px);
     }
@@ -95,12 +202,13 @@
 @keyframes moveInTopCornerLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
-        @include hide();
+        transform: translateX(-1000px);    
+        position: absolute;
+        top: -500px;
+        left: -500px;
     }
 
    
-
     100% {
         opacity: 1;
         transform: translate(0);
@@ -108,19 +216,13 @@
 }
 
 
-
-
-
-
 @keyframes moveInLeft {
     0% {
         opacity: 0;
         transform: translateX(-100px);
-        @include hide();
     }
 
     80% {
-        @include show();
         transform: translateX(10px);
     }
 
@@ -133,12 +235,10 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        @include hide();
-        transform: translateX(10rem);
+        transform: translateX(1000px);
     }
 
     80% {
-        @include show();
         transform: translateX(-1rem);
     }
 

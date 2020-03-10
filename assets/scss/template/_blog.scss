@@ -82,3 +82,267 @@
     
 
 }
+
+
+
+.blog-paragraph {
+
+    font-family: $font-base;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--big {
+            color: $dark-gray;
+            float: left;
+            font-family: $font-heading1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            padding-top: 10px;
+            line-height: 30px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            padding-right: 8px;
+            padding-left: 3px;
+          }
+}
+
+.video-placeholder {
+    margin: -60px auto 10px auto;
+    z-index: 99999999999;
+    position: relative;
+    width: 1224px;
+
+    @include respond(tablet) {
+        width: 100%;
+    }
+
+    &__video {
+        width: 100%;
+        //height: 720px;
+        background: $black;
+
+        video {
+            width: 100%;
+        }
+    }
+    
+    &__description {
+        text-align: center;
+        margin: 16px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+.blog-img {
+    margin: 52px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &--row {
+        display: flex;
+    }
+
+    &--col1 {
+        width: 600px;
+        height: 700px;
+        margin:auto;
+
+        @include respond(tablet) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    &--col2 {
+        width: 600px;
+        height: 700px;
+        margin-right: 24px;
+        &:last-child { 
+            margin-right: 0;
+        }
+
+        @include respond(1261px) {
+            width: 48%;
+            height: auto;
+        }
+
+        @include respond(tablet) {
+            width: 48%;
+            margin-right: 16px;
+            height: auto;
+        }
+
+        @include respond(mobile) {
+            width: 160px;
+            height: auto;
+        }
+    }
+
+    &__caption {
+        padding: 48px 24px;
+        background: #FFFFFF;
+        border: 4px solid #F05D6B;
+        bottom: 0;
+        width: 520px;
+        position: relative;
+        margin: -70px auto 62px auto;
+
+        @include respond(tablet) {
+            width: 100%;
+            height: auto;
+        }
+    
+        h4 {
+            font-family: $font-heading1;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: #F05D6B;
+            
+            @include respond(mobile) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+    
+            span {
+                margin-left: 30%;
+            }
+        }
+    }
+}
+
+.content-box {
+    padding: 80px 62px;
+    width: 857px;
+    margin: auto;
+
+    @include respond(tablet) {
+        width: 100%;
+        padding: 40px 32px;
+    }
+
+    &--cream {
+        background-color: $cream;
+    }
+}
+
+.voucher {
+    width: 1016px;
+    margin: auto;
+    padding: 38px 66px;
+    position: relative;
+    height: 200px;
+    background: url('../../assets/images/voucher-horizontal.png') no-repeat center,
+    linear-gradient(180deg, #FF6372 0%, #FF9C90 100%);
+
+
+    @include respond(1070px) {
+        width: 90%;
+    }
+
+    @include respond(970px) {
+        width: 383px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 26px 0;
+        height: auto;
+        border-radius: 8px;
+     }
+
+     @include respond(mobile) {
+        width: 286px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 26px 0;
+        height: auto;
+     }
+    
+    
+
+
+  &__h2 {
+      color: white;
+      font-size: 64px;
+      line-height: 72px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  &__h5 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+
+    @include respond(970px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+
+    }
+
+    &__p {
+        color: white;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 73px;
+        top: 76px;
+
+        @include respond(970px) {
+           position: relative;
+           align-self: center;
+           right: inherit;
+           top: inherit;
+
+           margin: 60px 0 40px 0;
+        }
+        
+    }
+}
+
+.suggested-blog {
+    padding: 110px 0;
+
+    &__h2 {
+        margin-bottom: 40px;
+    }
+
+
+    @include respond(970px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__row {
+        flex-wrap: nowrap;
+
+
+        @include respond(970px) {
+           flex-wrap: wrap;
+        }
+    }
+
+
+}
+
+
