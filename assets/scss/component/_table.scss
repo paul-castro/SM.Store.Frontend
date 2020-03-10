@@ -2,22 +2,77 @@
     width: 100%;
     border-collapse: collapse;
 
-    & tr {
-        &.by-three {
-            display: flex;
-
+    &--3ds {
+        & tr {
             & > td {
                 flex-basis: 33.33%;
             }
         }
-        &.by-two {
+
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+
+    &__3ds-m {
+        display: none;
+        width: 100% !important;
+        margin-bottom: 8px;
+
+        @include respond(mobile) {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+        }
+        
+        &-title {
+            background-color: $silver;
+            padding: 16px 24px;
+            color: $black;
+            border: 1px solid $mid-gray;
+        }
+
+        &-date {
+            background-color: $white;
+            padding: 16px 24px;
+            color: $black;
+            text-align: center;
+            border: 1px solid $mid-gray;
+        }
+
+        &-content {
             display: flex;
 
+            & > span {
+                flex-basis: 50%;
+                padding: 16px 24px;
+                color: $black;
+                text-align: center;
+                border: 1px solid $mid-gray;
+                border-top: none;
+
+                &:nth-of-type(1) {
+                    background-color: #F9FBFF;
+                    border-right: none; 
+                }
+            }
+        }
+    }
+
+    &--5ds {
+        & tr {
             & > td {
                 flex-basis: 50%;
             }
         }
 
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+
+    & tr {
         &:nth-child(odd) {
             background-color: #F9FBFF;
         }
@@ -33,5 +88,53 @@
         padding: 16px 0;
         border: 1px solid $mid-gray;
         text-align: center;
+    }
+
+    &-forex {
+        border-collapse: collapse;
+        width: 100%;
+
+        & thead {
+            
+            & tr {
+                display: flex;
+
+                & td {
+                    flex-basis: 33.33%;
+                    background-color: $silver;
+                    padding: 18px;
+                    text-align: center;
+                }
+            }
+        }
+
+        & tbody {
+            
+            & tr {
+                display: flex;
+
+                &:nth-child(even) {
+                    background-color: $opal;
+                }
+
+                & td {
+                    flex-basis: 33.33%;
+                    padding: 18px 40px;
+
+                    &:nth-of-type(1) {
+                        font-weight: 600;
+                        
+                        & img {
+                            margin-right: 26px;
+                        }
+                    }
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(3) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }
