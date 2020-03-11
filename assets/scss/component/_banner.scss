@@ -123,10 +123,20 @@
     
     &--events {
         background: url('../../assets/images/banner-events.png') no-repeat;
-        background-size: cover;
-        background-position: center left; 
-        flex-direction: column;
+        @include bgcover;
+        // background-size: cover;
+        // background-position: center left; 
+        // flex-direction: column;
         align-items: center;
+
+        @include respond(tablet) {
+            height: 344px;
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-events-m.jpg') no-repeat;
+            @include bgcover;
+        }
 
         & p {
             margin-top: 60px;
@@ -153,6 +163,7 @@
 
             @include respond(tablet) {
                 width: 90%;
+                height: 56px;
             }
 
             & img {
@@ -179,6 +190,26 @@
                     outline: none;
                 }
             }
+        }
+    }
+
+    &--sm-cares {
+        background: url('../../assets/images/banner-sm-cares.jpg') no-repeat;
+        @include bgcover;
+        height: 350px;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-sm-cares-m.jpg') no-repeat;
+            @include bgcover;
         }
     }
 
