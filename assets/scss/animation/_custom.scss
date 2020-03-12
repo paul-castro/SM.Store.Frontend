@@ -79,6 +79,22 @@
     //transition-duration: 0.5s;
 }
 
+/*.widget {
+    &--promos {
+        @include navMoveInUp();
+        animation-delay: 2.25s;
+    }
+
+    &--events {
+        @include navMoveInUp();
+        animation-delay: 2.50s;
+    }
+
+    &--locator {
+        @include navMoveInUp();
+        animation-delay: 2.75s;
+    }
+}*/
 
 .nav {
 
