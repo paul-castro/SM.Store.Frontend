@@ -55,3 +55,35 @@
         }
     }
 }
+
+.press-contact {
+    height: 205px;
+    margin-bottom: 67px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px 0;
+    background-image: radial-gradient(rgba(0,0,0,0.2) 2px, #F0F3FC 2px);
+    background-size: 57px 57px;
+    background-position: top center;
+
+    & > h3 {
+        color: $blue;
+        margin-bottom: 16px;
+    }
+
+    & > h4 {
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    & > p {
+        color: #000;
+        margin-bottom: 8px;
+
+        & > img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+}

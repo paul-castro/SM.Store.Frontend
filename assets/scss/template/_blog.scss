@@ -341,8 +341,32 @@
            flex-wrap: wrap;
         }
     }
-
-
 }
 
 
+
+
+.sm-cares-blog {
+    height: 2000px;
+    position: relative;
+
+    &__content {
+        padding: 66px 0; 
+    }
+
+    &__row {
+        margin-top:53px;
+    }
+}
+
+.press-release-blog {
+    position: relative;
+
+    &__content {
+        padding: 66px 0; 
+    }
+
+    &__row {
+        margin-top:53px;
+    }
+}

@@ -195,8 +195,8 @@
 
     &--sm-cares {
         background: url('../../assets/images/banner-sm-cares.jpg') no-repeat;
-        @include bgcover;
         height: 350px;
+        @include bgcover;
 
         & > div {
             width: 90%;
@@ -209,6 +209,26 @@
 
         @include respond(mobile) {
             background: url('../../assets/images/banner-sm-cares-m.jpg') no-repeat;
+            @include bgcover;
+        }
+    }
+    
+    &--press-release {
+        background: url('../../assets/images/banner-press-release.jpg') no-repeat;
+        height: 350px;
+        @include bgcover;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-press-release-m.jpg') no-repeat;
             @include bgcover;
         }
     }
