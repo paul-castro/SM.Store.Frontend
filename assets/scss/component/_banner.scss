@@ -325,9 +325,30 @@
     &--forex {
         background: url('../../assets/images/banner-services-forex.jpg') no-repeat;
         @include bgcover;
+        height: 350px;
 
         @include respond(mobile) {
             background: url('../../assets/images/banner-services-forex-m.jpg') no-repeat;
+            @include bgcover;
+        }
+    }
+
+    &--omnibus {
+        background: url('../../assets/images/banner-omnibus.jpg') no-repeat;
+        @include bgcover;
+        height: 350px;
+        
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 50px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-omnibus-m.jpg') no-repeat;
             @include bgcover;
         }
     }

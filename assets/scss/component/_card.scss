@@ -314,6 +314,8 @@
     @include respond(mobile) {
         max-height: 304px !important;
         width: 248px !important;
+        margin-left: 0;
+        margin-right: 26px;
     }
 
     &-poster {
@@ -485,4 +487,42 @@
             }
         }
     }
+}
+
+
+.video-card { 
+    height: min-content;
+
+    &__video {
+        height: 250px;
+        width: 392px;
+        position: relative;
+        background-color: $gray;
+
+        @include respond(mobile) {
+            width: 285px;
+            height: 180px;
+        }
+
+        & > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__details {
+        position: relative;
+        padding: 16px 0;
+        & > span {
+            display: block;
+            color: $gray;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.card--blog {
+    margin-right: 24px;
 }

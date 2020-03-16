@@ -368,6 +368,7 @@
             width: 300px;
             margin-left: -170px;
             justify-content: center;
+            align-items: flex-end;
 
             @include respond(1299px) {
                 margin-left: 0;
@@ -378,6 +379,7 @@
                 justify-content: flex-start;
                 height: 450px;
                 position: relative;
+                align-items: flex-start;
             }
 
             & > h2 {
