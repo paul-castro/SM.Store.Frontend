@@ -143,12 +143,11 @@
             display: flex;
             flex-direction: column;
             width: 300px;
-            margin-left: -170px;
+            margin-left: 0px;
             justify-content: center;
             align-items: flex-end;
 
             @include respond(1299px) {
-                margin-left: 0;
                 width: 260px;
             }
 
@@ -216,7 +215,7 @@
 
         &__slider {
             position: absolute;
-            margin-left: 130px;
+            margin-left: 300px;
             display: flex;
             height: 400px;
 

@@ -278,9 +278,43 @@
         }
     }
 
+    &--mens {
+        background: url('../../assets/images/banner-mens.jpg') no-repeat;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-mens-m.jpg') no-repeat;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
+        }
+    }
+
     &--womens-blog {
         background: url('../../assets/images/banner-womens-blog@2x.png') no-repeat;
+        height: 350px;
         @include bgcover;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
 
         @include respond(tablet) {
             background: url('../../assets/images/banner-womens-blog.png') no-repeat;
