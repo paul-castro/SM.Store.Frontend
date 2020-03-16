@@ -96,57 +96,57 @@
     }
 }*/
 
-.nav {
+.navanimate {
 
-    &__lower-menu-item {
+    &__item {
         opacity: 0;
         animation-fill-mode: forwards !important;
         
         &:nth-child(1) {
             @include navMoveInUp();
-            animation-delay: 2.1s;
+            animation-delay: 1.1s;
         }
 
         &:nth-child(2) {
             @include navMoveInUp();
-            animation-delay: 2.15s;
+            animation-delay: 1.15s;
         }
 
         &:nth-child(3) {
             @include navMoveInUp();
-            animation-delay: 2.2s;
+            animation-delay: 1.2s;
         }
 
         &:nth-child(4) {
             @include navMoveInUp();
-            animation-delay: 2.25s;
+            animation-delay: 1.25s;
         }
 
         &:nth-child(5) {
             @include navMoveInUp();
-            animation-delay: 2.30s;
+            animation-delay: 1.30s;
         }
 
         &:nth-child(6) {
             @include navMoveInUp();
-            animation-delay: 2.35s;
+            animation-delay: 1.35s;
         }
 
         &:nth-child(7) {
             @include navMoveInUp();
-            animation-delay: 2.40s;
+            animation-delay: 1.40s;
         }
 
         &:nth-child(8) {
             @include navMoveInUp();
-            animation-delay: 2.45s;
+            animation-delay: 1.45s;
         }
     }
 
     &__lower-search {
         @include opacityFillMode();
         @include navMoveInUp();
-        animation-delay: 2.50s;
+        animation-delay: 1.50s;
     }
 }
 
@@ -164,13 +164,15 @@
         transform: translate(0);
         top: 47px;
         left: 25px;
+        transition: 1s;
+
     }
 }
 
 @keyframes moveNavListInUp {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(100px);
     }
 
     100% {
