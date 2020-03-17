@@ -241,6 +241,7 @@ p {
             letter-spacing: 2px;
         }
     }
+    
 
     &-eyebrow-semi {
         font-family: $font-base;
@@ -403,4 +404,20 @@ p {
         margin-bottom: 16px;
     }
 
+}
+
+
+.card {
+    &__heading {
+        font-family: $font-base;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: $black;
+        margin-left: 70px;
+
+     
+    }
 }

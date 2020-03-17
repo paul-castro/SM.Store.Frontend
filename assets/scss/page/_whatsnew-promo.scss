@@ -15,13 +15,14 @@
 
         &--shadow {
             font-size: 95px;
-            -webkit-text-stroke: 0.9px $freshmint;
+            -webkit-text-stroke: 0.9px $rosa;
             color: transparent;
             position: absolute;
             top: 0;
             left: 140px;
             letter-spacing: 8px;
             white-space: nowrap;
+            opacity: 0.6;
 
             @include respond(1034px) {
                 font-family: $font-heading1;

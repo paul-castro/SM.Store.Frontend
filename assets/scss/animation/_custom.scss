@@ -151,6 +151,15 @@
 }
 
 
+.services-animate {
+
+    animation: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+       
+}
+
+
 
 @keyframes moveFromCenter {
     0% {
