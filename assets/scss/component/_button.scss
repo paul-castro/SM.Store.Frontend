@@ -16,6 +16,16 @@ button {
     &:hover {
         background-color: $white;
         color: $black;
+        transition: 0.5s;
+
+
+        &::after {
+            color: $coral;
+            content: '\2014\2014';
+            letter-spacing: -4px;
+            margin-left: 16px;
+            transition: .2s;
+        }
     }
 
     &::after {
@@ -32,6 +42,19 @@ button {
     cursor: pointer;
     //padding: 8px 0 8px 0;
     color: $black;
+
+    &:hover {
+        transition: all 0.5s;
+        color: $blue;
+        transform: matrix3d();
+
+        &::after {
+            content: '\2014\2014';
+            letter-spacing: -2px;
+            margin-left: 10px;
+            transition: 0.5s;
+        }
+    }
 
     &::after {
         content: '\2014\2014';
