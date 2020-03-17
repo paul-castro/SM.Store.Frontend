@@ -278,6 +278,30 @@
         }
     }
 
+    &--youth {
+        background: url('../../assets/images/banner-youth.jpg') no-repeat;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-youth-m.jpg') no-repeat;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
+        }
+    }
+
     &--mens {
         background: url('../../assets/images/banner-mens.jpg') no-repeat;
         height: 350px;
