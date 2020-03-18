@@ -1,0 +1,55 @@
+.cta-box {
+    width: 1014px;
+    height: 313px;
+    padding: 50px 0;
+    margin:-160px auto 60px auto;
+    background-color: $coral;
+    z-index: 99;
+    position: relative;
+    text-align: center;
+
+    @include respond(1014px) {
+       width: 96%;
+    }
+
+    @include respond(754px) {
+        margin:-80px auto 60px auto;
+        margin:-160px auto 60px auto;
+     }
+
+     @include respond(600px) {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+     }
+
+     @include respond(mobile) {
+        margin:-120px auto 60px auto;
+        width: 100%;
+     }
+   
+    &__icon {
+        text-align: center;
+    }
+
+    &__h3 {
+        font-family: $font-heading1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: white;
+        display: block;
+        margin:10px 0 30px 0;
+
+        br {
+            @include respond(600px) {
+               display: none;
+             }
+        }
+        
+    }
+}

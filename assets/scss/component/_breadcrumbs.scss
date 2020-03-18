@@ -2,6 +2,8 @@
     padding-top: 16px;
     width: 100%;
 
+  
+
     &__link {
         color:$white;
         text-decoration: none;
@@ -16,10 +18,16 @@
             font-weight: bold;
             background: none;
         }
-    }
 
-    @include respond(mobile) {
-        display: none;
+        @include respond(mobile) {
+            &:nth-child(1) {
+                display: none;
+            }
+    
+            &:nth-child(2) {
+                display: none;
+            }
+        }
     }
 }
 

@@ -488,4 +488,19 @@
         }
     }
 
+    &--quiz{
+        background: url('../../assets/images/banner-quiz.jpg') no-repeat;
+        @include bgcover;
+
+        @include respond(tablet) {
+            background: url('../../assets/images/banner-quiz.jpg') no-repeat;
+            @include bgcover;
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-quiz-m.jpg') no-repeat;
+            @include bgcover;
+        }
+    }      
+
 }
