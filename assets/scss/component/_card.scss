@@ -415,7 +415,7 @@
 }
 
 .card--sale {
-    width: 1236px;
+    width: 100%;
     height: 250px;
     margin-top: 48px;
     position: relative;
@@ -434,7 +434,7 @@
 
     & img {
         position: absolute;
-        width: 1236px;
+        width: 100%;
         height: 250px;
 
         @include respond(1236px) {
@@ -452,6 +452,11 @@
         @include respond(tablet) {
         }
 
+
+        & > p {
+            color: $white;
+        }
+        
         & a {
             width: min-content;
         }

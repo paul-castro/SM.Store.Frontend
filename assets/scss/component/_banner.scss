@@ -302,6 +302,102 @@
         }
     }
 
+    &--kids {
+        background: url('../../assets/images/banner-kids.jpg') no-repeat;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-kids-m.jpg') no-repeat;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
+        }
+    }
+
+    &--home {
+        background: url('../../assets/images/banner-home.jpg') no-repeat;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-home-m.jpg') no-repeat;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
+        }
+    }
+
+    &--beauty {
+        background: url('../../assets/images/banner-beauty.jpg') no-repeat;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-beauty-m.jpg') no-repeat;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
+        }
+    }
+
+    &--other {
+        background: url('../../assets/images/banner-other.jpg') no-repeat;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
+
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-other-m.jpg') no-repeat;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
+        }
+    }
+
     &--mens {
         background: url('../../assets/images/banner-mens.jpg') no-repeat;
         height: 350px;
