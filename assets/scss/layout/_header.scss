@@ -10,3 +10,12 @@ header {
     }
 }
 
+
+.flat-header {
+    height: 120px;   
+
+    &--coral {
+        background-color: $coral;
+    }
+}
+
