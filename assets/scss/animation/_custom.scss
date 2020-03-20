@@ -69,7 +69,7 @@
 }
 
 
-.nav__lower {
+/*.nav__lower {
     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 0%);
     animation: bgFade;
     animation-fill-mode: forwards;
@@ -79,7 +79,7 @@
     //transition-duration: 0.5s;
 }
 
-/*.widget {
+.widget {
     &--promos {
         @include navMoveInUp();
         animation-delay: 2.25s;

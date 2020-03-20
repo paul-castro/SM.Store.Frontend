@@ -25,13 +25,13 @@
         justify-content: space-around;
     }
 
-    &:last-child {
-        margin: 0;
-    }
+    //&:last-child {
+      //  margin: 0;
+    //}
 
     &__count {
         color: $black;
-        margin: 16px;
+        margin: 8px;
 
         @include respond(mobile) {
             flex-basis: 100%;
@@ -41,7 +41,7 @@
 
     &__facebook {
         background-color: #1877F2;
-        margin: 16px;
+        margin: 8px;
 
         @include socia-button;  
         img {
@@ -56,7 +56,7 @@
 
     &__twitter {
         background-color: #1DA0F1;
-        margin: 16px;
+        margin: 8px;
 
         @include socia-button;
         img {
