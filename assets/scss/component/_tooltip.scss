@@ -1,51 +1,52 @@
 .tooltip {
-    display:inline-block;
-    position:relative;
-    border-bottom:1px dotted #666;
-    text-align:left;
-}
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted #666;
+    text-align: left;
+    
+    & .bottom {
+        min-width: 371px;
+        top: 40px;
+        left: 50%;
+        transform: translate(-10%, 0);
+        padding: 10px 20px;
+        color: #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 4px;
+        position: absolute;
+        z-index: 99;
+        box-sizing: border-box;
+        display: none;
 
-.tooltip .bottom {
-    min-width:371px;
-    top:40px;
-    left:50%;
-    transform:translate(-10%, 0);
-    padding:10px 20px;
-    color:#FFFFFF;
-    background-color:rgba(0, 0, 0, 0.6);
-    font-weight:normal;
-    font-size:13px;
-    border-radius:4px;
-    position:absolute;
-    z-index:99999999;
-    box-sizing:border-box;
-    display:none;
+        & > i {
+            position: absolute;
+            bottom: 100%;
+            left: 8%;
+            margin-left: -12px;
+            width: 24px;
+            height: 12px;
+            overflow: hidden;
 
-    & > p {
-        color: $white;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                left: 50%;
+                transform: translate(-50%,50%) rotate(45deg);
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        & > p {
+            color: $white;
+        }
     }
-}
+    
+    &:hover .bottom {
+        display: block;
+    }
 
-.tooltip:hover .bottom {
-    display:block;
-}
-
-.tooltip .bottom i {
-    position:absolute;
-    bottom:100%;
-    left:8%;
-    margin-left:-12px;
-    width:24px;
-    height:12px;
-    overflow:hidden;
-}
-
-.tooltip .bottom i::after {
-    content:'';
-    position:absolute;
-    width:12px;
-    height:12px;
-    left:50%;
-    transform:translate(-50%,50%) rotate(45deg);
-    background-color:rgba(0, 0, 0, 0.6);
 }
