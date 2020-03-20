@@ -1,0 +1,35 @@
+.cookie {
+
+    &__container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        bottom: 130px;
+        right: 0;
+        height: 240px;
+        width: 460px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px 24px;
+        z-index: 99;
+    }
+
+    &__text {
+        color: $white;
+    }
+    
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+
+        & > a {
+            margin-left: 16px;
+
+            &:nth-of-type(2) {
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+
+}

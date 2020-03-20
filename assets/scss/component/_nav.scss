@@ -51,6 +51,12 @@
 
                 & li {
                     margin: 0 12px;
+
+                    & > img {
+                        vertical-align: middle;
+                        margin-left: -12px;
+                        cursor: pointer;
+                    }
                 }
             }
 
