@@ -54,3 +54,157 @@
         
     }
 }
+
+.section-quiz {
+    background-color: $light-periwinkle;
+}
+
+.quiz-progress {
+    width: 809px;
+    margin: auto;
+    background-color: $rosa;
+    margin-bottom: 16px;
+
+    @include respond(976px) {
+        width: 100%;
+     }
+
+    &__bar {
+          
+        width: 100%;
+        height: 8px;
+        background-color: $mid-gray;   
+
+        &__percentage {
+            height: 8px;
+            
+            &--20 {
+                width: 20%;
+                background-color: $freshmint;   
+            }
+
+            &--40 {
+                width: 40%;
+                background-color: $freshmint;   
+            }
+
+            &--60 {
+                width: 60%;
+                background-color: $freshmint;   
+            }
+
+            &--80 {
+                width: 80%;
+                background-color: $freshmint;   
+            }
+
+            &--100 {
+                width: 100%;
+                background-color: $freshmint;   
+            }
+        }
+     }
+ 
+     &__text {
+         padding: 20px 0;
+         text-align: center;
+         color: $dark-blue;
+         text-transform: uppercase;
+         font-family: $font-heading1;
+         letter-spacing: 1.6px;
+         font-size: 24px;
+         line-height: 32px;
+         font-weight: bold;
+        
+         @include respond(tablet) {
+            font-size: 20px;
+            line-height: 30px;
+         }
+       
+     }
+}
+
+.quiz-grid {
+    width: 809px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    @include respond(976px) {
+        width: 100%;
+     }
+
+    &__col {
+        width: 258px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+
+        @include respond(960px) {
+            width: 159.79px;
+        }
+
+        @include respond(500px) {
+            width: 228px;
+        }
+
+        @include respond(480px) {
+            width: 159.79px;
+        }
+
+        &__thumbnail {
+            width: 100%;
+        }
+
+        &__label {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            padding: 12px 0 16px 0;
+
+            @include respond(mobile) {
+                font-size: 14px;
+            }
+        }
+
+        &--active, &:hover {
+            border:2px solid $blue;
+        }
+    }
+
+    &__boxshadow {
+        background: #FFFFFF;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+    }
+
+    &--greenbox {
+        background-color: $teal;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+
+        &__label {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: white;
+
+            @include respond(mobile) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+    
+        }
+
+    }
+}
+
+

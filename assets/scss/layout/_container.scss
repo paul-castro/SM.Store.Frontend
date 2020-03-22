@@ -136,7 +136,24 @@
     @include respond(mobile) {
         width: 336px;
     }
-   
+}
 
+.container-quiz {
+    position: relative;
+    z-index: 9;
+    max-width: 1014px;
+    margin: auto;
+    min-height: 300px;
+    padding: 58px;
+
+    @include respond(tablet) {
+        width: 100%;
+        padding: 12px;
+    }
 
 }
+
+
+
+
+
