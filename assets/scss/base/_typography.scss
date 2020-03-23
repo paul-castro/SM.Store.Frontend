@@ -416,12 +416,16 @@ p {
     &__p {
         font-family: $font-base;
         font-style: normal;
-        font-weight: 600;
+        font-weight: normal;
         font-size: 16px;
         text-transform: uppercase;
         color: $gray;
         text-align: center;
         margin-bottom: 16px;
+
+        &--date {
+            font-weight: 600;
+        }
     }
 
 }
