@@ -43,11 +43,8 @@
 	}
 
 	&__item {
-		//margin-top: 53px;
 		margin-bottom: 10px;
 		margin-right: 24px;
-		//height: 556px;
-
 
 		@include respond(610px) {
 			width: 160px !important;
