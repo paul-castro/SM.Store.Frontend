@@ -63,8 +63,6 @@
     justify-content: space-between;
     padding: 0px $gutter-desktop;
 
-    
-
     @include respond(tablet) {
         padding: 0px $gutter-tablet;
     }
