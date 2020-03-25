@@ -506,6 +506,65 @@
             @include bgcover;
         }
     }
+
+    &--all-blogs {
+        background: url('../../assets/images/banner-all-blogs.jpg') no-repeat;
+        @include bgcover;
+        min-height: 350px;
+        
+        & > div {
+
+            &:nth-of-type(2) {
+                margin-top: 20px;
+                margin-left: 10%;
+
+                @include respond(tablet) {
+                    margin-left: 0;
+                }
+            }
+
+            & h1 {
+                display: block;
+                color: $white;
+                width: 780px;
+
+                @include respond(tablet) {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 40px;
+                    width: 100%;
+                }
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-all-blogs-m.jpg') no-repeat;
+            @include bgcover;
+            background-position: center right; 
+        }
+    }
+
+    &--all-magazine {
+        background: url('../../assets/images/banner-all-magazine.jpg') no-repeat;
+        @include bgcover;
+        height: 350px;
+        
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 50px;
+                width: 70%;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-all-magazine-m.jpg') no-repeat;
+            @include bgcover;
+            background-position: center right; 
+        }
+    }
 }
 
 
