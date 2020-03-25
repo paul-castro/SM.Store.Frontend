@@ -20,14 +20,26 @@
         box-sizing: border-box;
         display: none;
 
+        @include respond(960px) {
+            left: -294px;
+        }
+
+        @include respond(mobile) {
+            min-width: 336px;
+            left: -268px;
+        }
+
         & > i {
             position: absolute;
             bottom: 100%;
-            left: 8%;
-            margin-left: -12px;
+            left: 5%;
             width: 24px;
             height: 12px;
             overflow: hidden;
+
+            @include respond(960px) {
+                left: 86%;
+            }
 
             &::after {
                 content: '';
@@ -36,7 +48,7 @@
                 height: 12px;
                 left: 50%;
                 transform: translate(-50%,50%) rotate(45deg);
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: rgba(0, 0, 0, 0.8);
             }
         }
 
