@@ -52,6 +52,14 @@ $aos-distance: 100px !default;
       transform: translate3d($aos-distance, -$aos-distance, 0);
     }
 
+    [data-aos='fade-out'] {
+      opacity: 1;
+      transition-property: opacity;
+      &.aos-animate {
+        opacity: 0;
+      }
+    }
+
 
 
 
