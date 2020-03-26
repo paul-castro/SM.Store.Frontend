@@ -108,6 +108,20 @@
         background-size: cover;
         background-position: center right; 
         align-items: center;
+        height: 350px;
+
+        @include respond(tablet) {
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding-bottom: 40px;
+            padding-left: 10%;
+            height: 200px;
+            background-position: 81% 50%; 
+        }
+
+        @include respond(tablet) {
+            
+        }
 
         & h1 {
             margin-top: 30px;
@@ -115,9 +129,14 @@
             border-bottom: 8px solid $lemon;
             color: $white;
 
-            @include respond(mobile) {
-                border-bottom: none;
+            @include respond(tablet) {
+                font-size: 32px;
+                line-height: 40px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $lemon;
+                justify-content: start;
             }
+
         }
     }
     
