@@ -87,4 +87,20 @@ $(document).ready(function(){
     $('.modal').click(function(){
         $(this).removeClass('active');
     });
+
+
+
+    // CATEGORIES MENU CONTROLS
+    $('.nav__dropdown-controls--right').click(function() {
+        $(this).css('display', 'none');
+        $('.nav__dropdown-controls--left').css('display', 'block');
+        $('.card--menu-categories:nth-of-type(1), .card--menu-categories:nth-of-type(2), .card--menu-categories:nth-of-type(3)').css('display', 'none');
+        $('.card--menu-categories:nth-of-type(5), .card--menu-categories:nth-of-type(6), .card--menu-categories:nth-of-type(7)').css('display', 'block');
+    });
+    $('.nav__dropdown-controls--left').click(function() {
+        $(this).css('display', 'none');
+        $('.nav__dropdown-controls--right').css('display', 'block');
+        $('.card--menu-categories:nth-of-type(1), .card--menu-categories:nth-of-type(2), .card--menu-categories:nth-of-type(3)').css('display', 'block');
+        $('.card--menu-categories:nth-of-type(5), .card--menu-categories:nth-of-type(6), .card--menu-categories:nth-of-type(7)').css('display', 'none');
+    });
 });
