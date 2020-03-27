@@ -457,8 +457,18 @@
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-services.jpg') no-repeat;
+            background: url('../../assets/images/banner-services-m.jpg') no-repeat;
             @include bgcover;
+            flex-direction: column;
+
+            & > div {
+                width: 90%;
+    
+                & h1 {
+                    color: $white;
+                    margin-top: 100px;
+                }
+            }
         }
     }
 

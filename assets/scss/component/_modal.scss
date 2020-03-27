@@ -111,4 +111,82 @@
             margin-bottom: 16px;
         }
     }
+
+    &--services {
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+
+        & .modal__header {
+            position: relative;
+            width: 598px;
+            height: 96px;
+            display: flex;
+            align-items: center;
+            background-color: $indigo;
+            padding: 20px 37px;
+            border-radius: 4px 4px 0px 0px;
+
+            @include respond(mobile) {
+                width: 336px;
+                height: 88px;
+                padding: 13px 21px;
+            }
+            
+            & > h3 {
+                margin-left: 24px;
+                color: $white;
+                letter-spacing: 4px;
+                font-weight: bold;
+            }
+
+            & .modal__close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+
+                @include respond(mobile) {
+                    top: 16px;
+                    right: 16px;
+                }
+            }
+        }
+
+        & > .modal__content {
+            height: 266px;
+            width: 598px;
+            background-color: $white;
+            padding: 16px 34px;
+            align-items: flex-start;
+            border-radius: 0px 0px 4px 4px;
+
+            @include respond(mobile) {
+                width: 336px;
+                height: 263px;
+                padding: 16px;
+            }
+            
+            & > p {
+                color: $dark-gray;
+                margin-bottom: 12px;
+            }
+
+            & > ul {
+                margin-left: 30px;
+                list-style-type: none;
+
+                @include respond(mobile) {
+                    margin-left: 24px;
+                }
+
+                & > li::before {
+                    content: '\2022';
+                    color: $dark-gray;
+                    width: 3px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+            }
+        }   
+    }
 }

@@ -88,6 +88,10 @@ $(document).ready(function(){
         $(this).removeClass('active');
     });
 
+    $('.card--service-btn').click(function() {
+        $('.modal').addClass('active');
+    });
+
 
 
     // CATEGORIES MENU CONTROLS
