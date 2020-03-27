@@ -582,7 +582,7 @@
 
             & > h2 {
                 font-family: $font-heading1;
-                font-weight: bold;
+                font-weight: 600;
                 font-size: 32px;
                 line-height: 40px;
                 letter-spacing: 1.6px;
@@ -668,7 +668,7 @@
             position: absolute;
             margin-left: 370px;
             display: flex;
-            height: 400px;
+            //height: 400px;
             width: 1500px !important;
 
             &-event {

@@ -5,11 +5,19 @@
         padding: 0 24px;
         justify-content: space-between;
         align-items: center;
-
-
+        
         position: absolute;
         top: 0;
         left: 0;
+
+        @include respond(tablet) {
+            &--mhide{
+                display: none;
+            }   
+        }
+
+
+       
  
         &--default {
             background-color: $blue;
@@ -98,6 +106,11 @@
         align-items: center;
         top: 30px;
         left: 0;
+
+        @include respond(tablet) {
+            top: 0;
+            padding: 14px 20px;
+        }
 
         &-burger {
             display: none;
@@ -209,9 +222,14 @@
             align-items: center;
             margin-left: 35px;
             cursor: pointer;
+
+            @include respond(tablet) {
+                margin-left: 0;
+            }
+           
                 
             & img {
-                height: 24px;
+                height: 18px;
             }
         }
     }

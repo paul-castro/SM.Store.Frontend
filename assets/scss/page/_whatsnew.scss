@@ -1,4 +1,76 @@
-.whats-new{
+.whats-new {
+
+    &__3daysale {
+        background-color: $pacific;
+        padding: 44px 0;
+
+        @include respond(tablet) {
+            padding: 24px 14px;
+        }
+
+        &__container {
+            width: 1314px;
+            margin: auto;
+            align-items: center;
+            display: flex;
+            padding: 41px 41px 45px 80px;
+            background-color: $blush;
+
+            @include respond(1399px) {
+                width: 96%;
+            }
+
+            @include respond(tablet) {
+                width: 100%;
+            }
+
+            @include respond(mobile) {
+                flex-direction: column-reverse;
+                padding: 0;
+            }
+
+         
+
+          
+        }
+
+        &__description {
+            margin-right: 46px;
+
+            @include respond(mobile) {
+                padding: 16px 24px;
+                margin-right: 0;
+            }
+
+            p {
+              margin-bottom: 32px;
+              @include respond(tablet) {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+
+            }
+
+           &__h1 {
+            @include respond(tablet) {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+            }
+           }
+
+           &__btn {
+               display: inline-flex;
+           }
+        }
+
+        &__image {
+            img {
+                width: 100%;
+            }
+        }
+    }
 
     &__intro {
         padding-top: 42px;
@@ -74,19 +146,32 @@
     }
 
     &__promos {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding:80px 20px;
         position: relative;
-        min-height: 759px;
+        //min-height: 759px;
         background-color: $blush;
+
+        @include respond(tablet) {
+            padding: 40px 12px;
+         }
+
+         
 
         &-container {
             display: flex;
             flex-direction: column;
+            width: 1224px;
+            margin: auto;
+            
         }
 
         &-cards {
             display: flex;
+            margin-top: 24px;
+
+            @include respond(mobile) {
+                margin-top: 12px;
+            }
 
             & .card--promo {
                 margin-right: 24px;
@@ -98,7 +183,14 @@
         }
 
         &-controls {
-            margin-left: auto;
+            display: flex;
+            display: flex;
+            padding: 32px 0;
+            justify-content: flex-end;
+
+            @include respond(1260px) {
+                justify-content: flex-start;
+            }
         }
     }
 
@@ -264,6 +356,10 @@
                 }
             }
         }
+    }
+
+    &__featured-events {
+        padding: 80px 0;
     }
 
 }
