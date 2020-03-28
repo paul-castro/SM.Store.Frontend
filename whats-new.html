@@ -12,7 +12,7 @@
 
             <!-- HEADER -->
             <header>
-                <nav class="nav__upper nav__upper--default container-fluid">
+                <nav class="nav__upper nav__upper--default container-fluid mobile-hide tablet-hide">
                     <ul class="nav__upper-list nav__upper-list-menu">
                         <li><a href="" class="font-fineprint">About Us</a></li>
                         <li><a href="" class="font-fineprint">Stores</a></li>
@@ -693,62 +693,74 @@
                         <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
                         <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
                     </div>
+                  
+
+
+                   
                 </div>
             </section>
 
             
-            <section class="featured-events whats-new__featured-events container">
-                <div class="featured-events__details">
-                    <h2 class="font-h2-hero featured-events__details--title">Upcoming <br> Events</h2>
+            <section class="events-slider container whats-new__featured-events">
+                <div class="events-slider__content">
+                    <div class="events-slider__details">
+                        <h2 class="font-h2-hero featured-events__details--title text-right">Upcoming Events</h2>
 
-                    <div class="featured-events__controls controls">
-                        <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                        <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                    </div> <!--.featured-events__controls controls-->
+                        <a href="#" class="btn--primary button--black font-cta whats-new__featured-events__btn mobile-hide tablet-hide">View Calendar</a>
+                    </div>
 
-                    <a href="#" class="btn--primary button--black font-cta">View Calendar</a>
-                    
-                </div> <!--.featured-events__details-->
+                    <div class="events-slider__slider">
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
 
-                <div class="featured-events__slider">
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="card--event">
-                        <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
-                        <div class="card--event-details">
-                            <p class="font-eyebrow card--event-details-month">Jan</p>
-                            <h1 class="font-h1 card--event-details-day">13-14</h1>
-                            <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                        </div>  <!--.card--event-details-->
-                    </div> <!--.card--event-->
-
-                </div> <!--.featured-events__slider-->
+                <div class="events__footer mobile-show">
+                    <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
+                    <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                </div> 
             </section>
             
             <!-- FOOTER -->

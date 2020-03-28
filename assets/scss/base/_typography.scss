@@ -117,17 +117,17 @@ p {
            
             
 
-            br {
+            /*br {
                 display: none;
-            }
+            }*/
 
             @include respond(mobile) {
                 font-size: 24px;
                 line-height: 32px;
-                margin-right: auto;
-                br {
+                //margin-right: auto;
+                /*br {
                     display: block;
-                }
+                }*/
             }
         }
 
