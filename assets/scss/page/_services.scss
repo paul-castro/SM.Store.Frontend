@@ -2,6 +2,10 @@
     &__container {
         background-color: $light-periwinkle;
         padding: 63.5px 0 139.5px 0;
+
+        @include respond(tablet) {
+            padding:34px 0 115px 0;
+        }
     }
 
     &__row {
