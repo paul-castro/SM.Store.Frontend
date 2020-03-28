@@ -70,6 +70,11 @@
         flex-direction: column;
         padding: 80px 0;
 
+        @include respond(mobile) {
+            margin: 0 12px;
+            max-width: 100%;
+        }
+
         &-header {
             display: flex;
             justify-content: space-between;
@@ -125,10 +130,11 @@
             width: 100% !important;
             max-width: 100%;
             margin: 0;
+            
         }
 
         @include respond(mobile) {
-            min-height: 580px;
+            // min-height: 578px;
         }
 
         &__content {
@@ -137,6 +143,11 @@
             flex-wrap: nowrap;
             position: relative;
             margin-top: 24px;
+
+            @include respond(tablet) {
+                
+            padding-left: 12px;
+            }
         }
         
         &__details {
@@ -153,9 +164,10 @@
 
             @include respond(mobile) {
                 justify-content: flex-start;
-                height: 490px;
+                height: 578px;
                 position: relative;
                 align-items: flex-start;
+                width: 100%;
             }
 
             & > h2 {
@@ -196,7 +208,7 @@
 
                 @include respond(mobile) {
                     position: absolute;
-                    bottom: 0;
+                    bottom: 104px;
                 }
             }
 
@@ -205,9 +217,9 @@
                 width: 210px;
 
                 @include respond(mobile) {
-                    border: 0;
+                    position: absolute;
+                    bottom: 24px;
                     margin-top: 0;
-                    padding: 0;
                 }
             }
 
@@ -224,7 +236,7 @@
             }
 
             @include respond(mobile) {
-                margin-top: 140px;
+                margin-top: 72px;
                 margin-left: 0px;
                 height: 304px;
             }
