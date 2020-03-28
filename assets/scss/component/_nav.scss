@@ -5,7 +5,6 @@
         padding: 0 24px;
         justify-content: space-between;
         align-items: center;
-        
         position: absolute;
         top: 0;
         left: 0;
@@ -15,8 +14,12 @@
                 display: none;
             }   
         }*/
-
-
+        
+        &:not(&--index) {
+            @include respond(1160px) {
+                display: none;    
+            }
+        }
        
  
         &--default {
@@ -39,9 +42,9 @@
 
             &-menu {
                 flex: 0 0 33.33%;
-                
+
                 @include respond(1160px) {
-                    display: none;    
+                    display: none;
                 }
 
                 & li {
@@ -110,6 +113,12 @@
         @include respond(tablet) {
             top: 0;
             padding: 14px 20px;
+        }
+
+        &--index {
+            @include respond(tablet) {
+                top: 20px;
+            }
         }
 
         &-burger {
