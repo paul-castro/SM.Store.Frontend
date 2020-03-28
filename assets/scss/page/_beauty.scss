@@ -134,7 +134,8 @@
         }
 
         @include respond(mobile) {
-            // min-height: 578px;
+            height: 578px;
+            margin-bottom: 24px;
         }
 
         &__content {

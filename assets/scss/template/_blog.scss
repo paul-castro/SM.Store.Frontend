@@ -103,10 +103,28 @@
 
 			& > select {
 				border: 1px solid $gray;
-				background: url(../images/icons/angle-down-black.svg) no-repeat 90% / 10% $white;
+				background: url(../images/icons/angle-down-black.svg) no-repeat 90% / 11% $white;
 				width: 127px;
-				padding: 9px 16px;
+				padding: 9px 24px 9px 16px;
 				appearance: none;
+
+				@include respond(tablet) {
+					border: none;
+				}
+			}
+		}
+
+		&-d {
+			display: block;
+			@include respond(tablet) {
+				display: none;
+			}
+		}
+
+		&-m {
+			display: none;
+			@include respond(tablet) {
+				display: flex;
 			}
 		}
 	}
