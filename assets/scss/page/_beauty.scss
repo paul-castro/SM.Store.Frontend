@@ -121,8 +121,8 @@
     &-slider {
         position: relative;
         min-height: 656px;
-        background-color: $white;
-        // padding: 80px 0;
+        background-color: $light-gray;
+        padding: 80px 0;
         display: flex;
         flex-direction: column;
 
@@ -130,7 +130,7 @@
             width: 100% !important;
             max-width: 100%;
             margin: 0;
-            
+            padding: 40px 0;
         }
 
         @include respond(mobile) {
@@ -143,11 +143,11 @@
             display: flex;
             flex-wrap: nowrap;
             position: relative;
-            margin-top: 24px;
+            margin: 24px auto;
+            width: 1224px;
 
             @include respond(tablet) {
-                
-            padding-left: 12px;
+                padding-left: 12px;
             }
         }
         
@@ -183,6 +183,11 @@
                 text-align: right;
 
                 @include respond(mobile) {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                    text-transform: uppercase;
                     text-align: left;
                 }
             }

@@ -30,6 +30,18 @@
 }
 
 
+.container-1238 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1238px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include respond(tablet) {
+        width: max-content;
+    }
+}
+
 .container-1236 {
     width: 1236px;
     margin: 0 auto;

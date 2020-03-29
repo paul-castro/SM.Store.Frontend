@@ -38,61 +38,88 @@
     }
 }
 
+.sale {
+    position: relative;
+    padding: 48px 0;
+    min-height: 346px;
+    max-height: 640px;
 
-.two-sale-banner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 10px;
+    @include respond(tablet) {
+    }
 
-    & > .card--sale-two {
-        width: 607px;
-        height: 275px;
-        margin-top: 24px;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    @include respond(mobile) {
+        padding: 16px 0 24px 0;
+        min-height: 275px;
+    }
+
+    &__controls {
+        display: none;
+        position: absolute;
+        bottom: 24px;
 
         @include respond(tablet) {
-            width: 336px;
-            height: 177px;
+            display: block;
         }
-    
-        & img {
-            position: absolute;
-            width: 607px;
-            height: 275px;
-    
-            @include respond(1236px) {
-            }
-        }
-
-        & > div {
-            position: absolute;
-            width: 330.5px;
-            right: 20px;
-            color: $white;
-            display: flex;
-            z-index: 100;
-            flex-direction: column;
-            justify-content: space-between;
-    
-            @include respond(tablet) {
-            }
-
-            & > p {
-                color: $white;
-            }
-    
-            & > a {
-                width: min-content;
-            }
-        }
-        
     }
-    
 }
+
+
+// .two-sale-banner {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     padding-top: 10px;
+
+//     & > .card--sale-two {
+//         width: 607px;
+//         height: 275px;
+//         margin-top: 24px;
+//         position: relative;
+//         display: flex;
+//         justify-content: flex-end;
+//         align-items: center;
+
+//         @include respond(tablet) {
+//             width: 336px;
+//             height: 177px;
+//         }
+    
+//         & img {
+//             position: absolute;
+//             width: 607px;
+//             height: 275px;
+            
+//             @include respond(tablet) {
+//                 width: 336px;
+//                 height: 177px;
+//             }
+//         }
+
+//         & > div {
+//             position: absolute;
+//             width: 330.5px;
+//             right: 20px;
+//             color: $white;
+//             display: flex;
+//             z-index: 100;
+//             flex-direction: column;
+//             justify-content: space-between;
+    
+//             @include respond(tablet) {
+//             }
+
+//             & > p {
+//                 color: $white;
+//             }
+    
+//             & > a {
+//                 width: min-content;
+//             }
+//         }
+        
+//     }
+    
+// }
 
 
 .others {

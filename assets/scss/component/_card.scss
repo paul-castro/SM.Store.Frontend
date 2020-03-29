@@ -324,6 +324,8 @@
     display: inline-block;
     margin-left: 24px;
     background-color: #ccc;
+    height: 496px;
+    width: 288px;
 
     @include respond(mobile) {
         height: 360px;
@@ -336,7 +338,7 @@
         height: 496px;
         width: 288px;
 
-        @include respond(tablet) {
+        @include respond(mobile) {
             height: 360px;
             width: 248px;
         }
@@ -347,15 +349,17 @@
         width: 192px;
         padding: 32px 24px;
         position: absolute;
-        top: 50%;
+        top: 167px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         background-color: rgba(255, 255, 255, 0.88);
         
 
         @include respond(mobile) {
             width: 160px;
-            height: 240px;
+            height: 220px;
+            top: 50%;
+            transform: translate(-50%,-50%);
         }
 
         &-month {
@@ -453,53 +457,239 @@
 }
 
 .card--sale {
-    width: 100%;
-    height: 250px;
-    margin-top: 48px;
     position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    margin-bottom: 24px;
 
-    @include respond(1236px) {
-        width: 100%;
-    }
-
-    @include respond(tablet) {
-        width: 536px;
-        height: 250px;
-    }
-
-    & img {
-        position: absolute;
-        width: 100%;
-        height: 250px;
-
-        @include respond(1236px) {
+    &:not(:nth-of-type(1)) {
+        @include respond(tablet) {
+            display: none !important;
         }
+    }
+
+    &-lg {
+        height: 250px;
+        max-width: 1238px;
+
+        @include respond(tablet) {
+            height: 275px;
+            max-width: 607px;
+        }
+
+        @include respond(mobile) {
+            height: 177px;
+            max-width: 336px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &-md {
+        height: 275px;
+        max-width: 607px;
+        display: inline-block;
+        
+        &:nth-of-type(1) {
+            margin-right: 24px;
+            @include respond(tablet) {
+                margin-right: 0;
+            }
+        }
+
+        @include respond(mobile) {
+            height: 177px;
+            max-width: 336px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & > .card--sale-text {
+            position: absolute;
+            width: 325px;
+            right: 17px;
+            top: 70px;
+            color: $white;
+    
+            // @include respond(tablet) {
+            //     width: 325px;
+            //     right: 17px;
+            //     top: 70px;
+            // }
+    
+            @include respond(mobile) {
+                width: 183px;
+                right: 26px;
+                top: 17px;
+            }
+    
+            & > p {
+                color: $white;
+    
+                &:nth-of-type(1) {
+                    font-family: Open Sans;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 1.6px;
+                    text-transform: uppercase;
+    
+                    // @include respond(tablet) {
+                    //     font-size: 14px;
+                    //     line-height: 20px;
+                    //     letter-spacing: 1.6px;
+                    // }
+    
+                    @include respond(mobile) {
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: 2px;
+                    }
+                }
+    
+                &:nth-of-type(2) {
+                    font-family: Open Sans;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-transform: capitalize;
+                    margin-bottom: 8px;
+    
+                    // @include respond(tablet) {
+                    //     font-weight: normal;
+                    //     font-size: 12px;
+                    //     line-height: 18px;
+                    // }
+    
+                    @include respond(mobile) {
+                        font-size: 10px;
+                    }
+                }
+            }
+    
+            & > h1 {
+                font-family: Josefin Sans;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+    
+                // @include respond(tablet) {
+                //     font-size: 32px;
+                //     line-height: 40px;
+                //     letter-spacing: 1.6px;
+                // }
+    
+                @include respond(mobile) {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+    
+            & > a {
+                display: block;
+                width: 182px;
+            }
+        }
+    }
+    
+    & > img {
+        object-fit: cover;
+        object-position: 28%;
+        height: 100%;
+        width: 100%;
     }
 
     &-text {
         position: absolute;
-        right: 100px;
+        top: 40px;
+        right: 10px;
+        width: 500px;
         color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
         @include respond(tablet) {
+            width: 325px;
+            right: 17px;
+            top: 70px;
         }
 
+        @include respond(mobile) {
+            width: 183px;
+            right: 26px;
+            top: 17px;
+        }
 
         & > p {
             color: $white;
+
+            &:nth-of-type(1) {
+                font-family: Open Sans;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+
+                @include respond(tablet) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 1.6px;
+                }
+
+                @include respond(mobile) {
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                font-family: Open Sans;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                text-transform: capitalize;
+                margin-bottom: 8px;
+
+                @include respond(tablet) {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                @include respond(mobile) {
+                    font-size: 10px;
+                }
+            }
         }
-        
-        & a {
-            width: min-content;
+
+        & > h1 {
+            font-family: Josefin Sans;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+
+            @include respond(tablet) {
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 1.6px;
+            }
+
+            @include respond(mobile) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        & > a {
+            display: block;
+            width: 182px;
         }
     }
+
 }
+
 
 .card-mobile--events {
     width: 312px;
