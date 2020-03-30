@@ -62,6 +62,7 @@
 
                 & li {
                     margin: 0 12px;
+                    white-space: nowrap;
 
                     & > img {
                         vertical-align: middle;
@@ -532,6 +533,15 @@
             padding-top: 24px !important;
             justify-content: space-between;
             flex-direction: row;
+
+            & .nav__dropdown-header {
+                margin-bottom: 16px;
+            }
+
+            & .nav__dropdown-btn {
+                display: block;
+                margin: 26px 0 0px 0; 
+            }
         }
 
         &--services {
