@@ -62,7 +62,10 @@
 
                 & li {
                     margin: 0 12px;
-                    white-space: nowrap;
+                    
+                    &:not(.tooltip) {
+                        white-space: nowrap;
+                    }
 
                     & > img {
                         vertical-align: middle;

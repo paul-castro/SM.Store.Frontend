@@ -199,6 +199,7 @@
 
             & p {
                 letter-spacing: 4px;
+                color: $black;
             }
 
             & ul {
@@ -207,15 +208,12 @@
                 & > li {
                     margin-bottom: 16px;
 
-                    & a {
+                    & span {
                         text-decoration: none;
                         display: flex;
                         align-items: flex-start;
                         width: 90%;
-    
-                        &:hover {
-                            text-decoration: underline;
-                        }
+                        color: $dark-gray;
     
                         & > img {
                             margin-top: 5px;
@@ -459,7 +457,7 @@
 
 .card--sale {
     position: relative;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
 
     &:not(:nth-of-type(1)) {
         @include respond(tablet) {
@@ -513,7 +511,7 @@
     
             @include respond(mobile) {
                 width: 190px;
-                right: 26px;
+                margin-right: 13px;
                 top: 17px;
             }
     
@@ -528,16 +526,11 @@
                     letter-spacing: 1.6px;
                     text-transform: uppercase;
     
-                    // @include respond(tablet) {
-                    //     font-size: 14px;
-                    //     line-height: 20px;
-                    //     letter-spacing: 1.6px;
-                    // }
-    
                     @include respond(mobile) {
                         font-size: 12px;
                         line-height: 18px;
                         letter-spacing: 2px;
+                        width: 150px;
                     }
                 }
     
@@ -548,12 +541,6 @@
                     line-height: 18px;
                     text-transform: capitalize;
                     margin-bottom: 8px;
-    
-                    // @include respond(tablet) {
-                    //     font-weight: normal;
-                    //     font-size: 12px;
-                    //     line-height: 18px;
-                    // }
     
                     @include respond(mobile) {
                         font-size: 10px;
@@ -568,12 +555,8 @@
                 line-height: 40px;
                 letter-spacing: 1.6px;
                 text-transform: uppercase;
-    
-                // @include respond(tablet) {
-                //     font-size: 32px;
-                //     line-height: 40px;
-                //     letter-spacing: 1.6px;
-                // }
+                white-space: nowrap;
+                width: min-content;
     
                 @include respond(mobile) {
                     font-size: 20px;
