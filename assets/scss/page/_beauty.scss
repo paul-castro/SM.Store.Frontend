@@ -84,6 +84,15 @@
                 justify-content: flex-start;
             }
 
+            & > h2 {
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    align-items: center;
+                    letter-spacing: 1.6px;
+                }
+            }
+
             & > a {
                 @include respond(mobile) {
                     display: none;
@@ -135,7 +144,7 @@
 
         @include respond(mobile) {
             height: 578px;
-            margin-bottom: 24px;
+            padding: 24px 0 !important;
         }
 
         &__content {
@@ -242,7 +251,7 @@
             }
 
             @include respond(mobile) {
-                margin-top: 72px;
+                margin-top: 48px;
                 margin-left: 0px;
                 height: 304px;
             }

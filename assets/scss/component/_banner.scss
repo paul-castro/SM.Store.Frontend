@@ -147,13 +147,10 @@
     &--events {
         background: url('../../assets/images/banner-events.png') no-repeat;
         @include bgcover;
-        // background-size: cover;
-        // background-position: center left; 
-        // flex-direction: column;
         align-items: center;
 
         @include respond(tablet) {
-            height: 344px;
+            height: 345px;
         }
 
         @include respond(mobile) {
@@ -231,6 +228,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-sm-cares-m.jpg') no-repeat;
             @include bgcover;
         }
@@ -251,6 +249,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-press-release-m.jpg') no-repeat;
             @include bgcover;
         }
@@ -318,6 +317,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-youth-m.jpg') no-repeat;
             background-size: cover;
             background-position: top right; 
@@ -342,6 +342,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-kids-m.jpg') no-repeat;
             background-size: cover;
             background-position: top right; 
@@ -366,6 +367,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-home-m.jpg') no-repeat;
             background-size: cover;
             background-position: top right; 
@@ -390,6 +392,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-beauty-m.jpg') no-repeat;
             background-size: cover;
             background-position: top right; 
@@ -414,6 +417,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-other-m.jpg') no-repeat;
             background-size: cover;
             background-position: top right; 
@@ -438,6 +442,7 @@
         }
 
         @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-mens-m.jpg') no-repeat;
             background-size: cover;
             background-position: top right; 
@@ -460,6 +465,7 @@
         }
 
         @include respond(tablet) {
+            height: 200px;
             background: url('../../assets/images/banner-womens-blog.png') no-repeat;
             @include bgcover;
         }
