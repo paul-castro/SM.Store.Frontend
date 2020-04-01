@@ -371,9 +371,20 @@
             position: relative;
             padding-top: 128px !important;
             z-index: 99;
+            width: 1200px;
+            margin: auto;
+
+            @include respond(1250px) {
+                width: 98%;
+                padding: 24px;
+            }
 
             @include respond(tablet) {
                 padding-top: 80px !important;
+            }
+
+            @include respond(mobile) {
+                padding: 0 12px;
             }
         }
 
@@ -448,8 +459,8 @@
             }
                 
             @include respond(mobile) {
-                height: 184px;
-                width: 350px;
+                height: 200px;
+                width: 348px;
             }
             
             & img {
@@ -461,7 +472,7 @@
                 }
                 
                 @include respond(mobile) {
-                    height: 184px;
+                    height: 200px;
                 }
             }
         }
@@ -472,11 +483,12 @@
             z-index: 90;
 
             @include respond(tablet) {
-                width: 100%;
+                width: 540px;
             }
 
             @include respond(mobile) {
                 text-align: center;
+                width: 348px;
             }
         }
 
@@ -622,7 +634,7 @@
             flex-direction: column;
 
             @include respond(mobile) {
-                margin-left: 24px;
+                margin-left: 12px;
             }
         }
 
@@ -829,12 +841,13 @@
         &__footer {
             text-align: right;
             margin-top: 49px;
+            padding-right: 24px;
 
             @include respond(mobile) {
                 z-index: 50;
                 position: absolute;
                 bottom: 136px;
-                right: 44px;
+                right: 24px;
                 margin-top: 0px;
             }
 

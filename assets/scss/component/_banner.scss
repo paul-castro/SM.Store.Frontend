@@ -10,14 +10,15 @@
 
     &__yellow {
         background-color: $bee;
-        width: 437px;
+        width: 30%;
         height: 55.17%;
         position: absolute;
         top: -9.15%;
 
         @include respond(mobile) {
             left: 0;
-            width: 260px;
+            //width: 260px;
+            width: 80%;
             height: 221px;
             top: 0;
         }
@@ -43,18 +44,21 @@
     }
 
     &__featured {
-        background: url('../images/banner.svg') no-repeat;
+        background: url('../images/carousel-img-01.jpg') no-repeat;
         background-position: center center;
         background-size: cover;
         // height: 704px;
         // width: 1104px;
-        width: 70%;
+        width:80%;
         height: 85%;
         position: absolute;
         right: 0;
         bottom: 0;
 
-        @include respond(mobile) {
+        @include respond(360px) {
+            background: url('../images/m-carousel-img-01.jpg') no-repeat;
+            right: -28px;
+            //background-position: center center;
             height: 378px;
         }
     }

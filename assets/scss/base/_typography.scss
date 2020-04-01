@@ -48,6 +48,7 @@ p {
         font-family: $font-heading1;
         font-size: 88px;
         font-weight: bold;
+        font-style: normal;
         line-height: 88px;
         letter-spacing: 8px;
         text-transform: uppercase;
@@ -56,6 +57,20 @@ p {
             font-size: 32px !important;
             line-height: 40px !important;
         }
+
+        &--newline-right {
+            display: block;
+            margin-left: 65%;
+
+            @include respond(1024px) {
+                margin-left: 28%;
+            }
+
+            @include respond(mobile) {
+                margin-left: 60%;
+            }
+        }
+
     }
 
     &-hero {
@@ -239,8 +254,8 @@ p {
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 3px;
+        line-height: 24px;
+        letter-spacing: 4px;
         text-transform: uppercase; 
         
         &--gray{
