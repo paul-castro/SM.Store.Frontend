@@ -8,11 +8,25 @@
         height: 500px;
     }
 
+    &__yellow {
+        background-color: $bee;
+        width: 437px;
+        height: 55.17%;
+        position: absolute;
+        top: -9.15%;
+
+        @include respond(mobile) {
+            left: 0;
+            width: 260px;
+            height: 221px;
+            top: 0;
+        }
+    }
+
     &__pattern {
-        background: linear-gradient(90deg, #FFC734 (57.4px - 3.5px), transparent 1%) center,
-		    linear-gradient(#FFC734 (57.4px - 3.5px), transparent 1%) center, gray;
-	    background-size: 57.4px 57.4px;
-        // height: 437px;
+        background-image: repeating-radial-gradient(center center, rgba(0,0,0,0.2), 
+        rgba(0,0,0,0.2) 2px, transparent 1px, transparent 100%);
+        background-size: 50px 50px;
         height: 55.17%;
         width: 100%;
         position: absolute;
