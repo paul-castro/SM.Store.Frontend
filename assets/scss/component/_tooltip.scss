@@ -25,12 +25,8 @@
         }
 
         @include respond(mobile) {
-            min-width: 336px;
-            left: -268px;
-        }
-
-        @include respond(600px) {
-            left: -294px;
+            width: 320px;
+            left: -254px;
         }
 
         & > i {

@@ -62,6 +62,10 @@
 
                 & li {
                     margin: 0 12px;
+
+                    @include respond(360px) {
+                        margin: 0 10px;
+                    }
                     
                     &:not(.tooltip) {
                         white-space: nowrap;
