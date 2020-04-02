@@ -224,6 +224,10 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
+            @include respond(mobile) {
+                top: 28%;  
+            }
             
             &-file {
                 position: absolute;
@@ -252,7 +256,11 @@
             z-index: 99;
 
             @include respond(mobile) {
-                flex: 0 0 60%;
+                flex: 0 0 250px;
+            }
+
+            @include respond(340px) {
+                flex: 0 0 200px;
             }
 
             & span {
@@ -265,6 +273,10 @@
                 @include respond(tablet) {
                     letter-spacing: 2px;
                 }
+
+                @include respond(mobile) {
+                    text-align: right;
+                }
             }
 
             & h1 {
@@ -276,6 +288,10 @@
                     margin-top: 270px;
                 }
 
+                @include respond(mobile) {
+                    margin-top: 240px;
+                }
+
                 & span {
                     &:nth-of-type(1) {
                         color: $white;
@@ -283,11 +299,19 @@
                         @include respond(1290px) {
                             text-align: left;
                         }
+
+                        @include respond(mobile) {
+                            color: $dark-gray;
+                        }
                     }
 
                     &:nth-of-type(2) {
                         color: $coral;
                         text-align: right;
+
+                        @include respond(mobile) {
+                            margin-right: 30px;
+                        }
                     }
                 }
             }
