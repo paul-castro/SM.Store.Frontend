@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SM Store</title>
+        <title>Search - SM Store</title>
 
         <link rel="stylesheet" href="./assets/css/style.min.css">
 
@@ -40,7 +40,7 @@
                     </ul> 
                 </nav>
                 
-                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid">
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid hide">
                     <div class="nav__lower-burger">
                         <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
@@ -431,9 +431,97 @@
                     </div>
                 </nav>
 
+
+               <div class="container-search">
+                    <div class="search">
+
+                        <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                        
+                        <span class="search__vl">  </span>
+                        
+                        <input type="text" class="search__input" placeholder="Search The SM Store...">
+
+                        <a href="#" class="search__close"><img src="./assets/images/icon-close.svg" alt="Search"></a>
+                        
+                    </div>
+
+                    <div class="search-hint">
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TOP SEARCHES</label>
+
+                       <!-- <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category">2020 Beauty Trends</a>
+                            <a href="#" class="search-hint__top-searches__category">Fashion Outfit</a>
+                            <a href="#" class="search-hint__top-searches__category">Make Up</a>
+                            <a href="#" class="search-hint__top-searches__category">Parisian Shoes</a>
+                            <a href="#" class="search-hint__top-searches__category">#SpottedAtSM</a>
+                        </div>
+                        -->
+
+                        <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                        </div>
+
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TRENDING BLOGS</label>
+
+                        <div class="search-hint__container">
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+               </div>
+
                 
                 <!-- MOBILE MENU -->
-                <nav class="nav__mobile">
+                <nav class="nav__mobile hide">
                     <ul class="nav__mobile-upper">
                         <li><a class="nav__mobile-upper-item" data-item="whatsnew">What's New</a></li>
                         <li><a class="nav__mobile-upper-item" data-item="category">Categories</a></li>
