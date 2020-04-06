@@ -1,0 +1,245 @@
+.container-search {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top:50px;
+    
+    @include respond(tablet) {
+        width: 94%;
+        left: 3%;
+     }
+
+     @include respond(mobile) {
+        width: 96%;
+        left: 2%;
+     }
+    
+}
+
+.search {
+
+    background: rgba(0, 0, 0, 0.3);    
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    border-color:rgba(255,255,255, 0.7);
+    border-width: 1px;
+    border-style: solid;
+    
+    &__input {
+        background: transparent;
+        border: none;
+        font-family: $font-base;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        width: 96%;
+
+        &::placeholder {
+            color:white;
+        }
+
+        &:focus {
+            outline: none;
+          }
+
+
+    }
+
+    &__btn {
+        background: transparent;
+    }
+
+    &__vl {
+        color: white;
+        margin: 0 15px;
+        display: inline-block;
+        height: 20px;
+        border: 0.5px solid #FFFFFF;
+    }
+
+    &__close {
+        background: transparent;
+    }
+}
+
+.search-hint {
+    margin-top: 10px;
+    padding: 24px;
+    min-height: 490px;
+    background: $light-gray;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+
+
+    &__label-heading {
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &--1 {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1.6px;
+        }
+        
+        &--2 {
+            font-size: 12px;
+
+        }
+
+        &--gray {
+            color: $gray;
+        }
+
+ 
+    }
+
+    &__top-searches {
+
+        margin: 8px 0 24px 0;
+        display: flex;
+
+        @include respond(tablet) {
+           flex-wrap: wrap;
+         }
+
+        &__category{
+            font-style: normal;
+            font-weight: 600;
+            background:$mid-gray;
+            border-radius: 8px;
+            color: $black;
+            padding: 8px 16px;
+            text-decoration: none;
+            margin-right: 16px;
+
+            @include respond(tablet) {
+                margin-bottom: 8px;
+              }
+
+            &--lazy-load {
+                height: 40px;
+                background: $super-light-gray;
+                width: 185px;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+
+        @include respond(1200px) {
+           flex-direction: column;
+        }
+    }
+
+    &__trending {
+        //margin-top: 32px;
+        margin-top: 16px;
+        display: flex;
+        width: 40%;
+        margin-right: 10%;
+        margin-bottom: 16px;
+
+        @include respond(1399px) {
+            width: 48%;
+            margin-right: 2%;
+         }
+
+        &__image-container {
+            width: 128px;
+            height: 128px;
+            flex-shrink: 0; 
+
+            @include respond(mobile) {
+                width: 72px !important;
+                height: 94px !important;
+             }
+
+            &--lazy-load {
+                background: $super-light-gray;
+                width: 128px;
+                height: 128px;
+                border-radius: 5px;
+            }
+        }
+
+        &__image {
+            width: 128px;
+            height: 128px;
+            flex-shrink: 0; 
+
+         
+            @include respond(mobile) {
+                width: 72px;
+                height: 94px;
+                object-fit: cover;
+             }
+        }
+
+        &__h2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 6px 0;
+        }
+
+        &__p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 14px;
+        }
+
+
+
+        &__info-text-container {
+            margin-top: 20px;
+            margin-left: 24px;
+
+            &--lazy-load {
+                background: $super-light-gray;
+                height: 16px;
+                border-radius: 5px;
+                display: block;
+                margin-bottom: 16px;
+
+                &--small {
+                    width: 78px;
+
+                    @include respond(mobile) {
+                        width:70px;
+                     }
+                }
+
+                &--medium {
+                    width: 200px;
+
+                    @include respond(mobile) {
+                        width: 80px
+                     }
+                }
+
+                &--large {
+                    width: 275px;
+
+                    @include respond(mobile) {
+                        width: 200px;
+                     }
+                }
+            }
+
+        }
+       
+    }
+
+ }

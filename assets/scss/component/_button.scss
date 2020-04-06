@@ -83,6 +83,11 @@ button {
 .button 
 {
     text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
 
     &--primary {
         padding: 16px 24px;
@@ -112,6 +117,16 @@ button {
         border: 1px solid #fff;
         color: $black;
     }
+    
+    &--outline {
+        border:1px solid $black;
+    }
 
+
+    &--search-result {
+        width: 243px;
+        text-align: center;
+        cursor: pointer;
+    }
    
 }

@@ -3,13 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SM Store</title>
+        <title>Search - SM Store</title>
 
-<<<<<<< HEAD
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-        <!-- <link rel="stylesheet" href="./assets/slick/slick.css"> -->
-=======
->>>>>>> 2acc39fde4185cfec162ce94d3491ffdbcaee60d
         <link rel="stylesheet" href="./assets/css/style.min.css">
 
     </head>
@@ -45,7 +40,7 @@
                     </ul> 
                 </nav>
                 
-                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid">
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid hide">
                     <div class="nav__lower-burger">
                         <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
@@ -436,9 +431,97 @@
                     </div>
                 </nav>
 
+
+               <div class="container-search">
+                    <div class="search">
+
+                        <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                        
+                        <span class="search__vl">  </span>
+                        
+                        <input type="text" class="search__input" placeholder="Search The SM Store...">
+
+                        <a href="#" class="search__close"><img src="./assets/images/icon-close.svg" alt="Search"></a>
+                        
+                    </div>
+
+                    <div class="search-hint">
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TOP SEARCHES</label>
+
+                       <!-- <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category">2020 Beauty Trends</a>
+                            <a href="#" class="search-hint__top-searches__category">Fashion Outfit</a>
+                            <a href="#" class="search-hint__top-searches__category">Make Up</a>
+                            <a href="#" class="search-hint__top-searches__category">Parisian Shoes</a>
+                            <a href="#" class="search-hint__top-searches__category">#SpottedAtSM</a>
+                        </div>
+                        -->
+
+                        <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                        </div>
+
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TRENDING BLOGS</label>
+
+                        <div class="search-hint__container">
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+               </div>
+
                 
                 <!-- MOBILE MENU -->
-                <nav class="nav__mobile">
+                <nav class="nav__mobile hide">
                     <ul class="nav__mobile-upper">
                         <li><a class="nav__mobile-upper-item" data-item="whatsnew">What's New</a></li>
                         <li><a class="nav__mobile-upper-item" data-item="category">Categories</a></li>
@@ -663,6 +746,7 @@
             <!-- WIDGETS -->
             <section class="widgets">
                 <div class="widget widget--promos">
+                    <!--<p class="font-eyebrow widget--promos-sidetext">Jan 2-12</p>//-->
                     <img src="./assets/images/icons/Promos.svg" alt="">
                     <div class="widget--promos-content">
                         <div class="widget--promos-header widget-header">
@@ -671,6 +755,7 @@
                         </div>
                         <div class="widget--promos-details">
                             <p class="font-eyebrow">Big clearance sale</p>
+                            <!--<p class="font-metadata">Up to 50% off on selected items</p>//-->
                             <p class="font-metadata">JAN. 21-23, 2020</p>
                         </div>
                     </div>
@@ -689,6 +774,7 @@
                     </div>
                 </div>
                 <div class="widget widget--locator">
+                    <!--<p class="font-eyebrow widget--locator-sidetext">Open now</p>//-->
                     <img src="./assets/images/icons/Stores.svg" alt="">
                     <div class="widget--locator-content">
                         <div class="widget--locator-header widget-header">
@@ -709,27 +795,32 @@
                 <div class="banner__pattern"></div>
                
                 <div class="main-carousel">
-                    <div>
-                        <div class="banner__featured"></div>
-                        <div class="banner__content">
-                            <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                            <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
-                            <div class="banner__btn">
-                                <a href="" class="btn--primary font-cta">Learn more</a>
-                            </div>
+                    <div class="banner__featured"></div>
+                    
+                    <div class="banner__content">
+                        <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
+                        <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
+                        <div class="banner__btn">
+                            <a href="" class="btn--primary font-cta">Learn more</a>
                         </div>
-                    </div>
-                    <div>
-                        <div class="banner__featured"></div>
-                        <div class="banner__content">
-                            <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                            <h1 class="font-titan">Men's <span class="font-titan--newline-right">Sale</span></h1>
-                            <div class="banner__btn">
-                                <a href="" class="btn--primary font-cta">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
+                     </div>
                 </div>
+
+                <div class="banner__pagination pagination-dot">
+                    
+                    <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide1"></label>
+                
+                    <input type="radio" id="slide2" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide2"></label>
+                
+                    <input type="radio" id="slide3" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide3"></label>
+                
+                    <input type="radio" id="slide4" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide4"></label>
+
+                </div> <!--.banner__pagination pagination-dot-->
             </section>
 
             <!-- EVENTS --> 
@@ -866,7 +957,11 @@
                 </div>
             </section>
             <!-- /VIDEO -->
-            
+
+            <!-- GIFTS -->
+
+            <!-- /GIFTS -->
+
             <!-- BLOG -->
             <section class="featured-blog container">
                 <h2 class="featured-blog__title font-h2-hero">Latest in fashion</h2>
@@ -999,7 +1094,8 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slimscroll.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
