@@ -107,4 +107,15 @@ $(document).ready(function(){
         $('.card--menu-categories:nth-of-type(1), .card--menu-categories:nth-of-type(2), .card--menu-categories:nth-of-type(3)').css('display', 'block');
         $('.card--menu-categories:nth-of-type(5), .card--menu-categories:nth-of-type(6), .card--menu-categories:nth-of-type(7)').css('display', 'none');
     });
+
+
+
+    // CAROUSEL
+    $('.main-carousel').slick({
+        arrows: false,
+        dots: true,
+        dotsClass: 'banner__pagination pagination-dot',
+        speed: 1000,
+        // mobileFirst: true
+    });
 });
