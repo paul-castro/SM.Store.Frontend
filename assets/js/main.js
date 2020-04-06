@@ -180,10 +180,10 @@ $(document).ready(function(){
 
         // REARRANGE EVENT ARRAY
         eventsArr[0].isActive = false;
-        if(dir == 'right') {
+        if(dir == 'right') { //to the right
             eventsArr.push(eventsArr.shift());
         }
-        else {
+        else { //to the left
             eventsArr.unshift(eventsArr.pop());
         }
         eventsArr[0].isActive = true;
@@ -225,5 +225,74 @@ $(document).ready(function(){
     
             <a href="${eventsArr[0].pageUrl}" class="btn--text-link font-cta">Learn more</a>
         `);
+    }
+
+
+    var catalogArr = [
+        {
+            isActive: true,
+            category: 'Magazine',
+            title1: 'Real',
+            title2: 'Beauty',
+            image: './assets/images/slideshow1.png',
+            pageUrl: '', 
+        },
+        {
+            isActive: false,
+            category: 'Women\'s',
+            title1: 'Women\'s',
+            title2: 'Sale',
+            image: './assets/images/omnibus-promo2.jpg',
+            pageUrl: '', 
+        },
+        {
+            isActive: false,
+            category: 'Kids',
+            title1: 'Toy',
+            title2: 'Kingdom',
+            image: './assets/images/omnibus-promo1.png',
+            pageUrl: '', 
+        },
+    ];
+
+    populateCatalogDetails();
+    populateCatalogSlider();
+    
+    $('.featured-stories__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+
+        // REARRANGE EVENT ARRAY
+        catalogArr[0].isActive = false;
+        if(dir == 'right') { //to the right
+            catalogArr.push(catalogArr.shift());
+        }
+        else { //to the left
+            catalogArr.unshift(catalogArr.pop());
+        }
+        catalogArr[0].isActive = true;
+        
+    
+        populateCatalogDetails(); // CHANGE EVENT DETAILS
+        populateCatalogSlider(); // REARRANGE EVENT SLIDER
+    });
+
+    function populateCatalogDetails() {
+        $('.featured-stories__details').html(`
+            <span class="featured-stories__category font-eyebrow-semi">${catalogArr[0].category}</span>
+            <h1 class="featured-stories__title font-hero">${catalogArr[0].title1}</h1>
+            <h1 class="featured-stories__title font-hero">${catalogArr[0].title2}</h1>
+            <a href="" class="featured-stories__btn btn--primary font-cta">Browse</a>
+        `);
+    }
+
+    function populateCatalogSlider() {
+        $('.featured-stories__images').html('');
+        for(x = 0; x < catalogArr.length; x++) {
+            $('.featured-stories__images').append(`
+                <div class="featured-stories__image">
+                    <img src="${catalogArr[x].image}" alt="">
+                </div>
+            `);
+        }
     }
 });

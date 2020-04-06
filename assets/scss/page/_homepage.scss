@@ -488,6 +488,8 @@
             }
             
             & img {
+                height: 528px;
+                width: 808px;
                 
                 @include respond(tablet) {
                     opacity: 0.5;
