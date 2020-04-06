@@ -120,4 +120,110 @@ $(document).ready(function(){
         });
         $('.main-carousel').eq(slideNum - 1).addClass('active');
     });
+
+
+    // CAROUSEL - EVENTS
+
+    var eventsArr = [
+        {
+            isActive: true,
+            url: './assets/images/event_img.jpg',
+            month: 'January',
+            day: '20',
+            year: '2020',
+            title: 'Billie Eilish Tour',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.',
+            branch: 'SM Makati',
+            pageUrl: ''
+        },
+        {
+            isActive: false,
+            url: './assets/images/event_img2.jpg',
+            month: 'January',
+            day: '22',
+            year: '2020',
+            title: 'Title 2',
+            desc: 'Description 2',
+            branch: 'SM Mindanao',
+            pageUrl: ''
+        },
+        {
+            isActive: false,
+            url: './assets/images/event_img3.jpg',
+            month: 'January',
+            day: '24',
+            year: '2020',
+            title: 'Title 3',
+            desc: 'Description 3',
+            branch: 'SM Tawi Tawi',
+            pageUrl: ''
+        },
+        {
+            isActive: false,
+            url: './assets/images/event_img.jpg',
+            month: 'January',
+            day: '26',
+            year: '2020',
+            title: 'Title 4',
+            desc: 'Description 4',
+            branch: 'SM Sultan Kudarat',
+            pageUrl: ''
+        },
+    ];
+
+    // Init event page
+    populateEventSlider();
+    populateEventDetails();
+    
+    $('.featured-events__footer .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+
+        // REARRANGE EVENT ARRAY
+        eventsArr[0].isActive = false;
+        if(dir == 'right') {
+            eventsArr.push(eventsArr.shift());
+        }
+        else {
+            eventsArr.unshift(eventsArr.pop());
+        }
+        eventsArr[0].isActive = true;
+        
+        populateEventDetails(); // CHANGE EVENT DETAILS
+        populateEventSlider(); // REARRANGE EVENT SLIDER
+    });
+
+    // Populate events' slider
+    function populateEventSlider(){
+        $('.featured-events__slider').html('');
+        for(x = 0; x < eventsArr.length; x++) {
+            $('.featured-events__slider').append(
+            `<div class="featured-events__slider-event ${eventsArr[x].isActive ? 'active' : ''}">
+                <img src="${eventsArr[x].url}" alt="">
+                <div>
+                    <p class="font-cta">${eventsArr[x].month.substr(0,3)}</p>
+                    <p class="font-hero-m">${eventsArr[x].day}</p>
+                </div>
+            </div>
+            `);
+        }
+    }
+    
+    // Populate events' details
+    function populateEventDetails() {
+        $('.featured-events__details').html(`
+            <h3 class="featured-events__details-title">${eventsArr[0].title}</h3>
+            <p class="featured-events__details-description">${eventsArr[0].desc}</p>
+            <div class="featured-events__details-datetime">
+                <img src="./assets/images/icons/icon-clock.svg" alt="">
+                <span class="font-eyebrow">${eventsArr[0].month + eventsArr[0].day}</span>
+            </div>
+    
+            <div class="featured-events__details-venue">
+                <img src="./assets/images/icons/icon-location.svg" alt="">
+                <p class="text-semibold">${eventsArr[0].branch}</p>
+            </div>
+    
+            <a href="${eventsArr[0].pageUrl}" class="btn--text-link font-cta">Learn more</a>
+        `);
+    }
 });
