@@ -109,4 +109,15 @@ $(document).ready(function(){
     });
 
 
+
+    // CAROUSEL - BANNER
+    $('.pagination-dot__indicator').click(function() {
+        var slideNum = $(this).attr('for');
+        slideNum = slideNum.substr(slideNum.length - 1);
+        
+        $('.main-carousel').each(function() {
+            $(this).removeClass('active');
+        });
+        $('.main-carousel').eq(slideNum - 1).addClass('active');
+    });
 });
