@@ -24,29 +24,55 @@
     }
 }
 
+// .pagination-dot {
+
+//     & li {
+//         display: block;
+//         height: 10px;
+//         width: 10px;
+//         border: 1.5px solid $white;
+//         border-radius: 5px;
+//         margin: 16px 0;
+//         cursor: pointer;
+
+//         &.slick-active {
+//             background-color: $white;
+//         }
+
+//         & > button {
+//             display: none;
+//         }
+        
+
+//         @include respond(tablet) {
+//             display: inline-block;
+//             margin: 0 8px;
+//         }
+//     }
+// }
+
 .pagination-dot {
 
-    & li {
+    &__activator {
+        display: none;
+
+        &:checked + label {
+            background-color: $white;
+        }
+    } 
+
+    &__indicator {
         display: block;
         height: 10px;
         width: 10px;
-        border: 1.5px solid $white;
         border-radius: 5px;
         margin: 16px 0;
         cursor: pointer;
-
-        &.slick-active {
-            background-color: $white;
-        }
-
-        & > button {
-            display: none;
-        }
-        
+        border: 1px $white solid;
 
         @include respond(tablet) {
-            display: inline-block;
             margin: 0 8px;
         }
     }
+
 }

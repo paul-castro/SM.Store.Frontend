@@ -109,13 +109,4 @@ $(document).ready(function(){
     });
 
 
-
-    // CAROUSEL
-    $('.main-carousel').slick({
-        arrows: false,
-        dots: true,
-        dotsClass: 'banner__pagination pagination-dot',
-        speed: 1000,
-        // mobileFirst: true
-    });
 });
