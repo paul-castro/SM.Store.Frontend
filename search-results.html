@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Other Products | SM Store</title>
+        <title>Search - SM Store</title>
 
         <link rel="stylesheet" href="./assets/css/style.min.css">
+
     </head>
     <body>
         <div class="wrapper">
-
+            
             <!-- HEADER -->
             <header>
-                <nav class="nav__upper nav__upper--default container-fluid">
+                <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
                     <ul class="nav__upper-list nav__upper-list-menu">
                         <li><a href="" class="font-fineprint">About Us</a></li>
                         <li><a href="" class="font-fineprint">Stores</a></li>
@@ -39,7 +40,7 @@
                     </ul> 
                 </nav>
                 
-                <nav class="nav__lower nav_lower--default container-fluid dark-gradient">
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid">
                     <div class="nav__lower-burger">
                         <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
@@ -280,14 +281,14 @@
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <ul>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-clock.svg" alt="">
                                                         11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </a></li>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    </span></li>
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-location.svg" alt="">
                                                         SM Makati
-                                                    </a></li>
+                                                    </span></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -299,14 +300,14 @@
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <ul>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-clock.svg" alt="">
                                                         11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </a></li>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    </span></li>
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-location.svg" alt="">
                                                         SM Makati
-                                                    </a></li>
+                                                    </span></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -318,19 +319,19 @@
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <ul>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-clock.svg" alt="">
                                                         11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </a></li>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    </span></li>
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-location.svg" alt="">
                                                         SM Makati
-                                                    </a></li>
+                                                    </span></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <a href="" class="btn--primary button--black font-cta nav__dropdown-btn">View all</a>
                                 </div>
 
                                 <div class="nav__dropdown-right">
@@ -428,11 +429,15 @@
                     <div class="nav__lower-search"> 
                         <img src="./assets/images/search.svg" alt="">
                     </div>
+
+                    
                 </nav>
 
+
+               
                 
                 <!-- MOBILE MENU -->
-                <nav class="nav__mobile">
+                <nav class="nav__mobile hide">
                     <ul class="nav__mobile-upper">
                         <li><a class="nav__mobile-upper-item" data-item="whatsnew">What's New</a></li>
                         <li><a class="nav__mobile-upper-item" data-item="category">Categories</a></li>
@@ -506,7 +511,6 @@
                     <div class="nav__mobile-container nav__mobile--category">
                         <div class="nav__mobile-header">
                             <span class="font-headline nav__mobile-header-title">Categories</span>
-                            <!-- <a href="">View all</a> -->
                         </div>
                         <div class="nav__mobile-content nav__mobile--category">
                             <a href="" class="nav__mobile-content-item">
@@ -541,7 +545,7 @@
                     </div>
                     <div class="nav__mobile-container nav__mobile--events">
                         <div class="nav__mobile-header">
-                            <span class="font-headline nav__mobile-header-title">Categories</span>
+                            <span class="font-headline nav__mobile-header-title">Upcoming Events</span>
                             <a class="btn--text-link font-cta" href="">View all</a>
                         </div>
                         <div class="nav__mobile-content nav__mobile--events">
@@ -550,8 +554,8 @@
                                 <div class="card-mobile--events-text">
                                     <p class="font-metadata text-bold">Billie Eilish Tour</p>
                                     <ul>
-                                        <li class="font-caption"><img src="./assets/images/calendar.svg" alt=""> Sat - Sun, January 13-14</li>
-                                        <li class="font-caption"><img src="./assets/images/navigation.svg" alt=""> SM Makati</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt=""> Sat - Sun, January 13-14</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt=""> SM Makati</li>
                                     </ul>
                                 </div>
                             </a>
@@ -560,8 +564,8 @@
                                 <div class="card-mobile--events-text">
                                     <p class="font-metadata text-bold">Kids At Play</p>
                                     <ul>
-                                        <li class="font-caption"><img src="./assets/images/calendar.svg" alt=""> Sat, January 20</li>
-                                        <li class="font-caption"><img src="./assets/images/navigation.svg" alt=""> SM Makati</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt=""> Sat, January 20</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt=""> SM Makati</li>
                                     </ul>
                                 </div>
                             </a>
@@ -570,8 +574,8 @@
                                 <div class="card-mobile--events-text">
                                     <p class="font-metadata text-bold">Peppa Pig's Adventure</p>
                                     <ul>
-                                        <li class="font-caption"><img src="./assets/images/calendar.svg" alt=""> Sat, January 20</li>
-                                        <li class="font-caption"><img src="./assets/images/navigation.svg" alt=""> SM Makati</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt=""> Sat, January 20</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt=""> SM Makati</li>
                                     </ul>
                                 </div>
                             </a>
@@ -631,269 +635,116 @@
                             </a>
                         </div>
                     </div>
+                    <div class="nav__mobile-container nav__mobile--gifts">
+                        <div class="nav__mobile-header">
+                            <span class="font-headline nav__mobile-header-title">Gifts</span>
+                        </div>
+                        <div class="nav__mobile-content nav__mobile--gifts">
+                            <a href="" class="nav__mobile-content-item">
+                                <img src="./assets/images/cards/menu-gifts-m1.jpg" alt="">
+                                <span class="font-headline2">Gift Cards</span>
+                            </a>
+                            <a href="" class="nav__mobile-content-item">
+                                <img src="./assets/images/cards/menu-gifts-m2.jpg" alt="">
+                                <span class="font-headline2">Gifts Wrapping</span>
+                            </a>
+                            <a href="" class="nav__mobile-content-item">
+                                <img src="./assets/images/cards/menu-gifts-m3.jpg" alt="">
+                                <span class="font-headline2">Gifts Registry</span>
+                            </a>
+                        </div>
+                    </div>
                 </nav>
                 <!-- /MOBILE MENU -->
+
             </header>
             <!-- /HEADER -->
-            
-            <section class="banner-inner banner-inner--other container-fluid">
-                <div class="container">
-                    <h1 class="font-hero banner-page__headings">Other Categories</h1>
+
+           
+            <section class="search-header">
+                <div class="container-1224">
+                    <div class="container-search--result">
+                        <h2 class="search-header__h2">Search for</h2>
+                        <div class="search">
+                            <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                            <input type="text" class="search__input" placeholder="Search The SM Store...">
+                         </div>
+                         <p class="search__count">Showing 9 of about 19 results</p>
+                     </div>
+
                 </div>
             </section>
-            
-            
-            <section class="sale container-1238 sale--with-controls sale--four-cards">
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale1.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Stationery Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale2.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Toy Kingdom Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale3.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Baby Co. Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale4.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Ace Hardware Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="sale__controls">
-                    <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                    <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                </div>
-            </section>
-            
-            
-            <section class="omnibus-slider container-fluid">
-                <div class="omnibus-slider__content">
-                    <div class="omnibus-slider__details">
-                        <h2>Upcoming Events</h2>
-                        <div class="omnibus-slider__details-controls">
-                            <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                            <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                        </div>
-                        <a href="" class="btn--primary button--black font-cta">View Calendar</a>
-                    </div>
 
-                    <div class="omnibus-slider__slider">
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event1.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
+            <section class="search-result">
+                <div class="container-1224">
+                    <h2 class="search-result__h2">Women</h2>
+                    <p class="search-result__p">10 results for “Summer Dresses”</p>
+                </div>
+
+                <div class="container-1224">
+                    <div class="search-result__row">
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
                         </div>
 
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event2.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
                         </div>
 
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event3.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
                         </div>
 
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event1.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
                         </div>
 
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event2.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img src="./assets/images/img-search-result-01.jpg">
+                            <h4 class="search-result__item__h4">FASHION</h4>
+                            <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                            <a class="btn--text-link font-cta" href="#">Read more</a>
                         </div>
                     </div>
                 </div>
             </section>
+          
 
-            <section class="others-video">
-                <div class="others-video__bg container-fluid"></div>         
-                <div class="others-video__content container">
-                    <div class="others-video__video">
-                        <video class="others-video__video-file" playsinline="" autoplay="" muted="" loop="" src="https://storage.coverr.co/videos/coverr-meditation-couple-in-the-park-1566577927549?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNzcyNzk2fQ.02ngrtvWjl3gOlqlCqYXerXmA9N2JcoUqXH-gu66oiA" poster="https://storage.coverr.co/posters/coverr-meditation-couple-in-the-park-1566577927549" class="ng-star-inserted"></video>
-                    </div> 
+         
 
-                    <div class="others-video__text">
-                        <span class="font-eyebrow">#SMStationery</span>
-                        <h1 class="font-hero">
-                            <span>ART FEST</span> 
-                            <span>2020</span>
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, necessitatibus.</p>
-                    </div> 
-
-                    <div class="others-video__controls controls">
-                        <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                        <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                    </div> 
-                </div>
-            </section>
-
-            <section class="stories-blog p-40">
-                <div class="container">
-                    <h2 class="font-h2-hero content__heading2--center">Lorem ipsum dolor sit amet</h2>
-                    <p class="font-eyebrow-semi content__heading2--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum debitis sint.</p>
-                </div>
-
-                <div class="stories-blog__content container">
-                    
-                    <div class="row-content blog-filter-d">
-                        <ul class="blog__nav">
-                            <li class="blog__nav-item"><a class="blog__nav-link blog__nav-link--active" href="#">All</a></li>
-                            <li class="blog__nav-item"><a class="blog__nav-link" href="#">Blogs</a></li>
-                            <li class="blog__nav-item"><a class="blog__nav-link" href="#">Quizzes</a></li>
-                            <li class="blog__nav-item"><a class="blog__nav-link" href="#">Campaigns</a></li>
-                        </ul>
-                    </div> 
-                    
-                    <div class="row-content blog-filter-m blog-filter-dropdown">
-                        <p class="font-metadata text-bold">Filter</p>
-                        <select class="font-caption text-semibold">
-                            <option value="All">All</option>
-                            <option value="All">SM Men</option>
-                            <option value="All">Men’s Accessories</option>
-                            <option value="All">Men’s Shoes & Bags</option>
-                        </select>
-                    </div> 
-
-                    <div class="stories-blog__row blog__row row-content">
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others1.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others2.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others3.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others4.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others5.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others6.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others7.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others8.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others4.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others5.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others6.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others7.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                    </div>
-
-                </div> 
-
-                <div class="gradient gradient--white">
-
-                    <a href="#" class="button button--primary button--black button--gradient-content">View more</a>
-
-                </div>
-            </section> 
-            
             
             <!-- FOOTER -->
             <footer class="footer">
@@ -969,5 +820,25 @@
             <!-- /FOOTER -->
 
         </div> <!-- /wrapper -->
+
+        <!-- COOKIE POLICY -->
+        <div class="cookie__container">
+            <p class="font-caption cookie__text">The SM Store values your rights to keep your data secure under the Data Privacy Act. This website uses cookies to help enhance your online experience. Continue to browse if you agree to our Cookie Policy; otherwise, kindly update your cookie settings. Check out our Privacy Policy page too for more information on how we protect your privacy.</p>
+
+            <div class="cookie__btn">
+                <a href="" class="btn--primary font-cta">Settings</a>
+                <a href="" class="btn--primary font-cta">Got it</a>
+            </div>
+        </div>
+        <!-- /COOKIE POLICY -->
+
     </body>
+
+    <!-- IMPORTS -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slimscroll.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
 </html>

@@ -8,6 +8,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 999;
 
         /*@include respond(tablet) {
             &--mhide{
@@ -15,11 +16,11 @@
             }   
         }*/
         
-        &:not(&--index) {
+        /*&:not(&--index) {
             @include respond(1160px) {
                 display: none;    
             }
-        }
+        }*/
        
  
         &--default {
@@ -120,7 +121,7 @@
 
         @include respond(tablet) {
             top: 0;
-            padding: 14px 20px;
+            padding: 44px 20px 0;
         }
 
         &--index {
@@ -640,4 +641,9 @@
             }
         }
     }
+}
+
+
+.dark-gradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }

@@ -16,6 +16,8 @@
     
 }
 
+
+
 .search {
 
     background: rgba(0, 0, 0, 0.3);    
@@ -62,6 +64,15 @@
 
     &__close {
         background: transparent;
+    }
+
+    &__count {
+        color: white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 4px;
     }
 }
 
@@ -243,3 +254,98 @@
     }
 
  }
+
+ .container-1224{
+     width: 1224px;
+     margin: auto;
+ }
+
+ .search-header {
+     background: $coral;
+     padding: 150px 0 46px;
+     //height: 350px;
+
+
+     &__h2 {
+        font-family: $font-heading1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 16px;
+     }
+ }
+
+ .search-result {
+    padding: 40px 0 166px;
+
+    &__h2 {
+        font-family: $font-heading1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    &__p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    &__row {
+        display: flex;
+        margin-top: 24px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+
+        &__link-heading {
+            text-decoration: none;
+    
+            &__h3 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #403F47;
+                margin-bottom: 32px;
+            }
+
+            
+        }
+
+        &__h4 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: #88898F;
+            margin-top: 17px;
+
+        }
+
+        margin-right: 24px;
+        margin-bottom: 48px;
+        &:nth-child(4n) {
+           margin-right: 0;
+        }
+
+    }
+
+    
+
+ }
+
+

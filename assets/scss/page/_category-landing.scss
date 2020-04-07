@@ -19,7 +19,7 @@
     max-height: 640px;
 
     @include respond(mobile) {
-        padding: 16px 0 24px 0;
+        padding: 16px 0 24px 0 !important;
         min-height: min-content;
     }
 
@@ -65,10 +65,11 @@
     &__controls {
         display: none;
         position: absolute;
-        bottom: 48px;
+        bottom: 35px;
 
         @include respond(tablet) {
             display: block;
+           
         }
     }
 }
