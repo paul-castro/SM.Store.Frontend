@@ -337,6 +337,7 @@
             position: absolute;
             right: 20px;
             align-self: flex-end;
+            z-index: 100;
             
             @include respond(1290px) {
                 text-align: right;
