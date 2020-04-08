@@ -246,4 +246,281 @@ $(document).ready(function() {
         `);
     }
     
+
+
+    // Landing Pages
+    // Mens
+    const mensEventArr = [
+        {
+            imgUrl: './assets/images/cards/men-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/men-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/men-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+    
+    // Womens
+    const womensEventArr = [
+        {
+            imgUrl: './assets/images/cards/women-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/women-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/women-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/women-card-event1.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+    
+    // Kids
+    const kidsEventArr = [
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+    
+    // Youth
+    const youthEventArr = [
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+    
+    // Home
+    const homeEventArr = [
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+    
+    // Beauty
+    const beautyEventArr = [
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+    
+    // Others
+    const othersEventArr = [
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event2.jpg',
+            month: 'Jan',
+            day: '15-16',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event3.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/youth-card-event1.jpg',
+            month: 'Jan',
+            day: '19-20',
+            event: 'Billie Eilish Tour'
+        },
+    ];
+
+    var category = $('.omnibus-slider__details-controls').attr('data-category');
+    
+        
+    if(category == 'mens') {
+        landingGenerateCarousel(mensEventArr);
+    }
+    else if (category == 'womens') {
+        landingGenerateCarousel(womensEventArr);
+    }
+    else if (category == 'kids') {
+        landingGenerateCarousel(kidsEventArr);
+    }
+    else if (category == 'youth') {
+        landingGenerateCarousel(youthEventArr);
+    }
+    else if (category == 'home') {
+        landingGenerateCarousel(homeEventArr);
+    }
+    else if (category == 'beauty') {
+        landingGenerateCarousel(beautyEventArr);
+    }
+    else if (category == 'others') {
+        landingGenerateCarousel(othersEventArr);
+    }
+
+    $('.omnibus-slider__details-controls .controls__arrow').click(function() {
+        
+        var dir = $(this).attr('class').split('--')[1];
+        var array = $(this).parent().attr('data-category') + 'EventArr';
+        var arr = new Array;
+        
+        if(array == 'mensEventArr') {
+            arr = mensEventArr;
+        }
+        else if (array == 'womensEventArr') {
+            arr = womensEventArr;
+        }
+        else if (array == 'kidsEventArr') {
+            arr = kidsEventArr;
+        }
+        else if (array == 'youthEventArr') {
+            arr = youthEventArr;
+        }
+        else if (array == 'homeEventArr') {
+            arr = homeEventArr;
+        }
+        else if (array == 'beautyEventArr') {
+            arr = beautyEventArr;
+        }
+        else if (array == 'othersEventArr') {
+            arr = othersEventArr;
+        }
+        
+        landingRearrangeCarousel(arr,dir);
+    });
+
+    function landingGenerateCarousel(arr) {
+        $('.omnibus-slider__slider').html('');
+        for(var i = 0; i < arr.length; i++) {
+            $('.omnibus-slider__slider').append(`<div class="card--event">
+                <img class="card--event-poster" src="${arr[i].imgUrl}" alt="">
+                <div class="card--event-details">
+                    <p class="font-eyebrow card--event-details-month">${arr[i].month}</p>
+                    <h1 class="font-h1 card--event-details-day">${arr[i].day}</h1>
+                    <p class="font-eyebrow card--event-details-title">${arr[i].event}</p>
+                </div>
+            </div>`); 
+        }
+    }
+
+    function landingRearrangeCarousel(arr, dir) {
+        
+        arr[0].isActive = false;
+        if(dir == 'right') { //to the right
+            arr.push(arr.shift());
+        }
+        else { //to the left
+            arr.unshift(arr.pop());
+        }
+        arr[0].isActive = true;
+
+        landingGenerateCarousel(arr);
+    }
+    
 });

@@ -66,20 +66,9 @@ $(document).ready(function(){
         // var submenu = $('.nav__mobile-control-back').data('item');
         $('.nav__mobile-container').css('display', 'none');
     }
- 
-    // SLIM SCROLL FOR CUSTOM SCROLLBAR
-    // $('.nav__mobile-content').slimScroll({
-    //     height: '345px',
-    //     width: '288px',
-    //     alwaysVisible: true,
-    //     railVisible: true,
-    //     railColor: '#E0E0E0',
-    //     railOpacity: 1,
-    //     color: '#0067B3',
-    //     opacity: 1
-    // });
+    
 
-
+    
     // TOGGLE MODAL
     $('.modal .modal__close').click(function(){
         $(this).parent().parent().removeClass('active');
