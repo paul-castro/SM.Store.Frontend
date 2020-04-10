@@ -256,8 +256,22 @@
  }
 
  .container-1224{
-     width: 1224px;
+     max-width: 1224px;
      margin: auto;
+
+     @include respond(1223px) {
+        width: 90%;
+        margin: 0 5%;
+      }
+
+      @include respond(mobile) {
+        width: auto;
+        margin: 0 12px;
+      }
+ }
+
+ .container-results {
+     margin-bottom: 40px;
  }
 
  .search-header {
@@ -276,6 +290,13 @@
         text-transform: uppercase;
         color: white;
         margin-bottom: 16px;
+
+        @include respond(mobile) {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 1.6px;
+            margin-bottom: 8px;
+          }
      }
  }
 
@@ -290,6 +311,12 @@
         line-height: 40px;
         letter-spacing: 1.6px;
         text-transform: uppercase;
+
+
+        @include respond(mobile) {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 
     &__p {
@@ -305,9 +332,54 @@
         display: flex;
         margin-top: 24px;
         flex-wrap: wrap;
+
+        @include respond(1223px) {
+            justify-content: space-around;
+          }
+
+          @include respond(mobile) {
+            flex-direction: column;
+          }
     }
 
     &__item {
+        width: 288px;
+        margin-right: 24px;
+        margin-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(4n) {
+           margin-right: 0;
+        }
+
+        @include respond(1223px) {
+           margin-right: 0;
+         }
+
+         @include respond(mobile) {
+           flex-direction: row;
+           margin-bottom: 15px;
+           width: 100%;
+        }
+
+         &__image {
+            width: 288px;
+    
+            @include respond(mobile) {
+                width: 72px;
+            }
+        }
+    
+        &__details {
+            margin-top: 17px;
+
+            @include respond(mobile) {
+                margin-left: 8px;
+                margin-top: 0;
+            }
+        }
+        
 
         &__link-heading {
             text-decoration: none;
@@ -319,9 +391,14 @@
                 line-height: 30px;
                 color: #403F47;
                 margin-bottom: 32px;
+
+                @include respond(mobile) {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                }
             }
 
-            
         }
 
         &__h4 {
@@ -332,17 +409,27 @@
             letter-spacing: 1.6px;
             text-transform: uppercase;
             color: #88898F;
-            margin-top: 17px;
 
-        }
 
-        margin-right: 24px;
-        margin-bottom: 48px;
-        &:nth-child(4n) {
-           margin-right: 0;
         }
 
     }
+
+    &__button {
+        display: flex;
+
+
+        @include respond(1223px) {
+            justify-content: center;
+          }
+
+          @include respond(mobile) {
+           justify-content: start;
+          }
+        
+    }
+
+    
 
     
 
