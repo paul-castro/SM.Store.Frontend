@@ -316,21 +316,51 @@
 
     &--about {
         background: url('../../assets/images/banner-about.png') no-repeat;
-        @include bgcover;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
 
-        @include respond(tablet) {
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-about-m.png') no-repeat;
-            @include bgcover;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
         }
     }
 
     &--contacts {
         background: url('../../assets/images/banner-contacts.jpg') no-repeat;
-        @include bgcover;
+        height: 350px;
+        background-size: cover;
+        background-position: top right; 
+        flex-direction: column;
 
-        @include respond(tablet) {
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 100px;
+            }
+        }
+
+        @include respond(mobile) {
+            height: 200px;
             background: url('../../assets/images/banner-contacts-m.png') no-repeat;
-            @include bgcover;
+            background-size: cover;
+            background-position: top right; 
+            flex-direction: column;
         }
     }
 
