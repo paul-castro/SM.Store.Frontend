@@ -590,84 +590,6 @@
         }
     }
 
-    &--omnibus {
-        background: url('../../assets/images/banner-omnibus.jpg') no-repeat;
-        @include bgcover;
-        height: 350px;
-        
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 50px;
-            }
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-omnibus-m.jpg') no-repeat;
-            @include bgcover;
-        }
-    }
-
-    &--all-blogs {
-        background: url('../../assets/images/banner-all-blogs.jpg') no-repeat;
-        @include bgcover;
-        min-height: 350px;
-        
-        & > div {
-
-            &:nth-of-type(2) {
-                margin-top: 20px;
-                margin-left: 10%;
-
-                @include respond(tablet) {
-                    margin-left: 0;
-                }
-            }
-
-            & h1 {
-                display: block;
-                color: $white;
-                width: 780px;
-
-                @include respond(tablet) {
-                    font-weight: bold;
-                    font-size: 32px;
-                    line-height: 40px;
-                    width: 100%;
-                }
-            }
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-all-blogs-m.jpg') no-repeat;
-            @include bgcover;
-            background-position: center right; 
-        }
-    }
-
-    &--all-magazine {
-        background: url('../../assets/images/banner-all-magazine.jpg') no-repeat;
-        @include bgcover;
-        height: 350px;
-        
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 50px;
-                width: 70%;
-            }
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-all-magazine-m.jpg') no-repeat;
-            @include bgcover;
-            background-position: center right; 
-        }
-    }
 }
 
 
@@ -762,4 +684,229 @@
     }      
 
 }
+
+
+// BREADCRUMBS MIXINS
+@mixin breadcrumbs--white {
+    color: $white;
+    &:not(:last-child) {
+        background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+    }
+}
+
+@mixin breadcrumbs--black {
+    color: $black;
+    &:not(:last-child) {
+        background: url(../../assets/images/arrow-right-black.svg) no-repeat right center;
+    }
+}
+
+@mixin breadcrumbs--gray {
+    color: $dark-gray;
+    &:not(:last-child) {
+        background: url(../../assets/images/arrow-right-gray.svg) no-repeat right center;
+    }
+}
+
+// BANNER
+.banner-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 26px;
+
+    @include respond(mobile) {
+        padding: 0 8px;
+    }
+
+    &__hr {
+        width: 100%;
+        height: 1px;
+        display: block;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        position: relative;
+        top: 112px;
+
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+
+    &__breadcrumbs { 
+        position: relative;
+        top: 128px;
+        height: 34px;
+
+        @include respond(mobile) {
+            padding: 9px 0;
+            top: 210px;
+            height: 40px;
+        }
+
+        & > a {
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: normal;
+            margin-right: 12px;
+            white-space: nowrap;
+            padding: 0 16px 0 0;
+            display: inline-block;
+
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:last-child {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        color: $white;
+        margin-left: 18.32%;
+        top: 174px;
+
+        @include respond(tablet) {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 4px;
+        }
+
+        @include respond(mobile) {
+            margin-left: calc(7.77% - 8px);
+            top: 81px;
+        }
+    }
+
+    &--small {
+        height: 350px;
+
+        @include respond(mobile) {
+            background-size: 100% 200px;
+            height: 250px;
+        }
+    }
+
+    &--all-blogs {
+        background-image: url('../../assets/images/banner-all-blogs.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-all-blogs-m.jpg');
+        }
+
+        & > .banner-section__breadcrumbs {
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--gray;
+                }
+            }
+        }
+
+        & > .banner-section__title {
+            margin-left: 13.71%;
+            top: 142px;
+            max-width: 780px;
+
+            @include respond(tablet) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            @include respond(mobile) {
+                top: 46px;
+                width: 80%;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &--all-magazine {
+        background-image: url('../../assets/images/banner-all-magazine.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-all-magazine-m.jpg');
+        }
+
+        & > .banner-section__breadcrumbs {
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--gray;
+                }
+            }
+        }
+    }
+
+    &--omnibus {
+        background-image: url('../../assets/images/banner-omnibus.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-omnibus-m.jpg');
+        }
+
+        & > .banner-section__breadcrumbs {
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--gray;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > .banner-section__title {
+             
+            @include respond(tablet) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            @include respond(mobile) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &--viber {
+        background-image: url('../../assets/images/banner-viber.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-viber-m.jpg');
+        }
+
+        & > .banner-section__breadcrumbs {
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--black;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 58px !important;
+            }
+        }
+    }
+} 
 
