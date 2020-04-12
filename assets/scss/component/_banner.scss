@@ -247,47 +247,6 @@
         }
     }
 
-    &--sm-cares {
-        background: url('../../assets/images/banner-sm-cares.jpg') no-repeat;
-        height: 350px;
-        @include bgcover;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-sm-cares-m.jpg') no-repeat;
-            @include bgcover;
-        }
-    }
-    
-    &--press-release {
-        background: url('../../assets/images/banner-press-release.jpg') no-repeat;
-        height: 350px;
-        @include bgcover;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-press-release-m.jpg') no-repeat;
-            @include bgcover;
-        }
-    }
 
     &--stories {
         background: url('../../assets/images/banner-stories.jpg') no-repeat;
@@ -364,181 +323,6 @@
         }
     }
 
-    &--youth {
-        background: url('../../assets/images/banner-youth.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-youth-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
-    }
-
-    &--kids {
-        background: url('../../assets/images/banner-kids.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-kids-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
-    }
-
-    &--home {
-        background: url('../../assets/images/banner-home.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-home-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
-    }
-
-    &--beauty {
-        background: url('../../assets/images/banner-beauty.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-beauty-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
-    }
-
-    &--other {
-        background: url('../../assets/images/banner-other.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-other-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
-    }
-
-    &--mens {
-        background: url('../../assets/images/banner-mens.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-mens-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
-    }
-
-    &--womens-blog {
-        background: url('../../assets/images/banner-womens-blog@2x.png') no-repeat;
-        height: 350px;
-        @include bgcover;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(tablet) {
-            height: 200px;
-            background: url('../../assets/images/banner-womens-blog.png') no-repeat;
-            @include bgcover;
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-womens-blog-m.png') no-repeat;
-            @include bgcover;
-        }
-    }
 
     &--services {
         background: url('../../assets/images/banner-services.jpg') no-repeat;
@@ -562,31 +346,6 @@
                     margin-top: 100px;
                 }
             }
-        }
-    }
-
-}
-
-.small-header {
-    position: relative;
-    display: flex;
-    height: 318px;
-    align-items: flex-start;
-    padding: 88px 24px 20px 24px;
-
-    & > h1 {
-        margin: 48px auto 0 auto;
-        color: $white;
-    }
-
-    &--forex {
-        background: url('../../assets/images/banner-services-forex.jpg') no-repeat;
-        @include bgcover;
-        height: 350px;
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-services-forex-m.jpg') no-repeat;
-            @include bgcover;
         }
     }
 
@@ -685,6 +444,15 @@
 
 }
 
+// BANNER MIXINS
+@mixin banner-small-m--bc {
+    background-size: 100% 200px;
+    height: 250px;
+}
+@mixin banner-small-m {
+    background-size: 100% 200px;
+    height: 200px;
+}
 
 // BREADCRUMBS MIXINS
 @mixin breadcrumbs--white {
@@ -738,6 +506,7 @@
         height: 34px;
 
         @include respond(mobile) {
+            position: absolute;
             padding: 9px 0;
             top: 210px;
             height: 40px;
@@ -781,17 +550,12 @@
 
         @include respond(mobile) {
             margin-left: calc(7.77% - 8px);
-            top: 81px;
+            top: 113px;
         }
     }
 
     &--small {
         height: 350px;
-
-        @include respond(mobile) {
-            background-size: 100% 200px;
-            height: 250px;
-        }
     }
 
     &--all-blogs {
@@ -799,6 +563,7 @@
 
         @include respond(mobile) {
             background-image: url('../../assets/images/banner-all-blogs-m.jpg');
+            @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
@@ -822,7 +587,7 @@
             }
 
             @include respond(mobile) {
-                top: 46px;
+                top: 81px;
                 width: 80%;
                 margin-left: 20px;
             }
@@ -834,6 +599,7 @@
 
         @include respond(mobile) {
             background-image: url('../../assets/images/banner-all-magazine-m.jpg');
+            @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
@@ -852,6 +618,7 @@
 
         @include respond(mobile) {
             background-image: url('../../assets/images/banner-omnibus-m.jpg');
+            @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
@@ -886,6 +653,7 @@
 
         @include respond(mobile) {
             background-image: url('../../assets/images/banner-viber-m.jpg');
+            @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
@@ -904,7 +672,121 @@
 
         & > .banner-section__title {
             @include respond(mobile) {
-                top: 58px !important;
+                top: 90px !important;
+            }
+        }
+    }
+
+    &--men {
+        background-image: url('../../assets/images/banner-mens.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-mens-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--women {
+        background-image: url('../../assets/images/banner-women.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-women-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--kids {
+        background-image: url('../../assets/images/banner-kids.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-kids-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--youth {
+        background-image: url('../../assets/images/banner-youth.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-youth-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--home {
+        background-image: url('../../assets/images/banner-home.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-home-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--beauty {
+        background-image: url('../../assets/images/banner-beauty.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-beauty-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--other {
+        background-image: url('../../assets/images/banner-other.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-other-m.jpg');
+            @include banner-small-m;
+        }
+
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 90px;
+            }
+        }
+    }
+
+    &--sm-cares {
+        background-image: url('../../assets/images/banner-sm-cares.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-sm-cares-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--press-release {
+        background-image: url('../../assets/images/banner-press-release.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-press-release-m.jpg');
+            @include banner-small-m;
+        }
+    }
+
+    &--forex {
+        background-image: url('../../assets/images/banner-services-forex.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-services-forex-m.jpg');
+            @include banner-small-m--bc;
+        }
+
+        & > .banner-section__breadcrumbs {
+            & > a {
+                @include respond(mobile) {
+                    @include breadcrumbs--black;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 90px !important;
             }
         }
     }

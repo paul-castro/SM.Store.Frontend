@@ -47,9 +47,9 @@
         & > p { 
             text-align: center;
 
-            // @include respond(tablet) {
-            //     width: 100%;
-            // }
+            @include respond(tablet) {
+                width: 90%;
+            }
 
             &:nth-of-type(1) {
                 margin-bottom: 16px;
