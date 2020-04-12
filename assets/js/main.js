@@ -98,4 +98,16 @@ $(document).ready(function(){
     });
 
 
+
+    // LOCATION ACCORDION
+    $('.viber-main__location-header').click(function() {
+        if($(window).width() <= 600 ) {
+            if($(this).parent().hasClass('active')) {
+                $(this).parent().removeClass('active');
+            }
+            else {
+                $(this).parent().addClass('active');
+            }
+        }
+    });
 });
