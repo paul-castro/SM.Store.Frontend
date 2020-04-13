@@ -2,137 +2,412 @@
 
     &-main {
         min-height: 928px;
+        width: 1400px;
+        margin: 0 auto;
         position: relative;
-        padding-top: 56px;
 
+        @include respond(1290px) {
+            width: 100%;
+        }
+
+        @include respond(360px) {
+            margin: 0;
+        }
+
+
+        & > div {
+            position: relative;
+            min-height: 784px;
+            width: 1287px;
+            margin: 56px auto 88px 0;
+            display: flex;
+            justify-content: space-between;
+
+            @include respond(1290px) {
+                flex-direction: column;
+                width: min-content;
+                margin: 56px auto;
+                align-items: center;
+            }
+
+            @include respond(360px) {
+                width: 100%;
+                margin: 30px 0 32px 0;
+                padding: 0 12px;
+            }
+        }
+            
         &-bg {
             background-color: $lemon;
             height: 741px;
             width: 607px;
             position: absolute;
-            left: -80px;
-            bottom: 88px;
+            left: 0px;
+            top: 43px;
             z-index: 1;
+
+            @include respond(mobile) {
+                height: 378px;
+                width: 312px;
+                top: 32px;
+            }
         }
 
         &-img {
             z-index: 50;
             position: relative;
+            margin-left: 87px;
+            width: 624px;
+            
+            @include respond(mobile) {
+                margin-left: 20px;
+                height: 378px;
+                width: 312px;
+            }
         }
 
         &-content {
-            position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 496px;
             z-index: 60;
-            top: 144px;
+            margin-top: 88px;
 
-            @include respond(1080px) {
-                position: relative;
+            @include respond(1290px) {
+                width: min-content;
+            }
+
+            @include respond(mobile) {
+                margin-top: 56px;
+                width: 336px;
             }
 
             & > h1 {
-                position: absolute;
-                left: 576px;
+                margin-left: -130px;
                 color: $pink;
+                white-space: nowrap;
 
-                @include respond(1160px) {
-                    left: 376px;
+                @include respond(1290px) {
+                    margin-left: 0px;
                 }
 
-                @include respond(1080px) {
-                    position: relative;
-                }
-            }
-
-            & > p {
-                width: 496px;
-                position: absolute;
-                right: 0;
-                top: 104px;
-
-                @include respond(1160px) {
-                    right: 280px;
-                    width: 400px;
-                }
-
-                @include respond(1080px) {
-                    position: relative;
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    text-align: center;
+                    letter-spacing: 1.6px;
                 }
             }
         }
     }
 
-    &-sm-cares {
-        background-color: $cream;   
-        min-height: 628px;
 
-        & > .container {
+    &-carousel {
+        width: 100%;
+        background-color: $cream;
+
+        & > div {
             position: relative;
+            max-width: 1400px;
+            min-height: 628px;
+            margin: 0 auto;
+            display: flex;
+
+            @include respond(1250px) {
+                // margin: 0 auto 0 auto;
+                padding-bottom: 60px;
+            }
         }
-        
-        &-bg {
+
+        &__text {
             background-color: $freshmint;
             height: 536px;
             width: 608px;
-            position: absolute;
-            right: -88px;
-            // z-index: 1;
+            padding: 88px 88px 0 165px;
+            margin-left: auto;
 
-            & > p:nth-of-type(1) {
-                position: absolute;
-                top: 88px;
-                left: 165px;
-                z-index: 60;
+            @include respond(1250px) {
+                padding: 340px 88px 24px 165px;
+                height: min-content;
             }
 
-            & > h1 {
-                position: absolute;
-                top: 128px;
-                left: 24px;
-                z-index: 60;
+            @include respond(tablet) {
+                padding: 340px 88px 24px 24px;
+            }
+
+            @include respond(800px) {
+                width: 76.6%;
+            }
+
+            @include respond(mobile) {
+                padding: 240px 18px 24px 16px;
+            }
+
+            & span {
+                color: $dark-gray;
+                margin-bottom: 18px;
+            }
+
+            & h1 {
+                position: relative;
+                margin-bottom: 16px;
+                z-index: 50;
+
+                @include respond(mobile) {
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 1.6px;
+                }
 
                 & > span {
-                    display: block;
+                    white-space: nowrap;
 
-                    &:nth-of-type(1),
+                    &:nth-of-type(1) {
+                        margin-left: -141px;
+                        color: $white;
+
+                        @include respond(tablet) {
+                            margin-left: 0;
+                        }
+                    }
+
                     &:nth-of-type(2) {
+                        margin-left: 67px;
                         color: $white;
                     }
 
-                    &:nth-of-type(2) {
-                        margin-left: 208px;
-                    }
-
                     &:nth-of-type(3) {
-                        margin-left: 141px;
                         color: $lemon;
                     }
                 }
             }
 
-            & > p:nth-of-type(2) {
-                position: absolute;
-                top: 350px;
-                margin-left: 165px;
-                color: $dark-gray;
-                z-index: 60;
-                width: 354px;
+            & p {
+                margin-bottom: 32px;
+
+                @include respond(mobile) {
+                    margin-bottom: 24px;
+                }
             }
 
-            & > a {
+            & a {
+                display: block;
                 width: 116px;
-                position: absolute;
-                top: 454px;
-                left: 165px;
             }
         }
 
-        &-img {
-            z-index: 50;
+        &__image {
+            & img {
+                position: absolute;
+                left: 88px;
+                top: 64px;
+                z-index: 40;
+
+                @include respond(1340px) {
+                    width: 57.5%;
+                }
+
+                @include respond(1250px) {
+                    width: 500px;
+                    height: auto;
+                    left: 50%;
+                    top: 24px;
+                    transform: translateX(-50%);
+                }
+
+                @include respond(mobile) {
+                    width: 335px;
+                    height: 215px;
+                    top: 16px;
+                }
+            }
+        }
+
+        &__controls {
+            height: 10px;
+            position: absolute;
+            bottom: 64px;
+            right: 40px;
+
+            @include respond(1250px) {
+                display: none;
+            }
+        }
+    }
+        
+    &-carousel-lg {
+        width: 100%;
+        background-color: #EFF3FD;
+
+        & > div {
             position: relative;
-            top: 64px;
-            // display: none;
+            max-width: 1400px;
+            min-height: min-content;
+            margin: 0 auto;
+            padding: 64px 88px 68px 88px;
+            display: flex;
+            flex-direction: column;
+
+            @include respond(tablet) {
+                padding: 36px 24px;
+            }
+
+            @include respond(mobile) {
+                padding: 36px 12px;
+            }
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 34px;
+            align-items: center;
+
+            & > h2 {
+                color: $dark-gray;
+                
+                @include respond(mobile) {
+                    width: 200px
+                }
+            }
+        }
+
+        &__img {
+            margin-bottom: 24px;
+            border: 24px solid #397CEE;
+            box-sizing: border-box;
+            width: 100%;
+            background-image: url('../../assets/images/press-release.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 584px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0 0 78px;
+
+            @include respond(tablet) {
+                height: 442px;
+                border: 16px solid #397CEE;
+                background-image: url('../../assets/images/press-release-m.jpg');
+                align-items: center;
+                padding: 0;
+            }
+
+            @include respond(mobile) {
+                height: 268px;
+            }
+
+            & > h1 {
+                width: 534px;
+                color: $white;
+                margin-bottom: 24px;
+
+                @include respond(tablet) {
+                    width: 260px;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+            }
+
+            & > a {
+                width: 117px;
+            }
+        }
+
+        &__controls {
+            height: 10px;
+        }
+    }
+
+    &-careers {
+        width: 100%;
+
+        & > div {
+            min-height: 408px;
+            padding: 60px 88px;
+            position: relative;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+                
+            @include respond(tablet) {
+                max-width: 100%;
+                padding: 37px 24px;
+            }
+                
+            @include respond(mobile) {
+                padding: 37px 17px;
+            }
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            align-items: center;
+                
+            @include respond(tablet) {
+                justify-content: center;
+                margin-bottom: 24px;
+            }
+
+            & > h2 {
+                color: $dark-gray;
+            }
+
+            & > a {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+        }
+
+        &__listing {
+            display: flex;
+
+            @include respond(tablet) {
+                flex-direction: column;
+            }
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 33.33%;
+                align-items: center;
+                
+                @include respond(tablet) {
+                    padding: 32px 0;
+                }
+
+                &:not(:nth-of-type(3)) {
+                    border-right: 1px solid #E0E0E0;   
+
+                    @include respond(tablet) {
+                        border-right: none;
+                        border-bottom: 1px solid #E0E0E0;  
+                    } 
+                }
+
+                & > h4 {
+                    margin-bottom: 8px;
+                    color: $dark-gray;
+                    text-align: center;
+                }
+
+                & > span {
+                    color: $dark-gray;
+                    margin-bottom: 32px;
+                    text-align: center;
+
+                    & > img {
+                        vertical-align: middle;
+                        margin-right: 12px;
+                    }
+                }
+            }
         }
     }
 }

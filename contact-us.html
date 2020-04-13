@@ -645,6 +645,11 @@
             <section class="contacts__intro container">
                 <h2 class="font-h2-caps">We’re here to help!</h2>
                 <p>Need some help? Check out our <a href="">Help & Support</a> section, but if you can't find the answer you're looking for, please get in touch using one of the below options:</p>
+                
+                <h4 class="font-h4 text-semibold">Message us on messenger</h4>
+                <p>Send us a message, and we'll aim to get back to you as soon as possible</p>
+                
+                <button class="btn--icon text-semibold"><img src="./assets/images/messenger.svg"> Chat With Us</button>
             </section>
 
             <section class="contacts__form container">
@@ -698,43 +703,40 @@
                 <button class="btn--primary font-cta">Submit</button>
             </section>
 
-            <section class="contacts__alt container">
-                <h2 class="font-h2-caps">Other ways to reach us</h2>
-                <div class="contacts__alt-content">
-                    <div>
-                        <img src="./assets/images/icons/icon-phone.png" alt="">
-                        <div>
-                            <p class="font-metadata">Call us at</p>
-                            <span class="font-caption-bold">(02)8811-0000</span>
-                        </div>
+            <section class="contacts-alt">
+                <div>
+                    <div class="contacts-alt__header">
+                        <h2 class="font-h2-hero">Other ways to reach us</h2>
                     </div>
-                    <div>
-                        <img src="./assets/images/icons/icon-message.png" alt="">
+                    <div class="contacts-alt__listing">
                         <div>
-                            <p class="font-metadata">Email us at</p>
-                            <span class="font-caption-bold">customercare@thesmstore.com</span>
+                            <span class="font-metadata"><img src="./assets/images/icons/icon-phone.svg" alt="">Call us at</span>
+                            <a href="" class="font-caption-bold">(02)8811-0000</a>
                         </div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/icons/icon-viber.png" alt="">
                         <div>
-                            <p class="font-metadata">Join us on viber</p>
+                            <span class="font-metadata"><img src="./assets/images/icons/icon-message.svg" alt="">Email us at</span>
+                            <a href="" class="font-caption-bold">customercare@thesmstore.com</a>
+                        </div>
+                        <div>
+                            <span class="font-metadata"><img src="./assets/images/icons/icon-viber.svg" alt="">Join us on viber</span>
                             <a href="" class="btn--text-link font-cta">Join</a>
                         </div>
                     </div>
+                    <p>For store information, visit our <a href="">Stores</a> page.</p>
                 </div>
-                <p>For store information, visit our <a href="">Stores</a> page.</p>
             </section>
 
-            <section class="contacts__social-media container-fluid">
-                <div class="container">
-                    <h3 class="font-h3-caps">Follow us on social</h3>
-                    <ul>
-                        <li><img src="./assets/images/icons/fb-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
-                        <li><img src="./assets/images/icons/instagram-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
-                        <li><img src="./assets/images/icons/twitter-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
-                        <li><img src="./assets/images/icons/youtube-alt.png" alt=""> <span class="font-headline text-bold">/TheSMStore</span></li>
-                    </ul>
+            <section class="contacts-social-media">
+                <div>
+                    <div class="contacts-social-media__header">
+                        <h3 class="font-h3-caps">Follow us on social</h3>
+                    </div>
+                    <div class="contacts-social-media__content">
+                        <span class="font-headline text-bold"><img src="./assets/images/icons/icon-facebook.svg" alt="">/TheSMStore</span>
+                        <span class="font-headline text-bold"><img src="./assets/images/icons/icon-instagram.svg" alt="">/TheSMStore</span>
+                        <span class="font-headline text-bold"><img src="./assets/images/icons/icon-twitter.svg" alt="">/TheSMStore</span>
+                        <span class="font-headline text-bold"><img src="./assets/images/icons/icon-youtube.svg" alt="">/TheSMStore</span>
+                    </div>
                 </div>
             </section>
 
@@ -813,4 +815,11 @@
 
         </div> <!-- /wrapper -->
     </body>
+
+    <!-- IMPORTS -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </html>
