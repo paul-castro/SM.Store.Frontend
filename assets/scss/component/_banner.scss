@@ -790,5 +790,99 @@
             }
         }
     }
+
+
+    &--gift-registry {
+        background-image: url('../../assets/images/banner-gift-registry.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-gift-registry-m.jpg');
+            @include banner-small-m--bc;
+        }
+
+        & > .banner-section__breadcrumbs {
+
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--gray;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 90px !important;
+                width: 187px;
+            }
+        }
+    }
+
+    &--gift-card {
+        background-image: url('../../assets/images/banner-gift-card.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-gift-card-m.jpg');
+            @include banner-small-m--bc;
+        }
+
+        & > .banner-section__breadcrumbs {
+            
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--gray;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 90px !important;
+                width: 187px;
+            }
+        }
+    }
+
+    &--gift-wrapping {
+        background-image: url('../../assets/images/banner-gift-wrapping.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-gift-wrapping-m.jpg');
+            @include banner-small-m--bc;
+        }
+
+        & > .banner-section__breadcrumbs {
+            
+            & > a {
+                @include breadcrumbs--white;
+
+                @include respond(mobile) {
+                    @include breadcrumbs--gray;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 90px !important;
+                width: 187px;
+            }
+        }
+    }
 } 
 
