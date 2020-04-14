@@ -40,7 +40,7 @@
                     </ul> 
                 </nav>
                 
-                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid hide">
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid">
                     <div class="nav__lower-burger">
                         <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
@@ -427,12 +427,12 @@
                     </ul>
                     
                     <div class="nav__lower-search"> 
-                        <img src="./assets/images/search.svg" alt="">
+                        <a class="icon-search" href="#"><img src="./assets/images/search.svg" alt="Search"></a>
                     </div>
                 </nav>
 
-
-               <div class="container-search">
+                 <!-- SEARCH -->
+               <div class="container-search hide">
                     <div class="search">
 
                         <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
@@ -445,7 +445,7 @@
                         
                     </div>
 
-                    <div class="search-hint">
+                    <div class="search-hint hide">
                         <label class="search-hint__label-heading search-hint__label-heading--1">TOP SEARCHES</label>
 
                        <div class="search-hint__top-searches">
@@ -523,6 +523,7 @@
 
                     </div>
                </div>
+               <!-- //SEARCH -->
 
                 
                 <!-- MOBILE MENU -->
@@ -1099,9 +1100,25 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/slimscroll.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+
+
+    $(document).ready(function () {
+        // SEARCH BAR
+        $('.icon-search').click(function(){
+            $('.nav__lower-menu').addClass('hide');
+            $('.logo').addClass('hide');
+            $('.nav__lower-search').addClass('hide');
+            $('.container-search').removeClass('hide');
+            $('.container-search').addClass('show');
+            $('.search__input').focus();
+   
+        });
+    });    
+
+    </script>
 </html>

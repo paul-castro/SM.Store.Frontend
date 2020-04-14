@@ -62,7 +62,8 @@
 
         @include respond(360px) {
             right: -28px;
-            height: 378px;
+            //height: 378px;
+            height: 85%;
         }
 
         &:nth-of-type(1) {
