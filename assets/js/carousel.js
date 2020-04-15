@@ -197,14 +197,14 @@ $(document).ready(function() {
             title1: 'SM Real',
             title2: 'Beauty',
             content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
-            videoUrl: 'https://storage.coverr.co/videos/coverr-meditation-couple-in-the-park-1566577927549?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNzcyNzk2fQ.02ngrtvWjl3gOlqlCqYXerXmA9N2JcoUqXH-gu66oiA'
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
         },
         {
             header: 'Women Video',
             title1: 'Test1',
             title2: 'Test1',
             content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
-            videoUrl: 'https://storage.coverr.co/videos/coverr-meditation-couple-in-the-park-1566577927549?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNzcyNzk2fQ.02ngrtvWjl3gOlqlCqYXerXmA9N2JcoUqXH-gu66oiA'
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
         },
     ];
 
