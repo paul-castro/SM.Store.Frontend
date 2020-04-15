@@ -18,9 +18,8 @@
             
             <!-- HEADER -->
             <header>
-                <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
+                <nav class="nav__upper nav__upper--default nav__upper--index container-fluid moveInDown">
                     <ul class="nav__upper-list nav__upper-list-menu">
-                        <li><a href="" class="font-fineprint">About Us</a></li>
                         <li><a href="" class="font-fineprint">Stores</a></li>
                         <li><a href="" class="font-fineprint">Contact Us</a></li>
                     </ul>
@@ -57,7 +56,7 @@
 
                     <ul class="nav__lower-menu navanimate__item">
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline">What's New</a>
+                            <a href="" class="font-headline navanimate__item--1">What's New</a>
                             <div class="nav__dropdown container">
                                 <div class="nav__dropdown-cards">
                                     <div class="card--menu card--menu-whatsnew">
@@ -97,7 +96,7 @@
                             </div>
                         </li>
                         <li class="nav__lower-menu-item"> 
-                            <a href="" class="font-headline">Categories</a>
+                            <a href="" class="font-headline navanimate__item--2">Categories</a>
                             <div class="nav__dropdown nav__dropdown--categories container">
                                 <div class="nav__dropdown-cards">
                                     <div class="card--menu card--menu-categories">
@@ -264,16 +263,16 @@
                                 </div>
                                 <div class="nav__dropdown-controls">
                                     <button class="nav__dropdown-controls--left">
-                                        <img src="./assets/images/icons/arrow-tail-left.svg" alt="">
+                                        <img src="./assets/images/icons/arrow-blue-tail-left.svg" alt="">
                                     </button>
                                     <button class="nav__dropdown-controls--right">
-                                        <img src="./assets/images/icons/arrow-tail-right.svg" alt="">
+                                        <img src="./assets/images/icons/arrow-blue-tail-right.svg" alt="">
                                     </button>
                                 </div>
                             </div>
                         </li>
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline">Events</a>
+                            <a href="" class="font-headline navanimate__item--3">Events</a>
                             <div class="nav__dropdown nav__dropdown--events container">
                                 <div class="nav__dropdown-left">
                                     <h1 class="nav__dropdown-header font-h1-m">Upcoming Events</h1>
@@ -353,7 +352,7 @@
                             </div>
                         </li>
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline">Services</a>
+                            <a href="" class="font-headline navanimate__item--4">Services</a>
                             <div class="nav__dropdown nav__dropdown--services container">
                                 <div class="nav__dropdown-cards">
                                     <div class="services-group-cards">
@@ -403,7 +402,7 @@
                             </div>
                         </li>
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline">Gifts</a>
+                            <a href="" class="font-headline navanimate__item--5">Gifts</a>
                             <div class="nav__dropdown nav__dropdown--gifts container">
                                 <div class="nav__dropdown-cards">
                                     <div class="gifts-group-cards">
@@ -424,15 +423,15 @@
                             </div>
                         </li>
                         <li class="nav__lower-menu-item">
-                            <a href="" class="font-headline">SM Cares</a>
+                            <a href="" class="font-headline navanimate__item--6">SM Cares</a>
                         </li>
-                        <li class="nav__lower-menu-item">
+                        <li class="nav__lower-menu-item navanimate__item--7">
                             <a href="" class="font-headline">Careers</a>
                         </li>
                     </ul>
                     
                     <div class="nav__lower-search"> 
-                        <img src="./assets/images/search.svg" alt="">
+                        <a class="icon-search navanimate__item--8" href="#"><img src="./assets/images/search.svg" alt="Search"></a>
                     </div>
                 </nav>
 
@@ -657,6 +656,105 @@
                     </div>
                 </nav>
                 <!-- /MOBILE MENU -->
+
+
+                <!-- SEARCH -->
+                <div class="container-search hide">
+                    <div class="search">
+
+                        <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                        
+                        <span class="search__vl">  </span>
+                        
+                        <input type="text" class="search__input" placeholder="Search The SM Store...">
+
+                        <a href="#" class="search__close"><img src="./assets/images/icon-close.svg" alt="Search"></a>
+                        
+                    </div>
+
+                    <div class="search-hint hide">
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TOP SEARCHES</label>
+
+                       <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category">2020 Beauty Trends</a>
+                            <a href="#" class="search-hint__top-searches__category">Fashion Outfit</a>
+                            <a href="#" class="search-hint__top-searches__category">Make Up</a>
+                            <a href="#" class="search-hint__top-searches__category">Parisian Shoes</a>
+                            <a href="#" class="search-hint__top-searches__category">#SpottedAtSM</a>
+                        </div>
+                        
+
+                     
+
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TRENDING BLOGS</label>
+
+                        <div class="search-hint__container">
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2">BEAUTY</label>
+                                    <img class="search-hint__trending__image" src="./assets/images/search-latest-articles-img-01.jpg">
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2 search-hint__label-heading--gray">MAKEUP and skincare</label>
+                                    <h2 class="search-hint__trending__h2">2020 Beauty Trends</h2>
+                                    <p class="search-hint__trending__p">All the latest in beauty and skincare for 2020.</p>
+                                    <a class="btn--text-link font-cta" href="#">Read more</a>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2">BEAUTY</label>
+                                    <img class="search-hint__trending__image" src="./assets/images/search-latest-articles-img-01.jpg">
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2 search-hint__label-heading--gray">MAKEUP and skincare</label>
+                                    <h2 class="search-hint__trending__h2">2020 Beauty Trends</h2>
+                                    <p class="search-hint__trending__p">All the latest in beauty and skincare for 2020.</p>
+                                    <a class="btn--text-link font-cta" href="#">Read more</a>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2">BEAUTY</label>
+                                    <img class="search-hint__trending__image" src="./assets/images/search-latest-articles-img-01.jpg">
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2 search-hint__label-heading--gray">MAKEUP and skincare</label>
+                                    <h2 class="search-hint__trending__h2">2020 Beauty Trends</h2>
+                                    <p class="search-hint__trending__p">All the latest in beauty and skincare for 2020.</p>
+                                    <a class="btn--text-link font-cta" href="#">Read more</a>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2">BEAUTY</label>
+                                    <img class="search-hint__trending__image" src="./assets/images/search-latest-articles-img-01.jpg">
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <label class="search-hint__label-heading search-hint__label-heading--2 search-hint__label-heading--gray">MAKEUP and skincare</label>
+                                    <h2 class="search-hint__trending__h2">2020 Beauty Trends</h2>
+                                    <p class="search-hint__trending__p">All the latest in beauty and skincare for 2020.</p>
+                                    <a class="btn--text-link font-cta" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button button--primary button--outline button--search-result">See all 19 Results</a>
+
+                    </div>
+               </div>
+               <!-- //SEARCH -->
+              
+
+
+
             </header>
             <!-- /HEADER -->
 
@@ -776,7 +874,7 @@
 
             <!-- EVENTS --> 
             <section class="featured-events container-fluid">
-                <div class="container">
+                <div class="container" data-aos="fade-left" data-aos-delay="10" data-aos-duration="2000">
                     <div class="featured-events__btn">
                         <a href="" class="btn--text-link font-cta">View all events</a>
                     </div>
@@ -816,7 +914,7 @@
                         <p>Your ultimate guide to this season’s fashion, style, beauty, and shopping finds at The SM Store.</p>
                     </div> <!--.featured-stories__header-->
 
-                    <div class="featured-stories__slider">
+                    <div class="featured-stories__slider" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000">
                         <div class="featured-stories__details">
                             <!-- generate by js - carousel.js -->
                         </div>
@@ -842,11 +940,11 @@
                 <div class="featured-video__bg container-fluid"></div>         
                 <div class="featured-video__content container">
                     
-                    <div class="featured-video__video">
+                    <div class="featured-video__video" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <!-- generated by js - carousel.js -->
                     </div>
 
-                    <div class="featured-video__text">
+                    <div class="featured-video__text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <!-- generated by js - carousel.js -->
                     </div>
 
@@ -860,34 +958,34 @@
             
             <!-- BLOG -->
             <section class="featured-blog container">
-                <h2 class="featured-blog__title font-h2-hero">Latest in fashion</h2>
-                <p class="featured-blog__subtitle font-eyebrow">All the freshest style inspirations in one place.</p>
+                <h2 class="featured-blog__title font-h2-hero" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">Latest in fashion</h2>
+                <p class="featured-blog__subtitle font-eyebrow" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">All the freshest style inspirations in one place.</p>
                 <a href="" class="featured-blog__btn font-cta btn--text-link">View all</a>
 
                 <div class="featured-blog__cards">
 
-                    <div class="featured-blog__card">
+                    <div class="featured-blog__card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <img src="./assets/images/thumbnail-blog-fashion.jpg" alt="Fashion">
                         <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
                         <h4 class="featured-blog__card--title font-h4">2020 Beauty Trends</h4>
                         <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
                     </div> 
 
-                    <div class="featured-blog__card">
+                    <div class="featured-blog__card" data-aos="fade-up" ddata-aos-delay="500" data-aos-duration="1000">
                         <img src="./assets/images/thumbnail-blog-women.jpg" alt="Women">
                         <span class="featured-blog__card--category font-eyebrow-medium">Women</span>
                         <h4 class="featured-blog__card--title font-h4">Classic Forever Pieces</h4>
                         <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
                     </div> 
 
-                    <div class="featured-blog__card">
+                    <div class="featured-blog__card" data-aos="fade-up" ddata-aos-delay="600" data-aos-duration="1000">
                         <img src="./assets/images/thumbnail-blog-men.jpg" alt="Men">
                         <span class="featured-blog__card--category font-eyebrow-medium">Men</span>
                         <h4 class="featured-blog__card--title font-h4">SM Men's Fashion Spring 2020 Lookbook</h4>
                         <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
                     </div> 
 
-                    <div class="featured-blog__card">
+                    <div class="featured-blog__card" data-aos="fade-up" ddata-aos-delay="400" data-aos-duration="1000">
                         <img src="./assets/images/thumbnail-blog-fashion-02.jpg" alt="Fashion">
                         <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
                         <h4 class="featured-blog__card--title font-h4">Summer Hits</h4>
@@ -990,8 +1088,32 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/aos.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/carousel.js"></script>
+
+
+      <script>
+      //Animate on Scroll
+      AOS.init();
+  
+  
+      $(document).ready(function () {
+          // SEARCH BAR
+          $('.icon-search').click(function(){
+              $('.nav__lower-menu').addClass('hide');
+              $('.logo').addClass('hide');
+              $('.animated-logo').addClass('hide');
+              $('.nav__lower-search').addClass('hide');
+              $('.container-search').removeClass('hide');
+              $('.container-search').addClass('show');
+              $('.search__input').focus();
+     
+          });
+
+      });    
+  
+      </script>
 </html>
