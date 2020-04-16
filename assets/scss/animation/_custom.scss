@@ -23,14 +23,15 @@
     position: absolute;
     //top: 47px;
     //left: 25px;
-    top:48%;
-    left:40%;
+    top:45%;
+    left:45%;
     z-index: 99;
 
     animation-name: moveFromCenter;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+
 
     &__image {
         
@@ -146,7 +147,7 @@
 
 .navanimate {
 
-    &__item {
+   /* &__item {
         opacity: 0;
         animation-fill-mode: forwards !important;
         
@@ -191,11 +192,63 @@
         }
     }
 
-    &__lower-search {
-        @include opacityFillMode();
-        @include navMoveInUp();
-        animation-delay: 1.50s;
+    */
+
+    &__item {
+        
+        
+        &--1 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.1s;
+        }
+
+        &--2 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.15s;
+        }
+
+        &--3 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.2s;
+        }
+
+        &--4 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.25s;
+        }
+
+        &--5 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.30s;
+        }
+
+        &--6 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.35s;
+        }
+
+        &--7 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.40s;
+        }
+
+        &--8 {
+            @include opacityFillMode();
+            @include navMoveInUp();
+            animation-delay: 1.45s;
+        }
+
     }
+
+   
+   
 }
 
 
