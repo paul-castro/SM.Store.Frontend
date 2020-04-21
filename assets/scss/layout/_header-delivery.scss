@@ -1,6 +1,7 @@
 .header-delivery {
     height: 350px;
-    background: $gray;
+    background: $aqua;
+    z-index: 40;
 }
 
 .align__content {
@@ -12,8 +13,6 @@
 }
 
 .nav__delivery {
-
-   
     
 }
 
@@ -113,11 +112,29 @@
 
 
 .button-guest {
-    &--outline-white {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 16px 24px;
 
+    &::after {
+        content: '\2014\2014';
+        letter-spacing: -2px;
+        margin-left: 8px;
+    }
+
+    &--outline-white {
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        color: $white;
+        margin-right: 16px;
     }
 
     &--pure-white {
-        
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        color: $black;
+        background-color: $white;
     }
 }
