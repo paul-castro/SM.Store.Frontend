@@ -6,6 +6,7 @@
         width: 100%;
         z-index: 50;
 
+  
 
         & > div {
             margin: 0 auto;
@@ -15,12 +16,44 @@
             display: flex;
             padding: 42px 47px 0 67px;
 
+            @include respond(tablet) {
+                width: 80%;
+                margin: auto;
+                padding: 19px 0 16px 19px;
+                flex-direction: column-reverse;
+              }
+
+              @include respond(mobile) {
+                width: 94%;
+                margin: auto;
+                padding: 19px 0 16px 19px;
+                flex-direction: column-reverse;
+              }
+
             & > img {
                 position: absolute;
                 width: 806px;
                 height: 465.52px;
                 z-index: 30;
                 margin-left: 394px;
+
+                @include respond(1024px) {
+                    position: relative;
+                    top: 120px;
+                  }
+
+                @include respond(tablet) {
+                    padding: 0;
+                    top: 0;
+                    position: relative;
+                    width: 80%;
+                    height: auto;
+                    margin: auto;
+                  }
+
+                  @include respond(mobile) {
+                    width: 329px;
+                  }
             }
         }
 
@@ -33,7 +66,22 @@
             z-index: 40;
             justify-content: space-between;
 
+            @include respond(tablet) {
+                margin-top: 0;
+                width: 100%;
+              }
+
+              
+
             & > h1 {
+
+
+            @include respond(tablet) {
+                margin-top: 20px;
+                font-size: 32px;
+                line-height: 40px;
+              }
+
                 & > span {
                     display: block;
 
@@ -42,7 +90,8 @@
                     }
                     &:nth-of-type(2) {
                         color: $black;
-                        text-align: right;
+                        //text-align: right;
+                        margin-left: 28%;
                         
                     }
                 }
@@ -52,6 +101,15 @@
                 text-align: right;
                 width: 354px;
                 min-height: 72px;
+
+                @include respond(tablet) {
+                    width: auto;
+                    margin-right: 20px;
+                  }
+
+                  /*@include respond(mobile) {
+                    display: none;
+                  }*/
             }
 
             & > a {
@@ -61,6 +119,14 @@
             }
         }
 
+    }
+
+    &__h2 {
+        @include respond(mobile) {
+            font-size: 24px;
+            line-height: 32px;    
+            margin-bottom: 30px;        
+          }
     }
 
     &__steps {
@@ -74,21 +140,44 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include respond(1290px) {
+                width: 100%;
+                height: auto;
+                padding:20px 12px;
+                height: auto;
+              }
         }
 
         &-header {
             width: 788px;
-            height: 78px;
+            //height: 78px;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0 auto;
             justify-content: space-between;
 
+            @include respond(tablet) {
+                width: 100%;
+                height: auto;
+                padding: 20px 12px;
+              }
+
+             & > h2 {
+                 font-size: 24px;
+             } 
+
             & > p {
                 letter-spacing: 3px;
                 white-space: nowrap;
                 text-align: center;
+
+                @include respond(tablet) {
+                    width: auto;
+                    height: auto;
+                    white-space: pre-wrap;
+                  }
             }
         }
 
@@ -96,12 +185,21 @@
             display: flex;
             justify-content: space-between;
 
+            @include respond(tablet) {
+                flex-direction: column;
+              }
+
             & > div {
                 background-color: $cream;
                 border-radius: 4px;
                 width: 392px;
                 min-height: 245px;
                 padding: 36px 26px;
+
+                @include respond(tablet) {
+                   width: 100%;
+                   margin: 10px 0;
+                  }
 
                 & > .step-header {
                     display: flex;
@@ -120,18 +218,45 @@
         width: 100%;
         background-color: $light-periwinkle;
 
+        
+
+
         & > div {
             width: 1400px;
             padding: 74px 92px;
             margin: 0 auto;
             height: 783px;
             position: relative;
+
+            @include respond(1340px) {
+                width: 100%;
+                height: auto;
+                padding: 60px 24px;
+              }
+
+            @include respond(1200px) {
+                width: 100%;
+                height: auto;
+                padding: 60px 24px;
+              }
+
+            @include respond(tablet) {
+                width: 100%;
+                height: auto;
+                padding: 40px 12px;
+              }
         }
 
         &-header {
             display: flex;
             justify-content: space-between;
             margin-bottom: 56px;
+
+            @include respond(mobile) {
+                text-align: center;
+                flex-direction: column;
+
+              }
         }
 
         &-slider {
@@ -140,15 +265,35 @@
             justify-content: space-between;
             margin: 0 auto;
 
+            @include respond(1200px) {
+                justify-content:center
+              }
+
+            @include respond(tablet) {
+                width: 100%;
+                justify-content:center
+              }
+
             & > div {
                 height: 514px;
                 width: 240px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin: 0 10px;
+
+               
+
+              
 
                 & > img {
                     margin-bottom: 16px;
+
+                    @include respond(mobile) {
+                        width: 187px;
+        
+                      }
+
                 }
 
                 & > span {
@@ -184,6 +329,17 @@
             width: 1216px;
             padding: 0 10px;
 
+            @include respond(1215px) {
+                width: 90%;
+
+              }
+
+            @include respond(mobile) {
+                top: 42%;
+
+              }
+
+
             &--right,
             &--left {
                 border-radius: 20px;
@@ -218,11 +374,20 @@
             position: relative;
             padding: 78px 192px;
 
+            @include respond(tablet) {
+                width: 100%;
+                padding: 40px 12px;
+              }
+
             & > .accordion {
                 position: relative;
                 width: 1016px;
                 min-height: min-content;
                 margin-bottom: 24px;
+
+                @include respond(1220px) {
+                    width: 100%;
+                  }
     
                 &.active {                    
                     & > .accordion__header {
@@ -273,5 +438,35 @@
         }
 
         
+    }
+}
+
+.carousel {
+    &__item {
+
+        @include respond(1260px) {
+           margin: 20px;
+        }
+
+        
+        &--2 {
+            @include respond(972px) {
+                display: none !important;
+              } 
+        }
+
+        &--3 {
+            @include respond(1020px) {
+                display: none !important;
+            }
+        }
+
+        &--4 {
+
+            @include respond(1260px) {
+                display: none !important;
+              }
+            
+        }
     }
 }
