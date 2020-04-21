@@ -1104,12 +1104,24 @@
           // SEARCH BAR
           $('.icon-search').click(function(){
               $('.nav__lower-menu').addClass('hide');
-              $('.logo').addClass('hide');
+              //$('.logo').addClass('hide');
               $('.animated-logo').addClass('hide');
               $('.nav__lower-search').addClass('hide');
               $('.container-search').removeClass('hide');
               $('.container-search').addClass('show');
               $('.search__input').focus();
+     
+          });
+
+          // SEARCH BAR CLOSE
+          $('.search__close').click(function(){
+              $('.nav__lower-menu').addClass('show');
+              //$('.logo').addClass('show');
+              $('.animated-logo').addClass('show');
+              $('.nav__lower-search').addClass('hide');
+              $('.container-search').removeClass('show');
+              $('.container-search').addClass('hide');
+              //$('.search__input').();
      
           });
 

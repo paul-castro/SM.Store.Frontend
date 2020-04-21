@@ -121,7 +121,8 @@
             display: none;
             cursor: pointer;
 
-            @include respond(1160px) {
+            //@include respond(1160px) {
+            @include respond(tablet) {
                 display: flex;
                 flex: 0 0 16px;
                 align-items: center;
