@@ -885,4 +885,15 @@
             }
         }
     }
-} 
+}
+
+.banner-yolk {
+    background-image: url('../../assets/images/pattern-yolk.svg');
+    width: 437px;
+    height: 350px;
+    position: absolute;
+
+    @include respond(mobile) {
+       width: 74%;
+    }
+}

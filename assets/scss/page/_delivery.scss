@@ -1,10 +1,17 @@
+
+
 .delivery {
 
     &__banner {
         margin-top: -227px;
         position: relative;
         width: 100%;
-        z-index: 50;
+        z-index: 40;
+
+
+        @include respond(mobile) {
+            margin-top: -270px;
+          }
 
   
 
@@ -435,35 +442,6 @@
     }
 }
 
-.carousel {
-    &__item {
-
-        @include respond(1260px) {
-           margin: 20px;
-        }
-
-        
-        &--2 {
-            @include respond(972px) {
-                display: none !important;
-              } 
-        }
-
-        &--3 {
-            @include respond(1020px) {
-                display: none !important;
-            }
-        }
-
-        &--4 {
-
-            @include respond(1260px) {
-                display: none !important;
-              }
-            
-        }
-    }
-}
 
 
 .delivery-catalog {
@@ -475,6 +453,15 @@
         padding: 40px 170px;
         margin: 0 auto;
         justify-content: space-between;
+
+        @include respond(tablet) {
+            width: 100%;
+            padding: 20px;
+        }
+
+        @include respond(mobile) {
+            padding: 0;
+        }
     }
 
     &__filter {
@@ -482,6 +469,14 @@
         min-height: 459px;
         display: flex;
         flex-direction: column;
+
+        @include respond(tablet) {
+            margin-right: 20px;
+          }
+
+          @include respond(tablet) {
+            display: none;
+          }
 
         & > h2 {
             margin-bottom: 32px;
@@ -590,7 +585,13 @@
         & > .catalog-sorter {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             height: 40px;
+
+            @include respond(tablet) {
+                padding: 12px;
+                height: 64px;
+              }
 
             & > p {
                 color: $dark-gray;
@@ -621,7 +622,7 @@
             justify-content: space-between;
 
             & > div {
-                height: 514px;
+                //height: 514px;
                 width: 240px;
                 display: flex;
                 flex-direction: column;
@@ -652,10 +653,56 @@
                     margin-bottom: 16px;
 
                     &:nth-of-type(1) {
-                        height: 60px;
+                       // height: 60px;
                     }
+
+                    @include respond(mobile) {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                      }
                 }
             }
         }
+    }
+}
+
+
+.carousel {
+    &__item {
+
+        @include respond(1260px) {
+           margin: 20px;
+        }
+
+        
+        &--2 {
+            @include respond(972px) {
+                display: none !important;
+              } 
+        }
+
+        &--3 {
+            @include respond(1020px) {
+                display: none !important;
+            }
+        }
+
+        &--4 {
+
+            @include respond(1260px) {
+                display: none !important;
+              }
+            
+        }
+
+      &__catalog {
+        @include respond(mobile) {
+            width: 160px !important;
+
+            
+        }
+      }
     }
 }
