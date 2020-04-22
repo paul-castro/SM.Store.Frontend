@@ -73,8 +73,17 @@ $(document).ready(function(){
     $('.modal .modal__close').click(function(){
         $(this).parent().parent().removeClass('active');
     });
-    $('.modal').click(function(){
-        $(this).removeClass('active');
+    $('.modal--item .modal__close').click(function(){
+        $(this).parent().parent().parent().removeClass('active');
+    });
+    // $('.modal').click(function(){
+    //     $(this).removeClass('active');
+    // }).children().not('.modal__close').click(function(e) {
+    //     return false;
+    // });
+
+    $('.carousel__item').click(function() {
+        $('.modal').addClass('active');
     });
 
     $('.card--service-btn').click(function() {

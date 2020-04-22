@@ -189,4 +189,115 @@
             }
         }   
     }
+
+    &--item {
+        height: 497px;
+        width: 936px;
+        background-color: $light-periwinkle;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 4px;
+        z-index: 99;
+
+        & > .modal-header {
+            background: $coral;
+            border-radius: 4px 4px 0px 0px;
+            height: 65px;
+            width: 100%;
+            padding: 17px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > p {
+                color: $white;
+            }
+
+            & > div {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        & > .modal-content {
+            display: flex;
+            height: 432px;
+            border-radius: 0px 0px 4px 4px;
+
+            & > .modal--item-image {
+                width: 400px;
+                padding: 28px 0;
+                margin-right: 24px;
+                display: flex;
+                justify-content: center;
+                background-color: $white;
+                position: relative;
+                border-radius: 0px 0px 0px 4px;
+
+                & > img {
+                    height: 339px;
+                    width: 272px;
+                }
+
+                & > .modal--item-controls {
+                    position: absolute;
+                    width: 352px;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 24px;
+                    align-self: center;
+                }
+
+                & > .modal--item-indicators {
+                    position: absolute;
+                    bottom: 81px;
+                    width: 88px;
+                    height: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    z-index: 99;
+
+                    & > input {
+                        display: none;
+
+                        &:checked + label {
+                            background-color: $gray;
+                        }
+                    }
+
+                    & > label {
+                        display: block;
+                        height: 10px;
+                        width: 10px;
+                        background-color: transparent;
+                        border: 1px solid $gray;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            & > .modal--item-description {
+                padding: 28px 0;
+                width: 488px;
+                height: 368px;
+
+                & > .font-callout {
+                    color: $dark-gray;
+                    margin-bottom: 24px;
+                }
+
+                & > hr {
+                    border: 1px solid #E0E0E0;
+                    margin-bottom: 24px;
+                }
+
+                & > .about-product {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
 }
