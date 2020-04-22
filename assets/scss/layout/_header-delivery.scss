@@ -2,7 +2,22 @@
     height: 350px;
     background: $aqua;
     z-index: 40;
+
+    &--catalog {
+        height: 350px;
+        background-image: url('../../assets/images/banner-delivery.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        & > h1 {
+            position: absolute;
+            color: $white;
+            margin: 206px 0 0 256px;
+        }
+    }
 }
+
+
 
 .align__content {
     display: flex;
