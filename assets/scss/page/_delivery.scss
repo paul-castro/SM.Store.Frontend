@@ -560,6 +560,7 @@
                 }
 
                 & > input {
+                    position: relative;
                     width: 100%;
                     border: none;
                     font-family: Open Sans;
@@ -577,6 +578,33 @@
                     &::placeholder {
                         font-weight: 600;
                         color: $black;
+                    }
+                }
+                
+                & > .branch-suggestion-box {
+                    display: none;
+                    position: absolute;
+                    margin-top: 48px;
+                    z-index: 99;
+                    padding: 16px;
+                    background-color: $white;
+                    box-shadow: 2px 5px 10px rgba(136, 137, 143, 0.25);
+
+                    & div {
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 22px;
+
+                        & > .store-name {
+                            cursor: pointer;
+                            display: block;
+
+                            &:hover {
+                                background-color: rgba(0,0,0,0.04);
+                            }
+                        }
                     }
                 }
             }

@@ -124,4 +124,101 @@ $(document).ready(function(){
     $('.accordion__header').click(function(){
         $(this).parent().toggleClass('active');
     });
+
+
+    // AUTO SUGGESTION SEARCH BRANCH
+
+    
+    $('.search-branch-input').keyup(() => {
+        var list = [];
+        if($('.search-branch-input').val()) {
+            var key = $('.search-branch-input').val();
+            $('.branch-suggestion-box').css('display', 'block');
+            for(i = 0; i < branches.length; i++) {
+                if(branches[i][0].toLowerCase().includes(key.toLowerCase())) {
+                    if(list.indexOf(branches[i]) == -1) {
+                        list.push(branches[i]);
+                        populateSuggestionBox(list);
+                    }
+                }
+            }
+        }
+        else {
+            $('.branch-suggestion-box').css('display', 'none');
+        }   
+    });
+
+    $('body').click(function(e) {
+        
+        if($(e.target).hasClass('search-branch-input') || $(e.target).hasClass('branch-suggestion-box') || $(e.target).parent().hasClass('slimScrollDiv')){
+            return false;
+        }
+        else {
+            if($('.branch-suggestion-box').css('display') == 'block') {
+                $('.branch-suggestion-box').css('display', 'none');
+                $('.search-branch-input').val('');
+            }
+        }
+    });
+
+
+    function populateSuggestionBox(arr) {
+        var list = '';
+        var metro = '';
+        var northl = '';
+        var southl = '';
+        var vis = '';
+        var minda = '';
+        for(i = 0; i < arr.length; i++) {
+            switch (arr[i][1]) {
+                case 1: 
+                    metro += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    break;
+                case 2: 
+                    northl += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    break;
+                case 3: 
+                    southl += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    break;
+                case 4: 
+                    vis += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    break;
+                case 5: 
+                    minda += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    break;
+            }
+        }
+
+        if(metro !== '') {
+            list += `<b>Metro Manila</b><br>${metro}<br>`;
+        }
+        if(northl !== '') {
+            list += `<b>North Luzon</b><br>${northl}<br>`;
+        }
+        if(southl !== '') {
+            list += `<b>South Luzon</b><br>${southl}<br>`;
+        }
+        if(vis !== '') {
+            list += `<b>Visayas</b><br>${vis}<br>`;
+        }
+        if(minda !== '') {
+            list += `<b>Mindanao</b><br>${minda}`;
+        }
+
+        $('.branch-suggestion-box div').html(list);
+        putSlimScroll();
+    }
+
+    function putSlimScroll() {
+        $('.branch-suggestion-box div').slimScroll({
+            height: '188px',
+            width: '313px',
+            size: '3px',
+            alwaysVisible: true,
+            railVisible: true,
+            railColor: '#222',
+            railOpacity: 0.3,
+            wheelStep:  '5' 
+        });
+    }
 });
