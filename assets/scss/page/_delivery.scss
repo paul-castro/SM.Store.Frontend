@@ -488,17 +488,55 @@
                 height: 31px;
                 padding: 7px 8px;
                 color: $white;
+                display: flex;
+                justify-content: space-between;
+                width: min-content;
+                white-space: nowrap;
+                margin-bottom: 16px;
+
+                & > img {
+                    margin-left: 12px;
+                    cursor: pointer;
+                }
             }
         }
     }
 
     &__accordion {
-        & > div {
+        &-item {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             padding: 16px 0;
             border-bottom: 1px solid $mid-gray;
-            cursor: pointer;
+
+            &.active {
+                & > div:nth-of-type(1) {
+                    & > img {
+                        transform: rotate(-180deg);
+                    }
+                }
+                & > div:nth-of-type(2) {
+                    display: flex;
+                }
+            }
+
+            & > div {
+                &:nth-of-type(1) {
+                    display: flex;
+                    justify-content: space-between;
+                    cursor: pointer;
+                }
+                &:nth-of-type(2) {
+                    display: none;
+                    flex-direction: column;
+
+                    & > label {
+                        display: block;
+                        margin-left: 3px;
+                        margin-top: 22px;
+                    }
+                }
+            }
 
             &:last-child {
                 border-bottom: none !important;

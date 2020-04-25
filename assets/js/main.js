@@ -166,6 +166,9 @@ $(document).ready(function(){
         $('.branch-details').css('display', 'flex');
     });
 
+    $('.delivery-catalog__accordion-item div:nth-child(1)').click(function() {
+        $(this).parent().toggleClass('active');
+    });
 
     function populateSuggestionBox(arr) {
         var list = '';
