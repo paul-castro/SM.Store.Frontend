@@ -529,7 +529,7 @@
         & > .serving-branch {
             background-color: $light-periwinkle;
             width: 100%;
-            height: 186px;
+            min-height: 186px;
             padding: 23px 24px;
             display: flex;
             flex-direction: column;
@@ -551,11 +551,13 @@
             }
 
             & > .input-group {
+                background-color: $white;
                 display: flex;
                 height: 40px;
                 width: 345px;
                 
                 & > img {
+                    margin-left: 12px;
                     margin-right: 9px;
                 }
 
@@ -583,6 +585,8 @@
                 
                 & > .branch-suggestion-box {
                     display: none;
+                    height: 220px;
+                    width: 345px;
                     position: absolute;
                     margin-top: 48px;
                     z-index: 99;
@@ -590,7 +594,7 @@
                     background-color: $white;
                     box-shadow: 2px 5px 10px rgba(136, 137, 143, 0.25);
 
-                    & div {
+                    & div{
                         font-family: Open Sans;
                         font-style: normal;
                         font-weight: normal;
@@ -603,6 +607,110 @@
 
                             &:hover {
                                 background-color: rgba(0,0,0,0.04);
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > .branch-details {
+                background-color: $white;
+                height: 176px;
+                width: 727px;
+                margin-top: 16px;
+                display: none;
+                flex-direction: column;
+                padding: 24px 16px 18px 16px;
+
+                & > .header {
+                    display: flex;
+                    margin-bottom: 13px;
+                    align-items: center;
+
+                    & > div {
+                        &:nth-of-type(1) {
+                            width: 302px;
+                            margin-right: 49px;
+
+                            & > img {
+                                vertical-align: middle;
+                                margin-right: 16px;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            & > img {
+                                height: 14px;
+                                width: 14px;
+                                vertical-align: middle;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+
+                & > .contacts {
+                    display: flex;
+
+                    & > div {
+                        height: 97px;
+                        width: 270px;
+
+                        & > h2 {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 11px;
+                            
+                            & > span {
+                                position: relative;
+                                padding-right: 10px;
+                                text-transform: uppercase;
+                                color: $gray;
+                                font-weight: normal;
+                                background-color: $white;
+                                z-index: 4;
+                            }
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                border-top: 1px solid $mid-gray;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 0.3em;
+                                z-index: 1;
+                            }
+                        }
+
+                        & > div {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+
+                            & > span {
+                                font-weight: 600;
+                            }
+
+                            & > div {
+                                width: 104px;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+
+                        &:nth-of-type(1) {
+                            margin-left: 40px;
+                        }
+
+                        &:nth-of-type(2) {
+                            margin-left: 69px;
+
+                            & > div {
+    
+                                & > div {
+                                    justify-content: flex-end;
+                                }
                             }
                         }
                     }

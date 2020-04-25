@@ -127,17 +127,16 @@ $(document).ready(function(){
 
 
     // AUTO SUGGESTION SEARCH BRANCH
-
     
     $('.search-branch-input').keyup(() => {
         var list = [];
         if($('.search-branch-input').val()) {
             var key = $('.search-branch-input').val();
             $('.branch-suggestion-box').css('display', 'block');
-            for(i = 0; i < branches.length; i++) {
-                if(branches[i][0].toLowerCase().includes(key.toLowerCase())) {
-                    if(list.indexOf(branches[i]) == -1) {
-                        list.push(branches[i]);
+            for(i = 0; i < branch.length; i++) {
+                if(branch[i].name.toLowerCase().includes(key.toLowerCase())) {
+                    if(list.indexOf(branch[i]) == -1) {
+                        list.push(branch[i]);
                         populateSuggestionBox(list);
                     }
                 }
@@ -156,9 +155,15 @@ $(document).ready(function(){
         else {
             if($('.branch-suggestion-box').css('display') == 'block') {
                 $('.branch-suggestion-box').css('display', 'none');
-                $('.search-branch-input').val('');
             }
         }
+    });
+
+    
+    $('.branch-suggestion-box').on('click', '.store-name', function() {
+        $('.search-branch-input').val('The SM Store ' + $(this).data('name'));
+        populateBranchDetails($(this).data('name'));
+        $('.branch-details').css('display', 'flex');
     });
 
 
@@ -170,21 +175,21 @@ $(document).ready(function(){
         var vis = '';
         var minda = '';
         for(i = 0; i < arr.length; i++) {
-            switch (arr[i][1]) {
+            switch (arr[i].group) {
                 case 1: 
-                    metro += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    metro += `<span class="font-caption store-name" data-name="${arr[i].name}">The SM Store ${arr[i].name}</span>`;
                     break;
                 case 2: 
-                    northl += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    northl += `<span class="font-caption store-name" data-name="${arr[i].name}">The SM Store ${arr[i].name}</span>`;
                     break;
                 case 3: 
-                    southl += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    southl += `<span class="font-caption store-name" data-name="${arr[i].name}">The SM Store ${arr[i].name}</span>`;
                     break;
                 case 4: 
-                    vis += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    vis += `<span class="font-caption store-name" data-name="${arr[i].name}">The SM Store ${arr[i].name}</span>`;
                     break;
                 case 5: 
-                    minda += `<span class="font-caption store-name" data-name="${arr[i][0]}">The SM Store ${arr[i][0]}</span>`;
+                    minda += `<span class="font-caption store-name" data-name="${arr[i].name}">The SM Store ${arr[i].name}</span>`;
                     break;
             }
         }
@@ -209,6 +214,8 @@ $(document).ready(function(){
         putSlimScroll();
     }
 
+
+
     function putSlimScroll() {
         $('.branch-suggestion-box div').slimScroll({
             height: '188px',
@@ -218,7 +225,60 @@ $(document).ready(function(){
             railVisible: true,
             railColor: '#222',
             railOpacity: 0.3,
-            wheelStep:  '5' 
+            wheelStep: '5'
         });
+    }
+
+
+    
+    function populateBranchDetails(name) {
+        var i = branch.findIndex(x => x.name === name);
+
+        $('.branch-details').html(
+            `<div class="header">
+            <div>
+                <img src="./assets/images/icons/Navigationbranded.svg" alt="">
+                <span class="font-headline">The SM Store ${branch[i].name}</span>
+            </div>
+            <div>
+                <img src="./assets/images/icons/icon-clock.svg" alt="">
+                <span class="font-eyebrow-medium">Operating hours: 9:00AM - 4:00PM</span>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="number">
+                <h2>
+                    <span class="font-fineprint">Contact</span>
+                </h2>
+                <div>
+                    <span class="contact-number">0917 861 5396</span>
+                    <div>
+                        <img src="./assets/images/icons/btn_Call.svg" alt="">
+                        <img src="./assets/images/icons/btn_Message.svg" alt="">
+                        <img src="./assets/images/icons/btn_Viber.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <span class="contact-number">0917 861 5396</span>
+                    <div>
+                        <img src="./assets/images/icons/btn_Call.svg" alt="">
+                        <img src="./assets/images/icons/btn_Message.svg" alt="">
+                        <img src="./assets/images/icons/btn_Viber.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="email">
+                <h2>
+                    <span class="font-fineprint">Email</span>
+                </h2>
+                <div>
+                    <span class="email-address">megamall@smmalls.com</span>
+                    <div>
+                        <img src="./assets/images/icons/btn_Email.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>`
+        );
     }
 });
