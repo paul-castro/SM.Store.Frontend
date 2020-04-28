@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up - The SM Store</title>
+
+        <link rel="stylesheet" href="./assets/css/style.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="signup">
+                <div>
+                    <div class="auth-bg"></div>
+                    <div class="signup__form">
+                        <img src="./assets/images/signup-logo.png" alt="">
+                        <h3 class="font-h3-caps">Sign up</h3>
+                        <div>
+                            <div class="signup__form-group">
+                                <label class="font-caption text-semibold" for="firstName">First Name</label>
+                                <input type="text" id="firstName">
+                            </div>
+                            <div class="signup__form-group">
+                                <label class="font-caption text-semibold" for="lastName">Last Name</label>
+                                <input type="text" id="lastName">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="signup__form-group">
+                                <label class="font-caption text-semibold" for="lastName">Mobile Number or Email Address</label>
+                                <input type="text" id="lastName" placeholder="+63 917 892 4245 or sam@account.com">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="signup__form-group">
+                                <label class="font-caption text-semibold" for="lastName">Password</label>
+                                <div>
+                                    <input type="password" id="lastName" placeholder="6+ alphanumeric characters">
+                                    <img src="./assets/images/icons/password-eye.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h2>
+                            <span class="font-caption">OR</span>
+                        </h2>
+                        <div class="signup__form-buttons">
+                            <button class="signup__form-btn"><img src="./assets/images/icons/fb-button.svg" alt=""><span class="font-caption text-bold">Facebook</span></button>
+                            <button class="signup__form-btn"><img src="./assets/images/icons/google-button.svg" alt=""><span class="font-caption text-bold">Google</span></button>
+                        </div>
+                        <label class="checkbox-container">I have read and agree to The SM Store's <span class="text-bold">Terms of Service</span> and <span class="text-bold">Privacy Policy</span>.
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <button class="btn--primary button--black font-cta">Sign up</button>
+                        <p>Already have an account? <a href="">Log in</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+        <div class="modal active">
+            <div class="modal__container modal--terms">
+                <div class="modal__header">
+                    <h3 class="font-eyebrow">Terms of service</p>
+                    <img class="modal__close" src="./assets/images/icons/close.svg" alt="">
+                </div>
+                <div class="modal__content">
+                    <p>By signing up, I give consent to THE SM STORE, its affiliates and its service group to collect, use, store or otherwise process my personal data to verify, complete and deliver your purchase from said THE SM STORE.
+                    </p>
+                    <p>
+                    I agree to the use of said data for analytics and commercial or marketing purposes; and agree to receive corporate communications from THE SM STORE and to the sharing of my information with its service providers who will deliver the items to my designated location.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+     
+    <!-- IMPORTS -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
+</html>
