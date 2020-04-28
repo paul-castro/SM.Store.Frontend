@@ -119,10 +119,27 @@ $(document).ready(function(){
         }
     });
 
+    
     // ACCORDION
     $('.accordion__header').click(function(){
         $(this).parent().toggleClass('active');
     });
+
+    // ACCORDION WHEN MENU CLICK
+    var $root = $('html, body');
+
+    $('.link-delivery__item').click(function () {
+        if(!($('.accordion'+$.attr(this, 'href')).hasClass('active'))){
+            $('.accordion'+$.attr(this, 'href')).addClass('active');
+        }
+
+        $root.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+
+        return false;
+    });
+
 
 
     // AUTO SUGGESTION SEARCH BRANCH
