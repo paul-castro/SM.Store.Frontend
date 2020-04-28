@@ -699,6 +699,7 @@
                             display: flex;
                             align-items: center;
                             margin-bottom: 11px;
+                            height: 20px;
                             
                             & > span {
                                 position: relative;
@@ -709,6 +710,7 @@
                                 background-color: $white;
                                 z-index: 4;
                             }
+
                             &:after {
                                 content: '';
                                 position: absolute;

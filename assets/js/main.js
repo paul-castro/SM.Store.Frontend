@@ -76,11 +76,10 @@ $(document).ready(function(){
     $('.modal--item .modal__close').click(function(){
         $(this).parent().parent().parent().removeClass('active');
     });
-    // $('.modal').click(function(){
-    //     $(this).removeClass('active');
-    // }).children().not('.modal__close').click(function(e) {
-    //     return false;
-    // });
+    
+    $('.modal--terms .modal__close').click(function(){
+        $('.modal--terms').parent().removeClass('active');
+    });
 
     $('.carousel__item').click(function() {
         $('.modal').addClass('active');
