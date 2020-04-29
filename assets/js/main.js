@@ -128,7 +128,7 @@ $(document).ready(function(){
     // ACCORDION WHEN MENU CLICK
     var $root = $('html, body');
 
-    $('.link-delivery__item').click(function () {
+    $('.link-delivery__item, .nav__mobile-upper-item').click(function () {
         if(!($('.accordion'+$.attr(this, 'href')).hasClass('active'))){
             $('.accordion'+$.attr(this, 'href')).addClass('active');
         }

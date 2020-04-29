@@ -3,6 +3,10 @@
     background: $aqua;
     z-index: 40;
 
+    @include respond(mobile) {
+        height: 500px;
+    }
+
      
 
     &--catalog {
