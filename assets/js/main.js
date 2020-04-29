@@ -141,6 +141,12 @@ $(document).ready(function(){
     });
 
 
+    // CLOSE COOKIE MODAL
+    $('.cookie__btn .btn--primary:nth-child(1)').click(function() {
+        $('.cookie__container').css('display', 'none');
+    });
+
+
 
     // AUTO SUGGESTION SEARCH BRANCH
     

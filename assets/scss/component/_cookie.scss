@@ -2,11 +2,11 @@
 
     &__container {
         position: fixed;
-        // display: flex;
-        display: none;
+        display: flex;
+        // display: none;
         flex-direction: column;
         justify-content: space-between;
-        bottom: 130px;
+        bottom: 53px;
         right: 0;
         height: 240px;
         width: 460px;
@@ -32,7 +32,7 @@
             justify-content: flex-start;
         }
 
-        & > a {
+        & > .btn--primary {
             margin-left: 16px;
 
             @include respond(mobile) {
@@ -40,7 +40,7 @@
                 margin-left: 0;
             }
 
-            &:nth-of-type(2) {
+            &:nth-child(2) {
                 background-color: $white;
                 color: $black;
             }
