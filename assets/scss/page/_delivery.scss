@@ -457,6 +457,7 @@
         @include respond(tablet) {
             width: 100%;
             padding: 20px;
+            justify-content: center;
         }
 
         @include respond(mobile) {
@@ -564,6 +565,10 @@
     &__catalog {
         width: 784px;
 
+        @include respond(tablet) {
+            width: 600px;
+        }
+
         & > .serving-branch {
             background-color: $light-periwinkle;
             width: 100%;
@@ -660,15 +665,32 @@
                 flex-direction: column;
                 padding: 24px 16px 18px 16px;
 
+                @include respond(tablet) {
+                    width: 100%;
+                    height: min-content;
+                }
+
+                @include respond(mobile) {
+                    width: 100%;
+                }
+
                 & > .header {
                     display: flex;
                     margin-bottom: 13px;
                     align-items: center;
 
+                    @include respond(tablet) {
+                        flex-direction: column;
+                    }
+
                     & > div {
                         &:nth-of-type(1) {
                             width: 302px;
                             margin-right: 49px;
+
+                            @include respond(tablet) {
+                                margin-right: 0px;
+                            }
 
                             & > img {
                                 vertical-align: middle;
@@ -689,6 +711,11 @@
 
                 & > .contacts {
                     display: flex;
+
+                    @include respond(tablet) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
 
                     & > div {
                         height: 97px;
@@ -741,10 +768,27 @@
 
                         &:nth-of-type(1) {
                             margin-left: 40px;
+
+                            @include respond(tablet) {
+                                margin-bottom: 24px;
+                            }
+
+                            @include respond(mobile) {
+                                margin-left: 0px;
+                            }
                         }
 
                         &:nth-of-type(2) {
                             margin-left: 69px;
+
+                            @include respond(tablet) {
+                                margin-left: 40px;
+                                height: min-content;
+                            }
+
+                            @include respond(mobile) {
+                                margin-left: 0px;
+                            }
 
                             & > div {
     
@@ -764,19 +808,40 @@
             align-items: center;
             height: 40px;
 
+            @include respond(972px) {
+                width: 100%;
+            }
+
             @include respond(tablet) {
                 padding: 12px;
                 height: 64px;
-              }
+            }
 
             & > p {
                 color: $dark-gray;
+
+                @include respond(972px) {
+                    display: none;
+                }
             }
 
             & > div {
+                white-space: nowrap;
+
+                &:nth-of-type(1) {
+                    display: none;
+
+                    @include respond(972px) {
+                        display: block;
+                    }
+                }
                 & > span {
                     color: $gray;
                     margin-right: 10px;
+
+                    @include respond(972px) {
+                        margin-right: 0;
+                    }
                 }
 
                 & > select {
@@ -788,6 +853,12 @@
                     appearance: none;
                     background: url('../../assets/images/icons/angle-down-black.svg') 90% / 8% no-repeat $white;
                     border: 1px solid $gray;
+                    outline: none;
+
+                    @include respond(972px) {
+                        border: none;
+                        padding: 5px 0 5px 13px;
+                    }
                 }
             }
         }

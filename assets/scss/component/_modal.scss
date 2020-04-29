@@ -275,12 +275,17 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        border-radius: 4px;
+        border-radius: 8px;
         z-index: 99;
+
+        @include respond(940px) {
+            width: 336px;
+            height: 731px;
+        }
 
         & > .modal-header {
             background: $coral;
-            border-radius: 4px 4px 0px 0px;
+            border-radius: 8px 8px 0px 0px;
             height: 65px;
             width: 100%;
             padding: 17px 20px;
@@ -302,7 +307,14 @@
         & > .modal-content {
             display: flex;
             height: 432px;
-            border-radius: 0px 0px 4px 4px;
+            border-radius: 0px 0px 8px 8px;
+
+            @include respond(940px) {
+                width: 336px;
+                height: 666px;
+                flex-direction: column;
+                background-color: $white;
+            }
 
             & > .modal--item-image {
                 width: 400px;
@@ -312,11 +324,22 @@
                 justify-content: center;
                 background-color: $white;
                 position: relative;
-                border-radius: 0px 0px 0px 4px;
+                border-radius: 0px 0px 0px 8px;
+
+                @include respond(940px) {
+                    width: 100%;
+                    margin-right: 0px;
+                    padding: 24px 0;
+                }
 
                 & > img {
                     height: 339px;
                     width: 272px;
+
+                    @include respond(940px) {
+                        width: 140px;
+                        height: 210px;
+                    }
                 }
 
                 & > .modal--item-controls {
@@ -326,6 +349,10 @@
                     justify-content: space-between;
                     height: 24px;
                     align-self: center;
+
+                    @include respond(940px) {
+                        display: none;
+                    }
                 }
 
                 & > .modal--item-indicators {
@@ -336,6 +363,10 @@
                     display: flex;
                     justify-content: space-between;
                     z-index: 99;
+
+                    @include respond(940px) {
+                        bottom: 0px;
+                    }
 
                     & > input {
                         display: none;
@@ -361,18 +392,66 @@
                 width: 488px;
                 height: 368px;
 
+                @include respond(940px) {
+                    padding: 24px 23px;
+                    width: 100%;
+                }
+
+                & > span {
+                    @include respond(940px) {
+                        text-align: center;
+                        display: block;
+                    }
+                }
+
                 & > .font-callout {
                     color: $dark-gray;
                     margin-bottom: 24px;
+
+                    @include respond(940px) {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                & > p.font-callout {
+                    @include respond(940px) {
+                        font-weight: bold;
+                        margin-bottom: 24px;
+                    }
                 }
 
                 & > hr {
                     border: 1px solid #E0E0E0;
                     margin-bottom: 24px;
+
+                    @include respond(940px) {
+                        display: none;
+                    }
                 }
 
                 & > .about-product {
                     margin-bottom: 24px;
+
+                    & > p {
+                        @include respond(940px) {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
+                & > .order-item {
+
+                    & > p {
+                        @include respond(940px) {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
                 }
             }
         }
