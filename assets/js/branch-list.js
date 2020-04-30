@@ -67,7 +67,7 @@ const branch = [
     { name: 'Puerto Princesa', group: 4 },
     { name: 'Seaside Cebu', group: 4 },
     { name: 'CDO Downtown Premier', group: 5 },
-    { name: 'Cagayan de Oro', group: 5 },
+    { name: 'Cagayan de Oro (Uptown)', group: 5 },
     { name: 'Davao', group: 5 },
     { name: 'General Santos', group: 5 },
     { name: 'Lanang', group: 5 },

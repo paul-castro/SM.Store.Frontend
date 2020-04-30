@@ -273,7 +273,7 @@ $(document).ready(function(){
             </div>
             <div>
                 <img src="./assets/images/icons/icon-clock.svg" alt="">
-                <span class="font-eyebrow-medium">Operating hours: 9:00AM - 4:00PM</span>
+                <span class="font-eyebrow-medium">Operating hours: Mon - Sun 9:00AM to 4:00PM</span>
             </div>
         </div>
         <div class="contacts">
