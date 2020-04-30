@@ -32,13 +32,13 @@
         }
         
         @include respond(tablet) {
-            background: url('../../assets/images/banner-delivery-m.svg') center left no-repeat;
+            background: url('../../assets/images/banner-delivery-m.jpg') center left no-repeat;
             background-size: cover;
             height: 200px;
           }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-delivery-m.svg') center top no-repeat;
+            background: url('../../assets/images/banner-delivery-m.jpg') center top no-repeat;
             background-size: cover;
             height: 200px;
           }

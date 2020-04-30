@@ -456,4 +456,89 @@
             }
         }
     }
+
+    
+    &--welcome {
+        height: 490px;
+        width: 800px;
+        background-color: $light-periwinkle;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 8px;
+        z-index: 99;
+                    
+        @include respond(tablet) {
+            height: 478px;
+            width: 335px;
+        }
+
+
+        & > .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & > img {
+                margin-bottom: 24px;
+                border-radius: 8px 8px 0 0;
+                    
+                @include respond(tablet) {
+                    margin-bottom: 16px;
+                }
+
+
+                &:nth-of-type(1) {
+                    display: block; 
+                    
+                    @include respond(tablet) {
+                        display: none;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    display: none; 
+
+                    @include respond(tablet) {
+                        display: block;
+                    }
+                }
+            }
+    
+            & > h2 {
+                margin-bottom: 8px;
+                font-weight: bold;
+                text-align: center;
+                    
+                @include respond(tablet) {
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 1.6px;
+                }
+
+                & > span {
+                    &:nth-of-type(1) {
+                        display: none; 
+    
+                        @include respond(tablet) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+    
+            & > p {
+                margin-bottom: 56px;
+                text-align: center;
+                    
+                @include respond(tablet) {
+                    width: 280px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+    }
 }

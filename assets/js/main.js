@@ -147,6 +147,12 @@ $(document).ready(function(){
     });
 
 
+    // CLOSE WELCOME MODAL
+    $('.modal--welcome .modal-content button').click(function() {
+        $('.modal').removeClass('active');
+    });
+
+
 
     // AUTO SUGGESTION SEARCH BRANCH
     
