@@ -889,6 +889,7 @@
 
                 & > img {
                     margin-bottom: 16px;
+                    width: 240px;
 
                     @include respond(mobile) {
                         width: 187px;
