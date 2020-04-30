@@ -440,10 +440,16 @@
                     & > ul {
                         margin: 0px 0 20px 40px;
                         list-style-type: disc;
-                        
-                        & > li {
-                            font-weight: bold;
+
+                        @include respond(tablet) {
+                            margin: 0px 0 20px 20px;
                         }
+                        
+                        /*& > li {
+                            font-weight: bold;
+                        }*/
+
+
                     }
                 }
             }
@@ -589,6 +595,11 @@
             flex-direction: column;
             margin-bottom: 38px;
 
+            @include respond(mobile) {
+                width: 96%;
+                margin: auto;
+            }
+
             & > h1 {
                 font-family: Josefin Sans;
                 font-weight: bold;
@@ -610,6 +621,10 @@
                 height: 40px;
                 width: 345px;
                 border: 1px solid $gray;
+
+                @include respond(tablet) {
+                    width: 100%;
+                }
                 
                 & > img {
                     margin-left: 12px;
@@ -768,6 +783,7 @@
 
                             & > span {
                                 font-weight: 600;
+                                word-break: break-word;
                             }
 
                             & > div {
@@ -828,6 +844,11 @@
                 height: 64px;
             }
 
+            @include respond(mobile) {
+                width: 94%;
+                margin: auto;
+            }
+
             & > p {
                 color: $dark-gray;
 
@@ -879,6 +900,10 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
+            @include respond(mobile) {
+                width: 98%;
+                margin: auto;
+            }
             
 
             & > div {
@@ -892,9 +917,11 @@
                 & > img {
                     margin-bottom: 16px;
                     width: 240px;
+                    height: 360px;
 
                     @include respond(mobile) {
-                        width: 187px;
+                        width: 160px;
+                        height: 245px;
                       }
                 }
 
@@ -937,9 +964,11 @@
 
         img {
             width: 240px;
+            height: 360px;
 
             @include respond(mobile) {
                 width: 160px;
+                height: 280px;
             }
         }
 

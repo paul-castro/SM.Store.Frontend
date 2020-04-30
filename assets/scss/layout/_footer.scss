@@ -233,6 +233,10 @@
         & > span {
             white-space: nowrap;
             color: $white;
+
+            @include respond(mobile) {
+                font-size: 12px;
+            }
         }
 
         

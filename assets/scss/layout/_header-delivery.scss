@@ -46,9 +46,11 @@
 
     &--privacy-policy {
         height: 350px;
-        background-image: url('../../assets/images/banner-privacy.jpg');
+        background-image: url('../../assets/images/banner-privacy.png');
         background-repeat: no-repeat;
         background-size: cover;
+
+      
 
         & > h1 {
             position: absolute;
@@ -67,13 +69,13 @@
         }
         
         @include respond(tablet) {
-            background: url('../../assets/images/banner-privacy-m.jpg') center left no-repeat;
+            background: url('../../assets/images/banner-privacy-m.png') center left no-repeat;
             background-size: cover;
             height: 200px;
           }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-privacy-m.jpg') center top no-repeat;
+            background: url('../../assets/images/banner-privacy-m.png') center top no-repeat;
             background-size: cover;
             height: 200px;
           }
@@ -221,3 +223,23 @@
         background-color: $white;
     }
 }
+
+.subpage-title {
+    font-size: 48px;
+    line-height: 58px;
+
+    br {
+        display: none;
+    
+        @include respond(tablet) {
+            display: block;
+         }
+    }
+
+    span {
+        @include respond(tablet) {
+            display: none;
+            }
+        }
+}
+
