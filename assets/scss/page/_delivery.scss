@@ -879,6 +879,8 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
+            
+
             & > div {
                 //height: 514px;
                 width: 240px;
@@ -928,8 +930,18 @@
 }
 
 
+
+
 .carousel {
     &__item {
+
+        img {
+            width: 240px;
+
+            @include respond(mobile) {
+                width: 160px;
+            }
+        }
 
         &__link {
             font-weight: 600;
