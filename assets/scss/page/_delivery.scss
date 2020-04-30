@@ -422,6 +422,7 @@
                     padding: 18px 16px;
                     display: flex;
                     justify-content: space-between;
+                    cursor: pointer;
                 }
     
                 & > .accordion__content {
@@ -608,6 +609,7 @@
                 display: flex;
                 height: 40px;
                 width: 345px;
+                border: 1px solid $gray;
                 
                 & > img {
                     margin-left: 12px;
@@ -668,7 +670,7 @@
 
             & > .branch-details {
                 background-color: $white;
-                height: 176px;
+                height: 190px;
                 width: 727px;
                 margin-top: 16px;
                 display: none;
@@ -687,7 +689,6 @@
                 & > .header {
                     display: flex;
                     margin-bottom: 13px;
-                    align-items: center;
 
                     @include respond(tablet) {
                         flex-direction: column;
