@@ -478,7 +478,7 @@
 
         @include respond(tablet) {
             width: 100%;
-            padding: 20px;
+            padding: 10px;
             justify-content: center;
         }
 
@@ -660,6 +660,10 @@
                     line-height: 22px;
                     padding: 9px 0;
                     color: $black;
+
+                    @include respond(tablet) {
+                        font-size: 12px;
+                    }
 
                     &:focus {
                         outline: none;
@@ -956,11 +960,16 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0 10px;
+                margin: 0 10px 40px 0;
 
                 @include respond(1230px) {
                     width: 173px;
                   }
+
+                  @include respond(mobile) {
+                    width: 173px;
+                  }
+
 
                 & > img {
                     margin-bottom: 16px;
@@ -992,7 +1001,7 @@
                        // height: 60px;
                     }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         font-style: normal;
                         font-weight: 600;
                         font-size: 16px;
@@ -1062,7 +1071,7 @@
       &__catalog {
         @include respond(mobile) {
             width: 160px !important;
-            margin: 0 !important;
+            margin: 0 0 60px 0 !important;
         }
       }
     }
