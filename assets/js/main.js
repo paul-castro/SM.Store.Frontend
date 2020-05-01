@@ -153,6 +153,25 @@ $(document).ready(function(){
     });
 
 
+    // TOGGLE FILTER ESSENTIAL IN MOBILE
+    $(window).on('resize', function(){
+        if($(window).width() < 600) {
+            $('.delivery-catalog__filter').css('display', 'none');
+        }
+        else {
+            $('.delivery-catalog__filter').css('display', 'flex');
+        }
+    });
+    $('.catalog-sorter div:nth-of-type(1) button').click(function() {
+        if ($(window).width() < 600) {
+            $('.delivery-catalog__filter').css('display', 'flex');
+        }
+    });
+
+    $('.delivery-catalog__filter img').click(function() {
+        $('.delivery-catalog__filter').css('display', 'none');
+    });
+
 
     // AUTO SUGGESTION SEARCH BRANCH
     
