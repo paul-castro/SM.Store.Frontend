@@ -277,34 +277,37 @@
         }
 
         &-slider {
-            max-width: 1058px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
+            overflow: hidden;
+            margin: 0 70px;
 
-            @include respond(1200px) {
-                justify-content:center
-              }
+            & .slick-arrow {
+                display: none !important;
+            }
 
-            @include respond(tablet) {
-                width: 100%;
-                justify-content:center
-              }
+            & .slick-list {
+                position: relative;
+                z-index: 20 !important;
+            }
 
-            & > div {
+            & .slick-track {
+                display: flex;
+            }
+
+            & .carousel__item {
                 height: 514px;
-                width: 240px;
+                width: 240px !important;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0 10px;
+                margin: 0 16px;
+                cursor: pointer;
 
                 & > img {
                     margin-bottom: 16px;
 
                     @include respond(mobile) {
                         width: 187px;
-                      }
+                        }
                 }
 
                 & > span {
@@ -326,7 +329,7 @@
                         height: 60px;
                     }
                 }
-            }
+            }            
         }
 
         &-controls {
@@ -339,6 +342,8 @@
             justify-content: space-between;
             width: 1216px;
             padding: 0 10px;
+            z-index: 1;
+            cursor: pointer;
 
             @include respond(1215px) {
                 width: 90%;
@@ -493,7 +498,7 @@
         display: flex;
         flex-direction: column;
 
-        @include respond(mobile) {
+        @include respond(tablet) {
             display: none;
             position: absolute;
             margin: 0px auto 0 auto; 
@@ -508,7 +513,7 @@
             display: none;
             margin-bottom: 27px; 
 
-            @include respond(mobile) {
+            @include respond(tablet) {
                 display: block;
                 align-self: flex-end;
             }
@@ -877,14 +882,13 @@
 
             @include respond(mobile) {
                 margin: auto;
-                //width: 96%;
                 width: auto;
             }
 
             & > p {
                 color: $dark-gray;
 
-                @include respond(mobile) {
+                @include respond(tablet) {
                     display: none;
                 }
             }
@@ -895,7 +899,7 @@
                 &:nth-of-type(1) {
                     display: none;
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         display: block;
                     }
                 }
@@ -903,7 +907,7 @@
                     color: $gray;
                     margin-right: 10px;
 
-                    @include respond(972px) {
+                    @include respond(tablet) {
                         margin-right: 0;
                     }
                 }
