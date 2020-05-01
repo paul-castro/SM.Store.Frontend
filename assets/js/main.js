@@ -209,6 +209,7 @@ $(document).ready(function(){
     
     $('.branch-suggestion-box').on('click', '.store-name', function() {
         $('.search-branch-input').val('The SM Store ' + $(this).data('name'));
+        $('.branch-suggestion-box').css('display', 'none');
         populateBranchDetails($(this).data('name'));
         $('.branch-details').css('display', 'flex');
     });
