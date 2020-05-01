@@ -81,7 +81,7 @@ $(document).ready(function(){
         $('.modal--terms').parent().removeClass('active');
     });
 
-    $('.carousel__item').click(function() {
+    $('.catalog-items .carousel__item').click(function() {
         $('.modal').addClass('active');
     });
 
@@ -152,10 +152,42 @@ $(document).ready(function(){
         $('.modal').removeClass('active');
     });
 
+    // FEATURED PRODUCT CAROUSEL
+    $('.delivery__featured-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true
+              }
+            },
+        ]
+    });
+
+    $('.delivery__featured-controls--left').click(function() {
+        $('.slick-prev').click();
+    });
+
+    $('.delivery__featured-controls--right').click(function() {
+        $('.slick-next').click();
+    });
+    
+
+    // TOGGLE FILTER ACCORDION
+    $('.delivery-catalog__accordion-item div:nth-child(1)').click(function() {
+        $(this).parent().toggleClass('active');
+    });
+
 
     // TOGGLE FILTER ESSENTIAL IN MOBILE
     $(window).on('resize', function(){
-        if($(window).width() < 600) {
+        if($(window).width() <= 1024) {
             $('.delivery-catalog__filter').css('display', 'none');
         }
         else {
@@ -163,12 +195,16 @@ $(document).ready(function(){
         }
     });
     $('.catalog-sorter div:nth-of-type(1) button').click(function() {
-        if ($(window).width() < 600) {
+        if ($(window).width() <= 1024) {
             $('.delivery-catalog__filter').css('display', 'flex');
+            console.log('dawdawdaw');
         }
     });
 
-    $('.delivery-catalog__filter img').click(function() {
+    $('.delivery-catalog__filter > img').click(function() {
+        $('.delivery-catalog__accordion-item').each(function() {
+            $(this).removeClass('active');
+        });
         $('.delivery-catalog__filter').css('display', 'none');
     });
 
@@ -212,10 +248,6 @@ $(document).ready(function(){
         $('.branch-suggestion-box').css('display', 'none');
         populateBranchDetails($(this).data('name'));
         $('.branch-details').css('display', 'flex');
-    });
-
-    $('.delivery-catalog__accordion-item div:nth-child(1)').click(function() {
-        $(this).parent().toggleClass('active');
     });
 
     function populateSuggestionBox(arr) {
