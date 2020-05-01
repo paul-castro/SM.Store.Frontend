@@ -493,17 +493,6 @@
         display: flex;
         flex-direction: column;
 
-        @include respond(tablet) {
-            display: none;
-            position: absolute;
-            margin: 0px 10px 0 auto; 
-            background-color: $white;
-            z-index: 190;
-            min-height: 576px;
-            padding: 19px 16px;
-            width: 100%;
-        }
-
         @include respond(mobile) {
             display: none;
             position: absolute;
