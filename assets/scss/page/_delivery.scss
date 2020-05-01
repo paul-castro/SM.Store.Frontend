@@ -312,6 +312,13 @@
                 margin: 0 16px;
                 cursor: pointer;
 
+                @include respond(tablet) {
+                    width: auto !important;
+                    margin: 0 20px 0 20px;
+                    cursor: pointer;
+
+                }
+
                 & > img {
                     margin-bottom: 16px;
 
@@ -974,9 +981,11 @@
                 flex-direction: column;
                 align-items: center;
                 margin: 0 10px 40px 0;
+                text-align: center;
 
                 @include respond(1230px) {
                     width: 173px;
+                    
                   }
 
                   @include respond(mobile) {
@@ -1054,11 +1063,23 @@
             color:$dark-gray;
             text-decoration: none;
             margin-bottom: 30px;
+            
+            h4 {
+
+
+                @include respond(tablet) {
+                    font-size: 16px;
+                    line-height: 24px;
+                 }
+            }
         }
 
         @include respond(1260px) {
            margin: 20px;
         }
+
+
+        
 
         @include respond(mobile) {
             margin: 0 8px 0;
