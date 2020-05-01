@@ -471,6 +471,11 @@
         margin: 0 auto;
         justify-content: space-between;
 
+        @include respond(1230px) {
+            width: 98%;
+            padding: 20px;
+        }
+
         @include respond(tablet) {
             width: 100%;
             padding: 20px;
@@ -489,7 +494,14 @@
         flex-direction: column;
 
         @include respond(tablet) {
-            margin-right: 20px;
+            display: none;
+            position: absolute;
+            margin: 0px 10px 0 auto; 
+            background-color: $white;
+            z-index: 190;
+            min-height: 576px;
+            padding: 19px 16px;
+            width: 100%;
         }
 
         @include respond(mobile) {
@@ -497,7 +509,7 @@
             position: absolute;
             margin: 0px auto 0 auto; 
             background-color: $white;
-            z-index: 999;
+            z-index: 190;
             min-height: 576px;
             padding: 19px 16px;
             width: 100%;
@@ -600,7 +612,7 @@
         width: 784px;
 
         @include respond(tablet) {
-            width: 600px;
+            width: 98%;
         }
 
         & > .serving-branch {
@@ -851,6 +863,8 @@
             justify-content: space-between;
             align-items: center;
             height: 40px;
+            padding: 0 10px;
+
 
             @include respond(972px) {
                 width: 100%;
@@ -863,7 +877,8 @@
 
             @include respond(mobile) {
                 margin: auto;
-                width: 100%;
+                //width: 96%;
+                width: auto;
             }
 
             & > p {
@@ -947,12 +962,16 @@
                 align-items: center;
                 margin: 0 10px;
 
+                @include respond(1230px) {
+                    width: 173px;
+                  }
+
                 & > img {
                     margin-bottom: 16px;
                     width: 240px;
                     height: 360px;
 
-                    @include respond(mobile) {
+                    @include respond(1230px) {
                         width: 160px;
                         height: 245px;
                       }
@@ -1019,6 +1038,10 @@
            margin: 20px;
         }
 
+        @include respond(mobile) {
+            margin: 0 8px 0;
+         }
+
         
         &--2 {
             @include respond(972px) {
@@ -1043,8 +1066,7 @@
       &__catalog {
         @include respond(mobile) {
             width: 160px !important;
-
-            
+            margin: 0 !important;
         }
       }
     }
