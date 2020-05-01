@@ -160,11 +160,21 @@ $(document).ready(function(){
         variableWidth: true,
         responsive: [
             {
+              breakpoint: 1345,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                variableWidth: true,
+              }
+            },
+            {
               breakpoint: 600,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                infinite: true
+                infinite: true,
+                variableWidth: true,
               }
             },
         ]

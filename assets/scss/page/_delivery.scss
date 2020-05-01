@@ -286,7 +286,17 @@
 
             & .slick-list {
                 position: relative;
+                overflow: hidden;
                 z-index: 20 !important;
+                max-width: 1076px;
+
+                // @include respond(1340px) {
+                //     max-width: 700px;
+                // }
+
+                @include respond(mobile) {
+                    max-width: max-content;
+                }
             }
 
             & .slick-track {
@@ -307,7 +317,7 @@
 
                     @include respond(mobile) {
                         width: 187px;
-                        }
+                    }
                 }
 
                 & > span {
@@ -346,14 +356,13 @@
             cursor: pointer;
 
             @include respond(1215px) {
-                width: 90%;
-
-              }
+                width: 100%;
+                padding: 0 24px 0 0;
+            }
 
             @include respond(mobile) {
                 top: 42%;
-
-              }
+            }
 
 
             &--right,
@@ -1022,6 +1031,10 @@
 
 .carousel {
     &__item {
+
+        & > a {
+            outline: none;
+        }
 
         img {
             width: 240px;
