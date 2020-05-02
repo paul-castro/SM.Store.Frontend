@@ -57,6 +57,11 @@
             color: $white;
             margin: 206px 0 0 256px;
 
+            @include respond(large-screen) {
+                margin: 10% 0 0 18%;
+              }
+
+
             @include respond(tablet) {
                 margin: 113px 0 0 20px;
                 font-size: 32px;

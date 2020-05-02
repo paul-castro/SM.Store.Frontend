@@ -364,11 +364,11 @@ $(document).ready(function(){
                 <h2>
                     <span class="font-fineprint">Email</span>
                 </h2>
-                <div>
-                    <span class="email-address">megamall@smmalls.com</span>
-                    <div>
+                <div class="container-email-branch">
+                    <div class="icon-email-branch">
                         <img src="./assets/images/icons/btn_Email.svg" alt="">
                     </div>
+                    <span class="email-address">megamall@smmalls.com</span>
                 </div>
             </div>
         </div>`

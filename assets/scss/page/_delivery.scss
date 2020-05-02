@@ -20,6 +20,7 @@
             height: 550px;
             display: flex;
             padding: 42px 47px 0 67px;
+            
 
             @include respond(tablet) {
                 width: 80%;
@@ -35,6 +36,7 @@
                 padding: 19px 0 16px 19px;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
+                
               }
 
             & > img {
@@ -62,6 +64,8 @@
                     width: 329px;
                     margin: 0;
                     top: 0;
+                    display: flex;
+                    align-self: flex-end;
                 }
             }
         }
@@ -98,6 +102,9 @@
                     &:nth-of-type(1) {
                         color: $teal;
                     }
+
+
+                    
                     &:nth-of-type(2) {
                         color: $black;
                         //text-align: right;
@@ -608,7 +615,7 @@
         background-color: $lilac;
         align-items: center;
 
-        & > img {
+        & > a {
             margin-right: 8px;
         }
 
@@ -756,6 +763,12 @@
                         display: flex;
                         align-items: flex-start;
 
+                        @include respond(tablet) {
+                            margin-bottom: 16px;
+                        }
+
+                  
+
                         & > img {
                             margin-top: 3px;
                         }
@@ -780,6 +793,11 @@
                                 width: 14px;
                                 vertical-align: middle;
                                 margin-right: 8px;
+
+                                @include respond(tablet) {
+                                    margin-right: 20px;
+                                    margin-left: 6px;
+                                }
                             }
                         }
                     }
@@ -788,14 +806,24 @@
                 & > .contacts {
                     display: flex;
 
+                   
+
                     @include respond(tablet) {
                         flex-direction: column;
-                        align-items: center;
+                        //align-items: center;
+                    }
+
+                    @include respond(mobile) {
+                        align-items: flex-start;
                     }
 
                     & > div {
                         //height: 97px;
                         width: 270px;
+
+                        @include respond(mobile) {
+                            width: 100%;
+                        }
 
                         & > h2 {
                             position: relative;
@@ -848,6 +876,7 @@
 
                             @include respond(tablet) {
                                 margin-bottom: 24px;
+                                margin-left: 0px;
                             }
 
                             @include respond(mobile) {
@@ -859,7 +888,7 @@
                             margin-left: 69px;
 
                             @include respond(tablet) {
-                                margin-left: 40px;
+                                margin-left: 0;
                                 height: min-content;
                             }
 
@@ -870,7 +899,7 @@
                             & > div {
     
                                 & > div {
-                                    justify-content: flex-end;
+                                   // justify-content: flex-end;
                                 }
                             }
                         }
@@ -997,6 +1026,7 @@
                     margin-bottom: 16px;
                     width: 240px;
                     height: 360px;
+                    cursor: pointer;
 
                     @include respond(1230px) {
                         width: 160px;
@@ -1018,6 +1048,7 @@
                 & > h4 {
                     color: $dark-gray;
                     margin-bottom: 16px;
+                    cursor: pointer;
 
                     &:nth-of-type(1) {
                        // height: 60px;
@@ -1113,4 +1144,13 @@
         }
       }
     }
+}
+
+.container-email-branch {
+    justify-content: left !important;
+}
+
+.icon-email-branch {
+    width: auto !important;
+    margin-right: 8px;
 }
