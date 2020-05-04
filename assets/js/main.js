@@ -307,25 +307,7 @@ $(document).ready(function(){
         }
 
         $('.branch-suggestion-box div').html(list);
-        putSlimScroll();
     }
-
-
-
-    function putSlimScroll() {
-        $('.branch-suggestion-box div').slimScroll({
-            height: '188px',
-            width: '313px',
-            size: '3px',
-            alwaysVisible: true,
-            railVisible: true,
-            railColor: '#222',
-            railOpacity: 0.3,
-            wheelStep: '5'
-        });
-    }
-
-
     
     function populateBranchDetails(name) {
         var i = branch.findIndex(x => x.name === name);

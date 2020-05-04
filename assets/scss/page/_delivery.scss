@@ -730,16 +730,43 @@
                     background-color: $white;
                     box-shadow: 2px 5px 10px rgba(136, 137, 143, 0.25);
 
+                    @include respond(419px) {
+                        width: 300px;
+                    }
+
+                    @include respond(360px) {
+                        width: 280px;
+                    }
+
                     & div{
                         font-family: Open Sans;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 14px;
                         line-height: 22px;
+                        height: 188px;
+                        overflow: auto;
+
+                        &::-webkit-scrollbar-track {
+                            background-color: $mid-gray;
+                            border-radius: 4px;
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 6px;
+                            background-color: $mid-gray;
+                            border-radius: 4px;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            background-color: $gray;
+                            border-radius: 4px;
+                        }
 
                         & > .store-name {
                             cursor: pointer;
                             display: block;
+                            padding: 4px 0;
 
                             &:hover {
                                 background-color: rgba(0,0,0,0.04);
