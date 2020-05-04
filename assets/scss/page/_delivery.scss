@@ -549,16 +549,22 @@
         }
 
         & > .filters {
+            display: flex;
+            flex-wrap: wrap;
+
             & > span {
-                background-color: $cerulean;
+                background: url('../../assets/images/icons/tag-close.svg') no-repeat right 3px center $cerulean;
                 height: 31px;
-                padding: 7px 8px;
+                padding: 7px 25px 7px 8px;
                 color: $white;
-                display: flex;
-                justify-content: space-between;
+                display: inline-block;
                 width: min-content;
+                max-width: 240px;
                 white-space: nowrap;
+                margin-right: 8px;
                 margin-bottom: 16px;
+                overflow: hidden;
+                text-overflow: ellipsis;
 
                 & > img {
                     margin-left: 12px;
