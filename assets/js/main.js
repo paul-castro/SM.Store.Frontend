@@ -198,23 +198,26 @@ $(document).ready(function(){
     // TOGGLE FILTER ESSENTIAL IN MOBILE
     $(window).on('resize', function(){
         if($(window).width() <= 1024) {
+            $('body').css('overflow','auto');
             $('.delivery-catalog__filter').css('display', 'none');
         }
         else {
+            $('body').css('overflow','auto');
             $('.delivery-catalog__filter').css('display', 'flex');
         }
     });
     $('.catalog-sorter div:nth-of-type(1) button').click(function() {
         if ($(window).width() <= 1024) {
             $('.delivery-catalog__filter').css('display', 'flex');
-            console.log('dawdawdaw');
+            $('body').css('overflow','hidden');
         }
     });
 
-    $('.delivery-catalog__filter > img').click(function() {
+    $('.delivery-catalog__filter > img, .catalog-done-btn').click(function() {
         $('.delivery-catalog__accordion-item').each(function() {
             $(this).removeClass('active');
         });
+        $('body').css('overflow','auto');
         $('.delivery-catalog__filter').css('display', 'none');
     });
 
