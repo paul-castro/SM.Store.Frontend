@@ -11,7 +11,7 @@
 
     &--catalog {
         height: 350px;
-        background-image: url('../../assets/images/banner-delivery.jpg');
+        background-image: url('../../assets/images/banner-delivery.svg');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -32,13 +32,13 @@
         }
         
         @include respond(tablet) {
-            background: url('../../assets/images/banner-delivery-m.jpg') center left no-repeat;
+            background: url('../../assets/images/banner-delivery-m.svg') center left no-repeat;
             background-size: cover;
             height: 200px;
           }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-delivery-m.jpg') center top no-repeat;
+            background: url('../../assets/images/banner-delivery-m.svg') center top no-repeat;
             background-size: cover;
             height: 200px;
           }
@@ -46,7 +46,7 @@
 
     &--privacy-policy {
         height: 350px;
-        background-image: url('../../assets/images/banner-privacy.png');
+        background-image: url('../../assets/images/banner-privacy.svg');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -74,17 +74,82 @@
         }
         
         @include respond(tablet) {
-            background: url('../../assets/images/banner-privacy-m.png') center left no-repeat;
+            background: url('../../assets/images/banner-privacy-m.svg') center left no-repeat;
             background-size: cover;
             height: 200px;
           }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-privacy-m.png') center top no-repeat;
+            background: url('../../assets/images/banner-privacy-m.svg') center top no-repeat;
             background-size: cover;
             height: 200px;
           }
     }
+
+
+    &--terms {
+        height: 350px;
+        background-image: url("../../assets/images/tc-banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (max-width: 1024px) {
+                background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
+                background-size: cover;
+        }
+
+        @media only screen and (max-width: tablet) {
+                background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
+                background-size: cover;
+                height: 200px
+        }
+
+        @media only screen and (max-width: 600px) {
+                background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
+                background-size: cover;
+        }
+
+        @media only screen and (max-width: mobile) {
+                background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
+                background-size: cover;
+                height: 200px
+        }
+        
+
+
+
+       & > h1 {
+            position: absolute;
+            color: #fff;
+            margin: 206px 0 0 256px;
+
+            @media only screen and (max-width: 1024px) {
+                    margin: 113px 0 0 20px;
+                    font-size: 32px;
+                    line-height: 40px
+            }
+
+
+            @media only screen and (max-width: tablet) {
+                    margin: 113px 0 0 20px;
+                    font-size: 32px;
+                    line-height: 40px
+            }
+
+            @media only screen and (max-width: 600px) {
+                    margin: 90px 0 0 20px
+            }
+
+            @media only screen and (max-width: mobile) {
+                    margin: 90px 0 0 20px
+            }
+
+
+        }
+        
+    }
+
+   
 }
 
 
@@ -247,4 +312,9 @@
             }
         }
 }
+
+
+
+
+
 

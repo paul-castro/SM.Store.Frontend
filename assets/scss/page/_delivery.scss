@@ -98,7 +98,7 @@
                     display: block;
 
                     &:nth-of-type(1) {
-                        color: $teal;
+                        color: $aqua;
                     }
 
 
@@ -309,7 +309,7 @@
             }
 
             & .carousel__item {
-                height: 514px;
+                height: 360px;
                 width: 240px !important;
                 display: flex;
                 flex-direction: column;
@@ -329,6 +329,7 @@
 
                     @include respond(mobile) {
                         width: 187px;
+                        height: 280px;
                     }
                 }
 
@@ -373,7 +374,7 @@
             }
 
             @include respond(mobile) {
-                top: 42%;
+                top: 50%;
             }
 
 
@@ -554,10 +555,12 @@
 
             & > span {
                 background: url('../../assets/images/icons/tag-close.svg') no-repeat right 3px center $cerulean;
+                background-color: $cerulean;
                 height: 31px;
                 padding: 7px 25px 7px 8px;
                 color: $white;
                 display: inline-block;
+                justify-content: space-between;
                 width: min-content;
                 max-width: 240px;
                 white-space: nowrap;
@@ -644,6 +647,7 @@
         & > p {
             width: 162px;
             font-size: 14px;
+            padding-left: 8px;
         }
     }
 
@@ -1025,7 +1029,7 @@
 
                 & > select {
                     height: 40px;
-                    width: 122px;
+                    width: 170px; /*change from 122px to 170*/
                     padding: 9px 0 9px 16px;
                     -webkit-appearance: none;
                     -moz-appearance: none;
@@ -1219,6 +1223,17 @@
     margin-right: 8px;
 }
 
+
+
+
+
+
+
+
+.modal--item>.modal-content>.modal--item-image>img {
+    height: 360px;  /*change from 339 to 360*/
+    width: 240px;   /*change from 272 to 240*/
+}
 
 
 
