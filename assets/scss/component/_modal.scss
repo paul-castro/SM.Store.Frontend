@@ -9,11 +9,12 @@
     z-index: 999;
 
     @include respond(mobile) {
-        position: absolute;
+        position: fixed;
     }
 
     &.active {
         display: block;
+        overflow: auto;
     }
 
     &__container {
@@ -275,21 +276,24 @@
         height: 497px;
         width: 936px;
         background-color: $light-periwinkle;
-        position: fixed;
+        position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         border-radius: 8px;
         z-index: 99;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        margin-bottom: 50px;
 
         @include respond(940px) {
             width: 336px;
             height: 731px;
         }
 
-        @include respond(mobile) {
-            position: absolute;
+        @include respond(tablet) {
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         & > .modal-header {

@@ -75,6 +75,7 @@ $(document).ready(function(){
     });
     $('.modal--item .modal__close').click(function(){
         $(this).parent().parent().parent().removeClass('active');
+        $('body').css('overflow', 'auto');
     });
     
     $('.modal--terms .modal__close').click(function(){
@@ -83,6 +84,7 @@ $(document).ready(function(){
 
     $('.catalog-items .carousel__item').click(function() {
         $('.modal').addClass('active');
+        $('body').css('overflow', 'hidden');
     });
 
     $('.card--service-btn').click(function() {
