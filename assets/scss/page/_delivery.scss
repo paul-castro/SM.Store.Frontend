@@ -645,7 +645,8 @@
         }
 
         & > p {
-            width: 162px;
+            //width: 162px;
+            width: auto;
             font-size: 14px;
             padding-left: 8px;
         }
@@ -1223,17 +1224,6 @@
     margin-right: 8px;
 }
 
-
-
-
-
-
-
-
-.modal--item>.modal-content>.modal--item-image>img {
-    height: 360px;  /*change from 339 to 360*/
-    width: 240px;   /*change from 272 to 240*/
-}
 
 
 
