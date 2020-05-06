@@ -309,7 +309,7 @@
             }
 
             & .carousel__item {
-                height: 360px;
+                height: 514px;
                 width: 240px !important;
                 display: flex;
                 flex-direction: column;
@@ -1177,10 +1177,7 @@
         @include respond(1260px) {
            margin: 20px;
         }
-
-
         
-
         @include respond(mobile) {
             margin: 0 8px 0;
          }
