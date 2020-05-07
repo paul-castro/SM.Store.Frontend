@@ -66,6 +66,18 @@ $(document).ready(function(){
         // var submenu = $('.nav__mobile-control-back').data('item');
         $('.nav__mobile-container').css('display', 'none');
     }
+
+
+    // TOGGLE PASSWORD VISIBILITY
+    $('.signup__form-group .toggle-password, .login__form-group .toggle-password').click(function() {
+        let pass =  $('.signup__form-group #password, .login__form-group #password');
+        if (pass.attr('type') == 'password') {
+            pass.attr('type', 'text');
+        }
+        else {
+            pass.attr('type', 'password');
+        }
+    });
     
 
     
