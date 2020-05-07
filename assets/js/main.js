@@ -73,12 +73,26 @@ $(document).ready(function(){
         let pass =  $('.signup__form-group #password, .login__form-group #password');
         if (pass.attr('type') == 'password') {
             pass.attr('type', 'text');
+            $('.toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
         }
         else {
             pass.attr('type', 'password');
+            $('.toggle-password').attr('src', './assets/images/icons/password-eye.svg');
         }
     });
-    
+
+
+    // OPEN TERMS AND CONDITION MODAL
+    $('#openTermsModal').click(function() {
+        $('.modal--terms').parent().addClass('active');
+        let cb = $('.checkbox-container input');
+        if(cb.prop('checked')) {
+            cb.prop("checked", false).change();
+        }
+        else {
+            cb.prop("checked", true).change();
+        }
+    });
 
     
     // TOGGLE MODAL

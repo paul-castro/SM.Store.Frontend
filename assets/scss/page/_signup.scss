@@ -440,3 +440,10 @@
 
     }
 }
+
+
+.checkbox-container > span {
+    &:hover {
+        text-decoration: underline;
+    }
+}
