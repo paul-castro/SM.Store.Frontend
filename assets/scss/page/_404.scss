@@ -1,0 +1,46 @@
+.header-404 {
+    background: url('../../assets/images/bg-404.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    @include respond(tablet) {
+        background: url('../../assets/images/bg-404.jpg') center left no-repeat;
+        background-size: cover;
+    }
+
+    @include respond(mobile) {
+        background: url('../../assets/images/bg-404-m.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+
+.content-404 {
+    padding-top:20%;
+
+    @include respond(1240px) {
+        padding-left: 4%;
+
+    }
+
+    @include respond(tablet) {
+        padding-top:30%;
+
+    }
+
+    @include respond(mobile) {
+        padding-top:45%;
+
+    }
+}
+
+.freepik {
+    position: absolute;
+    bottom: 16px;
+    left: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #20A999;
+    text-decoration: none;
+}
