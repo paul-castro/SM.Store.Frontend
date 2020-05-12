@@ -665,13 +665,40 @@
             &:nth-of-type(1) {
                 display: flex;
                 font-family: Open Sans;
+                justify-content: center;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
                 margin-right: 33px;
+                cursor: pointer;
 
                 & > img {
                     margin-right: 8px;
+                }
+
+                & > .nav-user__menu {
+                    top: 68px;
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    background-color: $white;
+                    padding: 16px 16px 16px 11px;
+
+                    & > a {
+                        color: $dark-gray;
+                        text-decoration: none;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+
+                        &:not(:last-child) {
+                            box-shadow: 0px 1px 0px #E0E0E0;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
 

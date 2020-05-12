@@ -250,6 +250,26 @@ $(document).ready(function(){
     });
 
 
+    // TOGGLE USER MENU
+    $('.nav-user div:nth-of-type(1)').click(function() {
+        if($('.nav-user__menu').css('display') == 'none') {
+            $('.nav-user__menu').css('display', 'flex');
+        }
+        else {
+            $('.nav-user__menu').css('display', 'none');
+        }
+    });
+
+    // $(document).on('click', function (e) {
+    //     // if (!$(e.target).closest('.nav-user div:nth-of-type(1)').length || !$(e.target).closest('.nav-user__menu').length) {
+    //     //     $('.nav-user__menu').css('display', 'none');
+    //     // }
+    //     if(!$(e.target).hasClass('nav-user__menu') || $(e.target).parent() !== $('.nav-user__hello')) {
+    //         $('.nav-user__menu').css('display', 'none');
+    //     }
+    // });
+
+
     // AUTO SUGGESTION SEARCH BRANCH
     
     $('.search-branch-input').keyup(() => {
@@ -387,4 +407,6 @@ $(document).ready(function(){
         </div>`
         );
     }
+
+
 });
